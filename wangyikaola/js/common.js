@@ -128,10 +128,63 @@ $("#navWrap #nav li").mouseenter(function(e){
 });
 $("#bannerList").mouseleave(function(){
 	$("#bannerList").hide();
+}).mouseenter(function(){
+	isPause = true;
+	$("#btnLeft").hide();
+	$("#btnRight").hide();
 });
 $("#headerWrap").mouseenter(function(){
 	$("#bannerList").hide();
 });
+
+//图片轮播
+function imgLunbo(){
+	var timer;
+	var index = 0;
+	var isPause = false;
+	
+	timer = setInterval(function(){	
+		if(!isPause){
+			$("banner ul li img").eq(index).fadeOut(1200);
+			if(index>=4){
+				index = 0;
+			}
+			$("banner ul li img").eq(index+1).fadeIn(1200);
+			index++;
+		}
+			
+	},4000)
+	
+	$("banner").mouseenter(function(){
+		isPause = true;
+		$("#btnLeft").show();
+		$("#btnRight").show();
+	}).mouseleave(function(){
+		isPause = false;
+		$("#btnLeft").hide();
+		$("#btnRight").hide();
+	});
+	$("#btnLeft").click(function(){
+		
+		$("banner ul li img").eq(index).fadeOut(1000);//3
+		if(index<=0){
+			index = 4;
+		}
+		$("banner ul li img").eq(index-1).fadeIn(1000);//
+		index--;3
+	});
+	$("#btnRight").click(function(){	
+		$("banner ul li img").eq(index).fadeOut(1000);//3
+		if(index>=4){
+			index = 0;
+		}
+		$("banner ul li img").eq(index+1).fadeIn(1000);//
+		index++;
+	})
+}
+
+imgLunbo();
+
 
 
 	

@@ -405,10 +405,14 @@ input {
       line-height: 40px;
       text-indent: 45px;
       font-size: 14px; }
+      #bannerWrap #bannerList li .bgred {
+        z-index: 20;
+        position: absolute;
+        display: none; }
       #bannerWrap #bannerList li:hover {
-        background-color: rgba(144, 144, 144, 0.5);
-        border-left: 3px solid #e32b42;
-        width: 157px; }
+        background-color: rgba(144, 144, 144, 0.5); }
+        #bannerWrap #bannerList li:hover .bgred {
+          display: block; }
         #bannerWrap #bannerList li:hover a {
           border: none; }
       #bannerWrap #bannerList li a {
@@ -416,8 +420,6 @@ input {
         width: 136px;
         height: 39px;
         margin-left: 12px;
-        border-bottom: 1px solid #d3ccd3;
-        border-color: rgba(144, 144, 144, 0.5);
         color: #fff;
         background: url("../images/banner_jiao.png") no-repeat 120px 50%; }
     #bannerWrap #bannerList .borNone {
@@ -457,8 +459,38 @@ input {
       height: 400px;
       margin-left: -400px; }
       #bannerWrap banner ul .z10 {
-        z-index: 10; }
+        display: block; }
       #bannerWrap banner ul li {
         position: absolute; }
+        #bannerWrap banner ul li img {
+          display: none; }
+    #bannerWrap banner #btnLeft, #bannerWrap banner #btnRight {
+      cursor: pointer;
+      width: 33px;
+      height: 68px;
+      position: absolute;
+      top: 160px;
+      left: 95px;
+      background-color: rgba(0, 0, 0, 0.5);
+      background-image: url("../images/btnLeft1.png");
+      background-repeat: no-repeat;
+      background-position: 10px 20px; }
+      #bannerWrap banner #btnLeft:hover, #bannerWrap banner #btnRight:hover {
+        background-image: url("../images/btnLeft2.png"); }
+    #bannerWrap banner #btnRight {
+      position: absolute;
+      top: 160px;
+      left: 1160px;
+      background-image: url("../images/btnRight1.png"); }
+      #bannerWrap banner #btnRight:hover {
+        background-image: url("../images/btnRight2.png"); }
+    #bannerWrap banner #btnBottom {
+      width: 100px;
+      height: 28px;
+      background-color: rgba(0, 0, 0, 0.45);
+      position: absolute;
+      top: 350px;
+      left: 590px;
+      border-radius: 14px; }
 
 /*# sourceMappingURL=style.css.map */
