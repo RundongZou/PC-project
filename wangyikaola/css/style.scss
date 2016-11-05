@@ -1,0 +1,520 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    width:100%;
+    background-color: #f3f3f3;
+    font-size:12px;
+    font-family:"Microsoft YaHei";
+}
+ol,ul,li{
+    list-style:none;
+}
+a{
+    text-decoration: none;
+    color:#666;
+   
+}
+input{
+    outline: none;
+}
+@mixin commonStyle($width:100%,$height:100%){
+    width:$width;
+    height:$height;
+}
+@mixin commonMargin($top:auto,$left:auto){
+    margin-top:$top;
+    margin-left:$left;
+   
+}
+@mixin commonPosition($top:auto,$left:auto){
+    position:absolute;
+    top:$top;
+    left:$left;
+}
+@mixin commonPadding($top:0,$left:0,$right:0,$bottom:0){
+    padding-top:$top;
+    padding-left:$left;
+    padding-right:$right;
+    padding-bottom:$bottom;
+}
+@mixin textIndent($indent){
+    text-indent:$indent;
+}
+@mixin lineHeight($lineHeight){
+    line-height:$lineHeight;
+}
+@mixin aHover{
+    a{
+         &:hover{
+            color:$aHoverRed;
+        }
+    }
+}
+@mixin left{
+    float:left;
+}
+@mixin right{
+    float:right;
+}
+@mixin none{
+    display: none;
+}
+@mixin block{
+    display:block;
+}
+@mixin bg($url,$align:0,$vertical:50%){
+   background:url($url) no-repeat $align $vertical;
+}
+
+
+$aHoverRed:#e31436;
+#wrap{
+    @include commonStyle(100%,auto);
+}
+/*----------------------------top----------------------------------*/
+#topWrap{
+    @include commonStyle(100%,30px);
+    border-bottom:1px solid #ededee;
+}
+#top{
+    @include commonStyle(1090px,30px);
+    margin:0 auto;
+    
+}
+#top #ulLeft{
+    @include commonStyle(332px,14px);
+    @include commonMargin(8px);
+    @include left;
+    @include aHover;  
+}
+#top #ulLeft li{
+    height:14px;
+    @include left;
+}
+#top #ulLeft .li1{
+    width:72px;
+}
+#top #ulLeft .li2{
+    width:57px;
+    border-right:1px solid #d3ccd3;
+    @include textIndent(16px);
+}
+#top #ulLeft .li3{
+    width:95px;
+    @include textIndent(14px);
+}
+#top #ulLeft .li4{
+    width:106px;
+    @include textIndent(14px);
+}
+/*app,weixin,weibo,yixin*/
+#top .topApp{
+    position:absolute;
+    @include commonPosition(45px,300px);
+    @include none;
+    z-index: 10;   
+}
+#top .topWeibo{
+    position:absolute;
+    @include commonPosition(31px,940px);
+    @include none;  
+    z-index: 10; 
+}
+#top .topWeixin{
+    position:absolute;
+    @include commonPosition(31px,940px);
+    @include none;   
+    z-index: 10;
+}
+#top .topYixin{
+    position:absolute;
+    @include commonPosition(31px,940px);
+    @include none;
+    z-index: 10;   
+}
+
+#top #ulRight{
+    @include commonStyle(606px,30px);
+    @include right;
+    overflow: hidden;
+    @include aHover;
+}
+#top #ulRight li{
+    @include lineHeight(30px);
+    height:30px;
+    @include left;  
+    
+}
+#top #ulRight li a{
+    @include block;
+    @include lineHeight(14px);
+    @include commonMargin(8px);
+}
+#top #ulRight .li1{
+    width:92px;
+    @include textIndent(28px);
+    background:url("../images/topBorder.png") no-repeat right;
+    & img{
+        @include commonPosition(10px,590px);
+    }
+    & span{
+        @include commonPosition(8px,580px);
+    }
+}
+
+#top #ulRight .li2{
+    width:75px;
+    @include textIndent(14px);
+    background:url("../images/topBorder.png") no-repeat right;
+}
+#top #ulRight .li3{
+   width:82px;
+   @include textIndent(14px);
+   background:url("../images/topBorder.png") no-repeat right;
+   & img{
+       @include commonStyle(8px,4px);
+       @include commonPosition(14px,805px);
+   }
+   & span{
+        @include commonPosition(8px,740px);
+    }
+}
+#top #ulRight .li4{
+   @extend .li3;
+   width:86px;
+   background:url("../images/topBorder.png") no-repeat right;
+   & img{
+       @include commonStyle(8px,4px);
+       @include commonPosition(14px,890px);
+   }
+   & span{
+        @include commonPosition(8px,825px);
+    }
+}
+#top #li3h{
+    display:none;
+    width:81px;
+    height:30px;
+    background-color:#fff;
+    border-right:1px solid #d3ccd3;
+    border-left:1px solid #d3ccd3;
+    position:absolute;
+//  background-image:url("../images/topjiao1.png");
+//  background-repeat: no-repeat;
+//  background-position: 59px 14px;
+    line-height:30px;
+    left:745px;
+    text-indent: 8px;
+    z-index: 10;
+    & img{
+        transform:rotate(180deg);
+        position: absolute;
+        left:59px;
+        top:13px;
+    }
+}
+#top #li4h{
+    @extend #li3h;
+    text-indent: 11px ;
+    width:85px;
+    left:827px;
+    & img{
+        left:62px;
+        top:13px;
+    }
+}
+#top #li7h{
+    display:none;
+    width:59px;
+    height:30px;
+    background-color:#fff;
+    border-right:1px solid #d3ccd3;
+    border-left:1px solid #d3ccd3;
+    position:absolute;
+    line-height:30px;
+    left:1111px;
+    text-indent: 12px;
+    z-index: 10;
+    & img{
+        position: absolute;
+        left:38px;
+        top:13px;
+    }
+}
+#top #li3h a:hover{
+    color:#e31436;
+}
+
+#top #ulRight .li5{
+    width:94px;
+    @include textIndent(28px);
+    background:url("../images/topBorder.png") no-repeat right;
+    & img{
+       @include commonStyle(10px,13px);
+       @include commonPosition(9px,925px);
+   }
+   & span{
+        @include commonPosition(8px,915px);
+    }
+}
+#top #ulRight .li6{
+    width:102px;
+    @include textIndent(14px);
+    background:url("../images/topBorder.png") no-repeat right;
+    margin-left:2px;
+}
+#top #ulRight .li7{
+    width:62px;
+    @include textIndent(14px);
+    & img{
+       @include commonStyle(8px,4px);
+       @include commonPosition(14px,1150px);
+   }
+   & span{
+        @include commonPosition(8px,1110px);
+    }
+}
+#top #ulRight .li7 a{
+    border:none;
+}
+#top #ulRight img{
+    height:12px;
+}
+
+.liCover{
+    background-color:#fff;
+    border-right:1px solid #d3ccd3;
+    border-left:1px solid #d3ccd3;
+}
+@mixin commonTopLiHover(){
+    position: absolute;
+    border-right:1px solid #d3ccd3;
+    border-left:1px solid #d3ccd3;
+    border-bottom:1px solid #d3ccd3;
+    background-color:#fff;
+    @include lineHeight(28px);
+    @include commonPadding(4px,14px,14px);
+    @include none;
+    & .bor{
+        border-bottom:1px solid #dddddd;
+    };
+    @include aHover; 
+    text-align: center;
+    z-index: 10;
+}
+#top #li3Hover{
+    @include commonStyle(102px,212px);
+    @include commonTopLiHover;
+    @include commonMargin(30px,650px);      
+}
+#top #li4Hover{
+    @include commonStyle(83px,68px);
+    @include commonTopLiHover;
+    @include commonMargin(30px,732px);
+    & .gm{
+        @include bg("../images/bg_gm.png");
+    }
+    & .help{
+        @include bg("../images/bg_help.png",-2px);
+        text-indent:5px;
+    }  
+}
+#li7Hover{
+    @include commonStyle(76px,184px);
+    @include commonTopLiHover;
+    @include commonMargin(30px,971px);
+}
+
+/*-----------------------------header-----------------------------------*/
+#headerWrap{
+    @include commonStyle(100%,100px);
+    background-color:#fff;
+}
+#header{
+    @include commonStyle(1090px,100px);
+    position:relative;
+    margin:0 auto;
+}
+#header .search{
+    @include commonStyle(458px,32px);
+    @include commonPosition(24px,342px);
+    @include textIndent(22px);
+    border:2px solid #333;
+    border-right:none;
+    @include bg("../images/search_mirror.png",8px,10px);
+}
+#header .img_search{
+    @include commonPosition(24px,802px);
+}
+#header #cart{
+    @include commonStyle(108px,34px);
+    border:1px solid #ddd;
+    border-radius:3px;
+    @include commonPosition(24px,980px);
+    @include lineHeight(34px);
+    @include textIndent(46px);
+    @include bg("../images/bg_cart.png",22px,10px);
+    cursor: pointer;
+}
+#header .gif{
+    @include commonPosition(68px,922px);
+}
+
+#header ul{
+    @include commonStyle(390px,12px);
+    @include commonPosition(67px,332px);
+}
+#header ul li{
+    float:left;
+    padding:0px 12px;
+    border-right:1px solid #d3ccd3;
+}
+#header ul .borNone{
+    border:none;
+}
+#header ul .red a{
+    color:$aHoverRed;
+}
+#header ul li a:hover{
+    text-decoration: underline;
+}
+
+/*-----------------------------------nav-------------------------------------------*/
+#navWrap{
+    @include commonStyle(100%,40px);
+    background-color:#fff;
+    border-bottom:2px solid #151515;
+}
+#nav{
+    @include commonStyle(1090px,40px);
+    position:relative;
+    margin:0 auto;
+    color:#151515;
+}
+#nav ul li{
+    float: left;
+    padding:0 20px;
+    font-size:14px;
+    @include lineHeight(40px);
+    color:#151515;
+    text-align: center;
+    margin-right:8px;
+}
+#nav .all{
+    width:160px;
+    padding:0;
+    background-color:#000;
+    cursor: pointer;
+    text-indent:10px;
+    margin-right:10px;
+    background-image: url("../images/bg_all.png");
+    background-repeat: no-repeat;
+    background-position:28px,16px;
+}
+#nav .all a{
+    color:#fff;
+}
+#nav .common a:hover{
+    color:$aHoverRed;
+}
+
+/*--------------------------------banner-------------------------------*/
+#bannerWrap{
+    @include commonStyle(100%,400px);
+ //   display:flex;
+    overflow: hidden;
+    position: relative;
+}
+#bannerWrap #bannerList{
+    @include commonStyle(160px,401px);
+    background:rgba(0,0,0,0.65) ;
+    cursor: pointer;
+    @include none;
+    position: absolute;
+    margin-left:95px;
+    z-index: 100;
+    & :hover{
+//        background-color:rgba(144,144,144,0.5);
+//      border-left:3px solid #e32b42;
+//      border-top:1px solid #d3ccd3;
+//      height:40px;
+//      border:none;
+    }  
+}
+#bannerWrap #bannerList li{
+    @include commonStyle(160px,40px);       
+    @include lineHeight(40px);
+    @include textIndent(45px);
+    font-size:14px; 
+
+}
+#bannerWrap #bannerList li a{
+    @include block;
+    @include commonStyle(136px,39px);
+    margin-left:12px;
+    border-bottom:1px solid #d3ccd3;
+    border-color:rgba(144,144,144,0.5);
+    color:#fff;
+    @include bg("../images/banner_jiao.png",120px);
+}
+#bannerWrap #bannerList .borNone{
+    border:none;
+}
+
+#bannerWrap #bannerList .li1{
+    @include bg("../images/iqkplg1m99_40_40.png",22px);
+}
+#bannerWrap #bannerList .li2{
+    @include bg("../images/iqkpnez751_40_40.png",22px);
+}
+#bannerWrap #bannerList .li3{
+    @include bg("../images/iqkpo5f994_40_40.png",22px);
+}
+#bannerWrap #bannerList .li4{
+    @include bg("../images/iqkpow3285_40_40.png",22px);
+}
+#bannerWrap #bannerList .li5{
+    @include bg("../images/iqkpq2ue80_40_40.png",22px);
+}
+#bannerWrap #bannerList .li6{
+    @include bg("../images/iqkptd2291_40_40.png",22px);
+}
+#bannerWrap #bannerList .li7{
+    @include bg("../images/iqkpsh0e98_40_40.png",22px);
+}
+#bannerWrap #bannerList .li8{
+    @include bg("../images/iqkpr75617_40_40.png",22px);
+}
+#bannerWrap #bannerList .li9{
+    @include bg("../images/ir26dxt121_40_40.png",22px);
+}
+#bannerWrap #bannerList .li10{
+    @include bg("../images/iqsu18g169_40_40.png",22px);
+    & a{
+        border:none;
+    }
+}
+
+//这一块是参考着原网站的代码
+
+#bannerWrap banner{
+    position: relative;
+    height:400px;
+    font-size:0;
+    user-select:none;
+}
+#bannerWrap banner ul{
+    position: absolute;
+    @include commonPosition(0,50%);
+    height:400px;
+    margin-left:-400px;
+}
+#bannerWrap banner ul .z10{
+    z-index: 10;
+}
+#bannerWrap banner ul li{
+    position: absolute;
+}
+
