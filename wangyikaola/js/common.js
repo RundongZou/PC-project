@@ -195,8 +195,7 @@ function imgLunbo(){
 		$("#btnRight").hide();
 	});
 	//点击左右按钮切换
-	$("#btnLeft").click(function(){
-		
+	$("#btnLeft").click(function(){		
 		imgDecrease();
 	});
 	$("#btnRight").click(function(){	
@@ -220,6 +219,20 @@ function imgLunbo(){
 imgLunbo();
 
 
+//bannerList 列表详情页
+$("#bannerList li").mouseenter(function(){
+	if($(this).index() == 0){
+		$("#muyingertong").show();
+	}else if($(this).index() == 1){
+		$("#muyingertong").hide();
+	}
+});
+$("banner").mouseenter(function(){
+	$("#muyingertong").hide();
+})
+$("#muyingertong").mouseenter(function(){
+	$("#bannerList").show();
+});
 
 	
 }
