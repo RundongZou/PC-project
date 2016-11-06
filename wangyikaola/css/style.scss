@@ -534,6 +534,17 @@ $aHoverRed:#e31436;
             background-color:rgba(0,0,0,0.45);
             @include commonPosition(350px,590px);
             border-radius: 14px;
+            li{
+                cursor: pointer;
+                @include commonStyle(10px,10px);
+                border-radius: 5px;
+                background-color: #fff;
+                @include left;
+                @include commonMargin(10px,12px);
+            }
+            .liRed{
+                background-color:#e31436;
+            }
         }
     }
 }

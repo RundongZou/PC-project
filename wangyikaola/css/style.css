@@ -492,5 +492,16 @@ input {
       top: 350px;
       left: 590px;
       border-radius: 14px; }
+      #bannerWrap banner #btnBottom li {
+        cursor: pointer;
+        width: 10px;
+        height: 10px;
+        border-radius: 5px;
+        background-color: #fff;
+        float: left;
+        margin-top: 10px;
+        margin-left: 12px; }
+      #bannerWrap banner #btnBottom .liRed {
+        background-color: #e31436; }
 
 /*# sourceMappingURL=style.css.map */

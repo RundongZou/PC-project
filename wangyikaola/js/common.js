@@ -1,4 +1,9 @@
 window.onload = function(){
+	//图片加载不出来 换成动图
+//	$("#header img").one("error",function(e){
+//		alert("111")
+//	});
+	
 	$("#top #ulLeft .li4").mouseenter(function(){
 		$("#top .topApp").show();
 	});
@@ -141,19 +146,44 @@ $("#headerWrap").mouseenter(function(){
 function imgLunbo(){
 	var timer;
 	var index = 0;
+	var index2 = 0;
 	var isPause = false;
 	
-	timer = setInterval(function(){	
-		if(!isPause){
-			$("banner ul li img").eq(index).fadeOut(1200);
+	function imgIncrease(){
+		$("banner ul li img").eq(index).fadeOut(1000);
+			$("#btnBottom li").eq(index2).removeClass("liRed");//3
 			if(index>=4){
 				index = 0;
 			}
-			$("banner ul li img").eq(index+1).fadeIn(1200);
+			if(index2>2){
+				index2 = -1;
+			}
+			$("banner ul li img").eq(index+1).fadeIn(1000);
+			$("#btnBottom li").eq(index2+1).addClass("liRed");//3
 			index++;
+			index2++;
+	}
+	function imgDecrease(){
+		$("banner ul li img").eq(index).fadeOut(1200);
+			$("#btnBottom li").eq(index2).removeClass("liRed");//3
+			if(index<=0){
+				index = 4;
+			}
+			if(index2<=-1){
+				index2 = 3;
+			}
+			$("banner ul li img").eq(index-1).fadeIn(1200);
+			$("#btnBottom li").eq(index2-1).addClass("liRed");//3
+			index--;
+			index2--;
+	}
+	
+	timer = setInterval(function(){	
+		if(!isPause){
+			imgIncrease();			
 		}
 			
-	},4000)
+	},3000)
 	
 	$("banner").mouseenter(function(){
 		isPause = true;
@@ -164,22 +194,26 @@ function imgLunbo(){
 		$("#btnLeft").hide();
 		$("#btnRight").hide();
 	});
+	//点击左右按钮切换
 	$("#btnLeft").click(function(){
 		
-		$("banner ul li img").eq(index).fadeOut(1000);//3
-		if(index<=0){
-			index = 4;
-		}
-		$("banner ul li img").eq(index-1).fadeIn(1000);//
-		index--;3
+		imgDecrease();
 	});
 	$("#btnRight").click(function(){	
-		$("banner ul li img").eq(index).fadeOut(1000);//3
-		if(index>=4){
+		imgIncrease();
+	})
+	//点击小圆点切换
+	$("#btnBottom li").click(function(){
+		isPause = true;
+		$(this).addClass("liRed").siblings().removeClass("liRed");
+		index = $(this).index();
+		index2 = $(this).index()-1;
+		$("banner ul li img").eq(index).fadeIn(1000).siblings().fadeOut();
+//		$("banner ul li img").eq(index).fadeOut(1000);
+//		$("banner ul li img").eq(index+1).fadeIn(1000).siblings().fadeOut();
+		if(index>4){
 			index = 0;
 		}
-		$("banner ul li img").eq(index+1).fadeIn(1000);//
-		index++;
 	})
 }
 
