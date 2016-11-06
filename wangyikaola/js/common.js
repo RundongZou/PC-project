@@ -220,19 +220,63 @@ imgLunbo();
 
 
 //bannerList 列表详情页
+function allHide(){
+	$("#muyingertong").hide();
+	$("#meirongcaizhuang").hide();
+	$("#fushixiebao").hide();
+	$("#jiajushenghuo").hide();
+	$("#yingyangbaojian").hide();
+}
 $("#bannerList li").mouseenter(function(){
 	if($(this).index() == 0){
 		$("#muyingertong").show();
+		$("#meirongcaizhuang").hide();
+		$("#fushixiebao").hide();
+		$("#jiajushenghuo").hide();
+		$("#yingyangbaojian").hide();
 	}else if($(this).index() == 1){
 		$("#muyingertong").hide();
+		$("#meirongcaizhuang").show();
+		$("#fushixiebao").hide();
+		$("#jiajushenghuo").hide();
+		$("#yingyangbaojian").hide();
+	}else if($(this).index() == 2){
+		$("#muyingertong").hide();
+		$("#meirongcaizhuang").hide();
+		$("#fushixiebao").show();
+		$("#jiajushenghuo").hide();
+		$("#yingyangbaojian").hide();
+	}else if($(this).index() == 3){
+		$("#muyingertong").hide();
+		$("#meirongcaizhuang").hide();
+		$("#fushixiebao").hide();
+		$("#jiajushenghuo").show();
+		$("#yingyangbaojian").hide();
+	}else if($(this).index() == 4){
+		$("#muyingertong").hide();
+		$("#meirongcaizhuang").hide();
+		$("#fushixiebao").hide();
+		$("#jiajushenghuo").hide();
+		$("#yingyangbaojian").show();
 	}
 });
 $("banner").mouseenter(function(){
-	$("#muyingertong").hide();
+	allHide();
 })
 $("#muyingertong").mouseenter(function(){
 	$("#bannerList").show();
 });
-
+$("#meirongcaizhuang").mouseenter(function(){
+	$("#bannerList").show();
+});
+$("#fushixiebao").mouseenter(function(){
+	$("#bannerList").show();
+});
+$("#jiajushenghuo").mouseenter(function(){
+	$("#bannerList").show();
+});
+$("#yingyangbaojian").mouseenter(function(){
+	$("#bannerList").show();
+});
 	
 }
