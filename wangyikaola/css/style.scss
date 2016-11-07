@@ -557,9 +557,9 @@ $aHoverRed:#e31436;
     @include commonPosition(173px,255px);
     background-color:#fff;
     @include block;
-    #div01{
+    #div01muying{
         @include commonStyle(280px,400px);
-        .div1{
+        .div1muying{
             @include commonStyle(280px,185px);
             background-color:deepskyblue;
             dt{
@@ -596,14 +596,14 @@ $aHoverRed:#e31436;
             }
         }
         .div2{
-            @extend .div1;
+            @extend .div1muying;
             height:124px;
             dt{
                 @include lineHeight(36px);
             }
         }
         .div3{
-            @extend .div1;
+            @extend .div1muying;
             height:74px;
             dt{
                 text-indent:0px;
@@ -614,7 +614,7 @@ $aHoverRed:#e31436;
         @include left;
     }
     #div02{
-        @extend #div01;
+        @extend #div01muying;
         @include left;
         margin-left:26px;
     }
@@ -658,9 +658,9 @@ $aHoverRed:#e31436;
     @include commonPosition(173px,255px);
     background-color:#fff;
     @include block;
-    #div01{
+    #div01meirong{
         @include commonStyle(280px,400px);
-        .div1{
+        .div1meirong{
             @include commonStyle(280px,160px);
             dt{
                 @include commonStyle(100%,44px);
@@ -696,7 +696,7 @@ $aHoverRed:#e31436;
             }
         }
         .div2{
-            @extend .div1;
+            @extend .div1meirong;
             height:160px;
             dt{
                 @include lineHeight(44px);
@@ -704,7 +704,7 @@ $aHoverRed:#e31436;
             margin-top:-10px;
         }
         .div3{
-            @extend .div1;
+            @extend .div1meirong;
             height:74px;
             dt{
                 text-indent:0px;
@@ -715,7 +715,7 @@ $aHoverRed:#e31436;
         @include left;
     }
     #div02{
-        @extend #div01;
+        @extend #div01meirong;
         @include left;
         margin-left:26px;
     }
@@ -759,9 +759,9 @@ $aHoverRed:#e31436;
     @include commonPosition(173px,255px);
     background-color:#fff;
     @include block;
-    #div01{
+    #div01fushi{
         @include commonStyle(280px,400px);
-        .div1{
+        .div1fushi{
             @include commonStyle(280px,185px);
             dt{
                 @include commonStyle(100%,44px);
@@ -797,7 +797,7 @@ $aHoverRed:#e31436;
             }
         }
         .div2{
-            @extend .div1;
+            @extend .div1fushi;
             height:124px;
             dt{
                 @include lineHeight(36px);
@@ -805,7 +805,7 @@ $aHoverRed:#e31436;
             margin-top:5px;
         }
         .div3{
-            @extend .div1;
+            @extend .div1fushi;
             height:74px;
             dt{
                 text-indent:0px;
@@ -816,7 +816,7 @@ $aHoverRed:#e31436;
         @include left;
     }
     #div02{
-        @extend #div01;
+        @extend #div01fushi;
         @include left;
         margin-left:26px;
     }
@@ -860,9 +860,9 @@ $aHoverRed:#e31436;
     @include commonPosition(173px,255px);
     background-color:#fff;
     @include block;
-    #div01{
+    #div01jiaju{
         @include commonStyle(280px,400px);
-        .div1{
+        .div1jiaju{
             @include commonStyle(280px,160px);
             dt{
                 @include commonStyle(100%,44px);
@@ -898,14 +898,14 @@ $aHoverRed:#e31436;
             }
         }
         .div2{
-            @extend .div1;
+            @extend .div1jiaju;
             height:98px;
             dt{
                 @include lineHeight(36px);
             }
         }
         .div3{
-            @extend .div1;
+            @extend .div1jiaju;
             height:74px;
             dt{
                 text-indent:0px;
@@ -916,7 +916,7 @@ $aHoverRed:#e31436;
         @include left;
     }
     #div02{
-        @extend #div01;
+        @extend #div01jiaju;
         @include left;
         margin-left:26px;
     }
@@ -959,11 +959,10 @@ $aHoverRed:#e31436;
     @include commonPosition(173px,255px);
     background-color:#fff;
     @include block;
-    #div01{
+    #div01yingyang{
         @include commonStyle(280px,400px);
-        .div1{
-            @include commonStyle(280px,220px);
-            background-color:deepskyblue;
+        .div1yingyang{
+            @include commonStyle(280px,210px);
             dt{
                 @include commonStyle(100%,44px);
                 border-bottom:1px solid #eaeaea;
@@ -998,7 +997,7 @@ $aHoverRed:#e31436;
             }
         }
         .div2{
-            @extend .div1;
+            @extend .div1yingyang;
             height:94px;
            // margin-top:10px;
             dt{
@@ -1006,7 +1005,7 @@ $aHoverRed:#e31436;
             }
         }
         .div3{
-            @extend .div1;
+            @extend .div1yingyang;
             height:74px;
             dt{
                 text-indent:0px;
@@ -1017,7 +1016,7 @@ $aHoverRed:#e31436;
         @include left;
     }
     #div02{
-        @extend #div01;
+        @extend #div01yingyang;
         @include left;
         margin-left:26px;
     }
@@ -1047,6 +1046,7 @@ $aHoverRed:#e31436;
             }     
         }
     }
+    
     #div04{
         @include left;
         @include commonMargin(10px,20px);
