@@ -548,19 +548,9 @@ $aHoverRed:#e31436;
         }        
     }
 }
-#muyingertong{
-//    display:none;  //为什么这句话必须要写在内联样式里？权重问题？并没有看出来
-    font-size: 14px;
-    padding-left:22px;
-    @include commonStyle(908px,399px);
-    border-bottom:1px solid #000;
-    @include commonPosition(173px,255px);
-    background-color:#fff;
-    @include block;
-    #div01muying{
-        @include commonStyle(280px,400px);
-        .div1muying{
-            @include commonStyle(280px,185px);
+
+@mixin commondiv1(){
+    @include commonStyle(280px,185px);
             background-color:deepskyblue;
             dt{
                 @include commonStyle(100%,44px);
@@ -594,6 +584,20 @@ $aHoverRed:#e31436;
                     }
                 }
             }
+}
+#muyingertong{
+//    display:none;  //为什么这句话必须要写在内联样式里？权重问题？并没有看出来
+    font-size: 14px;
+    padding-left:22px;
+    @include commonStyle(908px,399px);
+    border-bottom:1px solid #000;
+    @include commonPosition(173px,255px);
+    background-color:#fff;
+    @include block;
+    #div01muying{
+        @include commonStyle(280px,400px);
+        .div1muying{
+            @include commondiv1;
         }
         .div2{
             @extend .div1muying;
@@ -660,40 +664,9 @@ $aHoverRed:#e31436;
     @include block;
     #div01meirong{
         @include commonStyle(280px,400px);
-        .div1meirong{
-            @include commonStyle(280px,160px);
-            dt{
-                @include commonStyle(100%,44px);
-                border-bottom:1px solid #eaeaea;
-                font-size:14px;
-                @include lineHeight(50px);
-            }
-            dd{
-                width:100%;
-                padding-top:10px;
-                ul{
-                    @include lineHeight(26px);
-                    font-size:14px;
-                    @include commonStyle(100%,26px);
-                    li{
-                        float:left;
-                        padding:0 6px;
-                        height:14px;
-                        line-height:14px;
-                        border-left:1px solid #ccc;
-                        a:hover{
-                            text-decoration: underline;
-                        }                       
-                    }
-                    .red a{
-                        color:$aHoverRed;
-                    }
-                    .padLeft0{
-                        padding-left:0;
-                        border:none;
-                    }
-                }
-            }
+        .div1meirong{ 
+             @include commondiv1;
+             @include commonStyle(280px,160px);
         }
         .div2{
             @extend .div1meirong;
@@ -762,39 +735,8 @@ $aHoverRed:#e31436;
     #div01fushi{
         @include commonStyle(280px,400px);
         .div1fushi{
+            @include commondiv1;
             @include commonStyle(280px,185px);
-            dt{
-                @include commonStyle(100%,44px);
-                border-bottom:1px solid #eaeaea;
-                font-size:14px;
-                @include lineHeight(50px);
-            }
-            dd{
-                width:100%;
-                padding-top:10px;
-                ul{
-                    @include lineHeight(26px);
-                    font-size:14px;
-                    @include commonStyle(100%,26px);
-                    li{
-                        float:left;
-                        padding:0 6px;
-                        height:14px;
-                        line-height:14px;
-                        border-left:1px solid #ccc;
-                        a:hover{
-                            text-decoration: underline;
-                        }                       
-                    }
-                    .red a{
-                        color:$aHoverRed;
-                    }
-                    .padLeft0{
-                        padding-left:0;
-                        border:none;
-                    }
-                }
-            }
         }
         .div2{
             @extend .div1fushi;
@@ -863,39 +805,8 @@ $aHoverRed:#e31436;
     #div01jiaju{
         @include commonStyle(280px,400px);
         .div1jiaju{
+            @include commondiv1;
             @include commonStyle(280px,160px);
-            dt{
-                @include commonStyle(100%,44px);
-                border-bottom:1px solid #eaeaea;
-                font-size:14px;
-                @include lineHeight(50px);
-            }
-            dd{
-                width:100%;
-                padding-top:10px;
-                ul{
-                    @include lineHeight(26px);
-                    font-size:14px;
-                    @include commonStyle(100%,26px);
-                    li{
-                        float:left;
-                        padding:0 6px;
-                        height:14px;
-                        line-height:14px;
-                        border-left:1px solid #ccc;
-                        a:hover{
-                            text-decoration: underline;
-                        }                       
-                    }
-                    .red a{
-                        color:$aHoverRed;
-                    }
-                    .padLeft0{
-                        padding-left:0;
-                        border:none;
-                    }
-                }
-            }
         }
         .div2{
             @extend .div1jiaju;
@@ -962,39 +873,8 @@ $aHoverRed:#e31436;
     #div01yingyang{
         @include commonStyle(280px,400px);
         .div1yingyang{
+            @include commondiv1;
             @include commonStyle(280px,210px);
-            dt{
-                @include commonStyle(100%,44px);
-                border-bottom:1px solid #eaeaea;
-                font-size:14px;
-                @include lineHeight(50px);
-            }
-            dd{
-                width:100%;
-                padding-top:10px;
-                ul{
-                    @include lineHeight(26px);
-                    font-size:14px;
-                    @include commonStyle(100%,26px);
-                    li{
-                        float:left;
-                        padding:0 6px;
-                        height:14px;
-                        line-height:14px;
-                        border-left:1px solid #ccc;
-                        a:hover{
-                            text-decoration: underline;
-                        }                       
-                    }
-                    .red a{
-                        color:$aHoverRed;
-                    }
-                    .padLeft0{
-                        padding-left:0;
-                        border:none;
-                    }
-                }
-            }
         }
         .div2{
             @extend .div1yingyang;
@@ -1045,8 +925,7 @@ $aHoverRed:#e31436;
                  border-left:none;
             }     
         }
-    }
-    
+    }   
     #div04{
         @include left;
         @include commonMargin(10px,20px);
