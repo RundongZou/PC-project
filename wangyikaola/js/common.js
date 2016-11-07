@@ -226,38 +226,143 @@ function allHide(){
 	$("#fushixiebao").hide();
 	$("#jiajushenghuo").hide();
 	$("#yingyangbaojian").hide();
+	$("#haiwaizhiyou").hide();
+	$("#shumajiadian").hide();
+	$("#huanqiumeishi").hide();
+	$("#yundonghuwai").hide();
+	$("#shuiguoshengxian").hide();
 }
 $("#bannerList li").mouseenter(function(){
 	if($(this).index() == 0){
+		
 		$("#muyingertong").show();
 		$("#meirongcaizhuang").hide();
 		$("#fushixiebao").hide();
 		$("#jiajushenghuo").hide();
 		$("#yingyangbaojian").hide();
+		$("#haiwaizhiyou").hide();
+		$("#shumajiadian").hide();
+		$("#huanqiumeishi").hide();
+		$("#yundonghuwai").hide();
+		$("#shuiguoshengxian").hide();
+		
 	}else if($(this).index() == 1){
+		
 		$("#muyingertong").hide();
 		$("#meirongcaizhuang").show();
 		$("#fushixiebao").hide();
 		$("#jiajushenghuo").hide();
 		$("#yingyangbaojian").hide();
+		$("#haiwaizhiyou").hide();
+		$("#shumajiadian").hide();
+		$("#huanqiumeishi").hide();
+		$("#yundonghuwai").hide();
+		$("#shuiguoshengxian").hide();
+		
 	}else if($(this).index() == 2){
+		
 		$("#muyingertong").hide();
 		$("#meirongcaizhuang").hide();
 		$("#fushixiebao").show();
 		$("#jiajushenghuo").hide();
 		$("#yingyangbaojian").hide();
+		$("#haiwaizhiyou").hide();
+		$("#shumajiadian").hide();
+		$("#huanqiumeishi").hide();
+		$("#yundonghuwai").hide();
+		$("#shuiguoshengxian").hide();
+		
 	}else if($(this).index() == 3){
+		
 		$("#muyingertong").hide();
 		$("#meirongcaizhuang").hide();
 		$("#fushixiebao").hide();
 		$("#jiajushenghuo").show();
 		$("#yingyangbaojian").hide();
+		$("#haiwaizhiyou").hide();
+		$("#shumajiadian").hide();
+		$("#huanqiumeishi").hide();
+		$("#yundonghuwai").hide();
+		$("#shuiguoshengxian").hide();
+		
 	}else if($(this).index() == 4){
+		
 		$("#muyingertong").hide();
 		$("#meirongcaizhuang").hide();
 		$("#fushixiebao").hide();
 		$("#jiajushenghuo").hide();
 		$("#yingyangbaojian").show();
+		$("#haiwaizhiyou").hide();
+		$("#shumajiadian").hide();
+		$("#huanqiumeishi").hide();
+		$("#yundonghuwai").hide();
+		$("#shuiguoshengxian").hide();
+		
+	}else if($(this).index() == 5){
+		
+		$("#muyingertong").hide();
+		$("#meirongcaizhuang").hide();
+		$("#fushixiebao").hide();
+		$("#jiajushenghuo").hide();
+		$("#yingyangbaojian").hide();
+		$("#haiwaizhiyou").show();
+		$("#shumajiadian").hide();
+		$("#huanqiumeishi").hide();
+		$("#yundonghuwai").hide();
+		$("#shuiguoshengxian").hide();
+		
+	}else if($(this).index() == 6){
+		
+		$("#muyingertong").hide();
+		$("#meirongcaizhuang").hide();
+		$("#fushixiebao").hide();
+		$("#jiajushenghuo").hide();
+		$("#yingyangbaojian").hide();
+		$("#haiwaizhiyou").hide();
+		$("#shumajiadian").show();
+		$("#huanqiumeishi").hide();
+		$("#yundonghuwai").hide();
+		$("#shuiguoshengxian").hide();
+		
+	}else if($(this).index() == 7){
+		
+		$("#muyingertong").hide();
+		$("#meirongcaizhuang").hide();
+		$("#fushixiebao").hide();
+		$("#jiajushenghuo").hide();
+		$("#yingyangbaojian").hide();
+		$("#haiwaizhiyou").hide();
+		$("#shumajiadian").hide();
+		$("#huanqiumeishi").show();
+		$("#yundonghuwai").hide();
+		$("#shuiguoshengxian").hide();
+		
+	}else if($(this).index() == 8){
+		
+		$("#muyingertong").hide();
+		$("#meirongcaizhuang").hide();
+		$("#fushixiebao").hide();
+		$("#jiajushenghuo").hide();
+		$("#yingyangbaojian").hide();
+		$("#haiwaizhiyou").hide();
+		$("#shumajiadian").hide();
+		$("#huanqiumeishi").hide();
+		$("#yundonghuwai").show();
+		$("#shuiguoshengxian").hide();
+		
+	}else if($(this).index() == 9){
+		
+		$("#muyingertong").hide();
+		$("#meirongcaizhuang").hide();
+		$("#fushixiebao").hide();
+		$("#jiajushenghuo").hide();
+		$("#yingyangbaojian").hide();
+		$("#haiwaizhiyou").hide();
+		$("#shumajiadian").hide();
+		$("#huanqiumeishi").hide();
+		$("#yundonghuwai").hide();
+		$("#shuiguoshengxian").show();
+		
 	}
 });
 $("banner").mouseenter(function(){
@@ -278,5 +383,21 @@ $("#jiajushenghuo").mouseenter(function(){
 $("#yingyangbaojian").mouseenter(function(){
 	$("#bannerList").show();
 });
+$("#haiwaizhiyou").mouseenter(function(){
+	$("#bannerList").show();
+});
+$("#shumajiadian").mouseenter(function(){
+	$("#bannerList").show();
+});
+$("#huanqiumeishi").mouseenter(function(){
+	$("#bannerList").show();
+});
+$("#yundonghuwai").mouseenter(function(){
+	$("#bannerList").show();
+});
+$("#shuiguoshengxian").mouseenter(function(){
+	$("#bannerList").show();
+});
+	
 	
 }

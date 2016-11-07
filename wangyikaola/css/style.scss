@@ -551,7 +551,6 @@ $aHoverRed:#e31436;
 
 @mixin commondiv1(){
     @include commonStyle(280px,185px);
-            background-color:deepskyblue;
             dt{
                 @include commonStyle(100%,44px);
                 border-bottom:1px solid #eaeaea;
@@ -650,7 +649,7 @@ $aHoverRed:#e31436;
     }
     #div04{
         @include left;
-        @include commonMargin(10px,20px);
+        @include commonMargin(10px,40px);
     }
 }
 
@@ -720,7 +719,7 @@ $aHoverRed:#e31436;
     }
     #div04{
         @include left;
-        @include commonMargin(10px,20px);
+        @include commonMargin(10px,40px);
     }
 }
 
@@ -790,7 +789,7 @@ $aHoverRed:#e31436;
     }
     #div04{
         @include left;
-        @include commonMargin(10px,20px);
+        @include commonMargin(10px,40px);
     }
 }
 
@@ -859,7 +858,7 @@ $aHoverRed:#e31436;
     }
     #div04{
         @include left;
-        @include commonMargin(10px,20px);
+        @include commonMargin(10px,40px);
     }
 }
 #yingyangbaojian{
@@ -928,6 +927,332 @@ $aHoverRed:#e31436;
     }   
     #div04{
         @include left;
-        @include commonMargin(10px,20px);
+        @include commonMargin(10px,40px);
+    }
+}
+#haiwaizhiyou{
+    font-size: 14px;
+    padding-left:22px;
+    @include commonStyle(908px,399px);
+    border-bottom:1px solid #000;
+    @include commonPosition(173px,255px);
+    background-color:#fff;
+    @include block;
+    #div01haiwai{
+        @include commonStyle(280px,400px);
+        .div1haiwai{
+            @include commondiv1;
+            @include commonStyle(280px,130px);
+        }
+        .div2{
+            @extend .div1haiwai;
+            dt{
+                @include lineHeight(36px);
+            }
+        }
+        .div3{
+            @extend .div1haiwai;
+            dt{
+                text-indent:0px;
+                @include lineHeight(44px);
+            }
+            margin-top:-5px;
+        }
+        @include left;
+    }
+    #div02{
+        @extend #div01haiwai;
+        @include left;
+        margin-left:26px;
+    }
+    #div03{
+        @include left;
+        @include commonStyle(244px,244px);
+        border:1px solid #eaeaea;
+        border-bottom:none;
+        @include commonMargin(20px,36px);
+        ul{
+            li{
+                @include left;
+                a{
+                    @include block;
+                    @include commonStyle(80px,80px);
+                    border-left:1px solid #eaeaea;
+                    border-bottom:1px solid #eaeaea;
+                    img{
+                        @include commonStyle(100%,100%);
+                    }
+                }
+            }
+        }
+        .borNone{
+            a{
+                 border-left:none;
+            }     
+        }
+    }   
+    #div04{
+        @include left;
+        @include commonMargin(10px,40px);
+    }
+}
+
+#shumajiadian{
+    font-size: 14px;
+    padding-left:22px;
+    @include commonStyle(908px,399px);
+    border-bottom:1px solid #000;
+    @include commonPosition(173px,255px);
+    background-color:#fff;
+    @include block;
+    #div01shuma{
+        @include commonStyle(280px,400px);
+        .div1shuma{
+            @include commondiv1;
+            @include commonStyle(280px,130px);
+        }
+        .div2{
+            @extend .div1shuma;
+            dt{
+                @include lineHeight(36px);
+            }
+        }
+        .div3{
+            @extend .div1shuma;
+            dt{
+                text-indent:0px;
+                @include lineHeight(44px);
+            }
+            margin-top:-5px;
+        }
+        @include left;
+    }
+    #div02{
+        @extend #div01shuma;
+        @include left;
+        margin-left:26px;
+    }
+    #div03{
+        @include left;
+        @include commonStyle(244px,244px);
+        border:1px solid #eaeaea;
+        border-bottom:none;
+        @include commonMargin(20px,36px);
+        ul{
+            li{
+                @include left;
+                a{
+                    @include block;
+                    @include commonStyle(80px,80px);
+                    border-left:1px solid #eaeaea;
+                    border-bottom:1px solid #eaeaea;
+                    img{
+                        @include commonStyle(100%,100%);
+                    }
+                }
+            }
+        }
+        .borNone{
+            a{
+                 border-left:none;
+            }     
+        }
+    }   
+    #div04{
+        @include left;
+        @include commonMargin(10px,40px);
+    }
+}
+
+#huanqiumeishi{
+    font-size: 14px;
+    padding-left:22px;
+    @include commonStyle(908px,399px);
+    border-bottom:1px solid #000;
+    @include commonPosition(173px,255px);
+    background-color:#fff;
+    @include block;
+    #div01huanqiu{
+        @include commonStyle(280px,400px);
+        .div1huanqiu{
+            @include commondiv1;
+            @include commonStyle(280px,160px);
+        }
+        .div2{
+            @extend .div1huanqiu;
+            height:130px;
+            dt{
+                @include lineHeight(36px);
+            }
+        }
+        .div3{
+            @extend .div1huanqiu;
+            height:100px;
+            dt{
+                text-indent:0px;
+                @include lineHeight(44px);
+            }
+            margin-top:-5px;
+        }
+        @include left;
+    }
+    #div02{
+        @extend #div01huanqiu;
+        @include left;
+        margin-left:26px;
+    }
+    #div03{
+        @include left;
+        @include commonStyle(244px,244px);
+        border:1px solid #eaeaea;
+        border-bottom:none;
+        @include commonMargin(20px,36px);
+        ul{
+            li{
+                @include left;
+                a{
+                    @include block;
+                    @include commonStyle(80px,80px);
+                    border-left:1px solid #eaeaea;
+                    border-bottom:1px solid #eaeaea;
+                    img{
+                        @include commonStyle(100%,100%);
+                    }
+                }
+            }
+        }
+        .borNone{
+            a{
+                 border-left:none;
+            }     
+        }
+    }   
+    #div04{
+        @include left;
+        @include commonMargin(10px,40px);
+    }
+}
+#yundonghuwai{
+    font-size: 14px;
+    padding-left:22px;
+    @include commonStyle(908px,399px);
+    border-bottom:1px solid #000;
+    @include commonPosition(173px,255px);
+    background-color:#fff;
+    @include block;
+    #div01huwai{
+        @include commonStyle(280px,400px);
+        .div1huwai{
+            @include commondiv1;
+            @include commonStyle(280px,130px);
+        }
+        .div2{
+            @extend .div1huwai;
+            dt{
+                @include lineHeight(36px);
+            }
+        }
+        .div3{
+            @extend .div1huwai;
+            dt{
+                text-indent:0px;
+                @include lineHeight(44px);
+            }
+            margin-top:-5px;
+        }
+        @include left;
+    }
+    #div02{
+        @extend #div01huwai;
+        @include left;
+        margin-left:26px;
+    }
+    #div03{
+        @include left;
+        @include commonStyle(244px,244px);
+        border:1px solid #eaeaea;
+        border-bottom:none;
+        @include commonMargin(20px,36px);
+        ul{
+            li{
+                @include left;
+                a{
+                    @include block;
+                    @include commonStyle(80px,80px);
+                    border-left:1px solid #eaeaea;
+                    border-bottom:1px solid #eaeaea;
+                    img{
+                        @include commonStyle(100%,100%);
+                    }
+                }
+            }
+        }
+        .borNone{
+            a{
+                 border-left:none;
+            }     
+        }
+    }   
+    #div04{
+        @include left;
+        @include commonMargin(10px,40px);
+    }
+}
+#shuiguoshengxian{
+    font-size: 14px;
+    padding-left:22px;
+    @include commonStyle(908px,399px);
+    border-bottom:1px solid #000;
+    @include commonPosition(173px,255px);
+    background-color:#fff;
+    @include block;
+    #div01shuiguo{
+        @include commonStyle(280px,400px);
+        .div1shuiguo{
+            @include commondiv1;
+            @include commonStyle(280px,160px);
+        }
+        .div2{
+            @extend .div1shuiguo;
+            dt{
+                @include lineHeight(36px);
+            }
+        }
+        @include left;
+    }
+    #div02{
+        @extend #div01shuiguo;
+        @include left;
+        margin-left:26px;
+    }
+    #div03{
+        @include left;
+        @include commonStyle(244px,244px);
+        border:1px solid #eaeaea;
+        border-bottom:none;
+        @include commonMargin(20px,36px);
+        ul{
+            li{
+                @include left;
+                a{
+                    @include block;
+                    @include commonStyle(80px,80px);
+                    border-left:1px solid #eaeaea;
+                    border-bottom:1px solid #eaeaea;
+                    img{
+                        @include commonStyle(100%,100%);
+                    }
+                }
+            }
+        }
+        .borNone{
+            a{
+                 border-left:none;
+            }     
+        }
+    }   
+    #div04{
+        @include left;
+        @include commonMargin(10px,40px);
     }
 }
