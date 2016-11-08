@@ -237,7 +237,7 @@ input {
       text-align: center;
       z-index: 10;
       margin-top: 30px;
-      margin-left: 650px; }
+      margin-left: 660px; }
       #topWrap #top #li3Hover .bor {
         border-bottom: 1px solid #dddddd; }
       #topWrap #top #li3Hover a:hover {
@@ -259,7 +259,7 @@ input {
       text-align: center;
       z-index: 10;
       margin-top: 30px;
-      margin-left: 732px; }
+      margin-left: 722px; }
       #topWrap #top #li4Hover .bor {
         border-bottom: 1px solid #dddddd; }
       #topWrap #top #li4Hover a:hover {
@@ -286,7 +286,7 @@ input {
       text-align: center;
       z-index: 10;
       margin-top: 30px;
-      margin-left: 971px; }
+      margin-left: 961px; }
       #topWrap #top #li7Hover .bor {
         border-bottom: 1px solid #dddddd; }
       #topWrap #top #li7Hover a:hover {
@@ -397,7 +397,7 @@ input {
     cursor: pointer;
     display: none;
     position: absolute;
-    margin-left: 95px;
+    margin-left: 88px;
     z-index: 100; }
     #bannerWrap #bannerList li {
       width: 160px;
@@ -485,7 +485,7 @@ input {
       #bannerWrap banner #btnRight:hover {
         background-image: url("../images/btnRight2.png"); }
     #bannerWrap banner #btnBottom {
-      width: 100px;
+      width: 122px;
       height: 28px;
       background-color: rgba(0, 0, 0, 0.45);
       position: absolute;
@@ -499,7 +499,7 @@ input {
         border-radius: 5px;
         background-color: #fff;
         float: left;
-        margin-top: 10px;
+        margin-top: 9px;
         margin-left: 12px; }
       #bannerWrap banner #btnBottom .liRed {
         background-color: #e31436; }
@@ -512,7 +512,7 @@ input {
   border-bottom: 1px solid #000;
   position: absolute;
   top: 173px;
-  left: 255px;
+  left: 245px;
   background-color: #fff;
   display: block; }
   #muyingertong #div01muying, #muyingertong #div02 {
@@ -596,7 +596,7 @@ input {
   border-bottom: 1px solid #000;
   position: absolute;
   top: 173px;
-  left: 255px;
+  left: 245px;
   background-color: #fff;
   display: block; }
   #meirongcaizhuang #div01meirong, #meirongcaizhuang #div02 {
@@ -683,7 +683,7 @@ input {
   border-bottom: 1px solid #000;
   position: absolute;
   top: 173px;
-  left: 255px;
+  left: 245px;
   background-color: #fff;
   display: block; }
   #fushixiebao #div01fushi, #fushixiebao #div02 {
@@ -770,7 +770,7 @@ input {
   border-bottom: 1px solid #000;
   position: absolute;
   top: 173px;
-  left: 255px;
+  left: 245px;
   background-color: #fff;
   display: block; }
   #jiajushenghuo #div01jiaju, #jiajushenghuo #div02 {
@@ -856,7 +856,7 @@ input {
   border-bottom: 1px solid #000;
   position: absolute;
   top: 173px;
-  left: 255px;
+  left: 245px;
   background-color: #fff;
   display: block; }
   #yingyangbaojian #div01yingyang, #yingyangbaojian #div02 {
@@ -942,7 +942,7 @@ input {
   border-bottom: 1px solid #000;
   position: absolute;
   top: 173px;
-  left: 255px;
+  left: 245px;
   background-color: #fff;
   display: block; }
   #haiwaizhiyou #div01haiwai, #haiwaizhiyou #div02 {
@@ -1025,7 +1025,7 @@ input {
   border-bottom: 1px solid #000;
   position: absolute;
   top: 173px;
-  left: 255px;
+  left: 245px;
   background-color: #fff;
   display: block; }
   #shumajiadian #div01shuma, #shumajiadian #div02 {
@@ -1108,7 +1108,7 @@ input {
   border-bottom: 1px solid #000;
   position: absolute;
   top: 173px;
-  left: 255px;
+  left: 245px;
   background-color: #fff;
   display: block;
   font-weight: normal; }
@@ -1196,7 +1196,7 @@ input {
   border-bottom: 1px solid #000;
   position: absolute;
   top: 173px;
-  left: 255px;
+  left: 245px;
   background-color: #fff;
   display: block; }
   #yundonghuwai #div01huwai, #yundonghuwai #div02 {
@@ -1280,7 +1280,7 @@ input {
   border-bottom: 1px solid #000;
   position: absolute;
   top: 173px;
-  left: 255px;
+  left: 245px;
   background-color: #fff;
   display: block; }
   #shuiguoshengxian #div01shuiguo, #shuiguoshengxian #div02 {
@@ -1350,5 +1350,49 @@ input {
     float: left;
     margin-top: 10px;
     margin-left: 40px; }
+
+#libaoWrap {
+  width: 100%;
+  height: 163px;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px; }
+  #libaoWrap #libao {
+    width: 1090px;
+    height: 163px;
+    margin: 0 auto; }
+
+#dingleiWrap {
+  position: relative;
+  width: 100%;
+  height: 210px;
+  text-align: center;
+  background: url("../images/dinglei_1000_210.jpg") no-repeat center center; }
+  #dingleiWrap #dinglei {
+    position: relative;
+    width: 1090px;
+    height: 210px;
+    margin: 0 auto; }
+    #dingleiWrap #dinglei a {
+      display: block;
+      float: left;
+      width: 240px;
+      height: 210px; }
+    #dingleiWrap #dinglei .a1 {
+      position: absolute;
+      top: 0;
+      left: 40px; }
+    #dingleiWrap #dinglei .a2 {
+      position: absolute;
+      top: 0;
+      left: 295px; }
+    #dingleiWrap #dinglei .a3 {
+      position: absolute;
+      top: 0;
+      left: 550px; }
+    #dingleiWrap #dinglei .a4 {
+      position: absolute;
+      top: 0;
+      left: 800px; }
 
 /*# sourceMappingURL=style.css.map */

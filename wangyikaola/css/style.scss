@@ -293,12 +293,12 @@ $aHoverRed:#e31436;
        #li3Hover{
             @include commonStyle(102px,212px);
             @include commonTopLiHover;
-            @include commonMargin(30px,650px);
+            @include commonMargin(30px,660px);
        }
        #li4Hover{
             @include commonStyle(83px,68px);
             @include commonTopLiHover;
-            @include commonMargin(30px,732px);
+            @include commonMargin(30px,722px);
             & .gm{
                 @include bg("../images/bg_gm.png");
             }
@@ -310,7 +310,7 @@ $aHoverRed:#e31436;
        #li7Hover{
             @include commonStyle(76px,184px);
             @include commonTopLiHover;
-            @include commonMargin(30px,971px);
+            @include commonMargin(30px,961px);
        }
     }
 }
@@ -419,7 +419,7 @@ $aHoverRed:#e31436;
         cursor: pointer;
         @include none;
         position: absolute;
-        margin-left:95px;
+        margin-left:88px;
         z-index: 100;
         li{
             @include commonStyle(160px,40px);       
@@ -530,7 +530,7 @@ $aHoverRed:#e31436;
             }
         }
         #btnBottom{
-            @include commonStyle(100px,28px);
+            @include commonStyle(122px,28px);
             background-color:rgba(0,0,0,0.45);
             @include commonPosition(350px,590px);
             border-radius: 14px;
@@ -540,7 +540,7 @@ $aHoverRed:#e31436;
                 border-radius: 5px;
                 background-color: #fff;
                 @include left;
-                @include commonMargin(10px,12px);
+                @include commonMargin(9px,12px);
             }
             .liRed{
                 background-color:#e31436;
@@ -590,7 +590,7 @@ $aHoverRed:#e31436;
     padding-left:22px;
     @include commonStyle(908px,399px);
     border-bottom:1px solid #000;
-    @include commonPosition(173px,255px);
+    @include commonPosition(173px,245px);
     background-color:#fff;
     @include block;
     #div01muying{
@@ -658,7 +658,7 @@ $aHoverRed:#e31436;
     padding-left:22px;
     @include commonStyle(908px,399px);
     border-bottom:1px solid #000;
-    @include commonPosition(173px,255px);
+    @include commonPosition(173px,245px);
     background-color:#fff;
     @include block;
     #div01meirong{
@@ -728,7 +728,7 @@ $aHoverRed:#e31436;
     padding-left:22px;
     @include commonStyle(908px,399px);
     border-bottom:1px solid #000;
-    @include commonPosition(173px,255px);
+    @include commonPosition(173px,245px);
     background-color:#fff;
     @include block;
     #div01fushi{
@@ -798,7 +798,7 @@ $aHoverRed:#e31436;
     padding-left:22px;
     @include commonStyle(908px,399px);
     border-bottom:1px solid #000;
-    @include commonPosition(173px,255px);
+    @include commonPosition(173px,245px);
     background-color:#fff;
     @include block;
     #div01jiaju{
@@ -866,7 +866,7 @@ $aHoverRed:#e31436;
     padding-left:22px;
     @include commonStyle(908px,399px);
     border-bottom:1px solid #000;
-    @include commonPosition(173px,255px);
+    @include commonPosition(173px,245px);
     background-color:#fff;
     @include block;
     #div01yingyang{
@@ -935,7 +935,7 @@ $aHoverRed:#e31436;
     padding-left:22px;
     @include commonStyle(908px,399px);
     border-bottom:1px solid #000;
-    @include commonPosition(173px,255px);
+    @include commonPosition(173px,245px);
     background-color:#fff;
     @include block;
     #div01haiwai{
@@ -1002,7 +1002,7 @@ $aHoverRed:#e31436;
     padding-left:22px;
     @include commonStyle(908px,399px);
     border-bottom:1px solid #000;
-    @include commonPosition(173px,255px);
+    @include commonPosition(173px,245px);
     background-color:#fff;
     @include block;
     #div01shuma{
@@ -1069,7 +1069,7 @@ $aHoverRed:#e31436;
     padding-left:22px;
     @include commonStyle(908px,399px);
     border-bottom:1px solid #000;
-    @include commonPosition(173px,255px);
+    @include commonPosition(173px,245px);
     background-color:#fff;
     @include block;
     font-weight: normal;
@@ -1139,7 +1139,7 @@ $aHoverRed:#e31436;
     padding-left:22px;
     @include commonStyle(908px,399px);
     border-bottom:1px solid #000;
-    @include commonPosition(173px,255px);
+    @include commonPosition(173px,245px);
     background-color:#fff;
     @include block;
     #div01huwai{
@@ -1206,7 +1206,7 @@ $aHoverRed:#e31436;
     padding-left:22px;
     @include commonStyle(908px,399px);
     border-bottom:1px solid #000;
-    @include commonPosition(173px,255px);
+    @include commonPosition(173px,245px);
     background-color:#fff;
     @include block;
     #div01shuiguo{
@@ -1258,5 +1258,45 @@ $aHoverRed:#e31436;
     #div04{
         @include left;
         @include commonMargin(10px,40px);
+    }
+}
+
+#libaoWrap{
+    @include commonStyle(100%,163px);
+    text-align:center;
+    margin-top:10px;
+    margin-bottom:10px;
+    #libao{
+        @include commonStyle(1090px,163px);
+        margin:0 auto;
+    }
+}
+
+#dingleiWrap{
+    position: relative;
+    @include commonStyle(100%,210px);
+    text-align:center;
+    @include bg("../images/dinglei_1000_210.jpg",center,center);
+    #dinglei{
+        position: relative;
+        @include commonStyle(1090px,210px);
+        margin:0 auto;
+        a{
+            @include block;
+            @include left;
+            @include commonStyle(240px,210px);
+        }
+        .a1{
+            @include commonPosition(0,40px);
+        }
+        .a2{
+            @include commonPosition(0,295px);
+        }
+        .a3{
+            @include commonPosition(0,550px);
+        }
+        .a4{
+            @include commonPosition(0,800px);
+        }
     }
 }

@@ -153,10 +153,10 @@ function imgLunbo(){
 	function imgIncrease(){
 		$("banner ul li img").eq(index).fadeOut(1000);
 			$("#btnBottom li").eq(index2).removeClass("liRed");//3
-			if(index>=4){
+			if(index>=5){
 				index = 0;
 			}
-			if(index2>2){
+			if(index2>3){
 				index2 = -1;
 			}
 			$("banner ul li img").eq(index+1).fadeIn(1000);
@@ -168,10 +168,10 @@ function imgLunbo(){
 		$("banner ul li img").eq(index).fadeOut(1200);
 			$("#btnBottom li").eq(index2).removeClass("liRed");//3
 			if(index<=0){
-				index = 4;
+				index = 5;
 			}
 			if(index2<=-1){
-				index2 = 3;
+				index2 = 4;
 			}
 			$("banner ul li img").eq(index-1).fadeIn(1200);
 			$("#btnBottom li").eq(index2-1).addClass("liRed");//3
@@ -196,10 +196,12 @@ function imgLunbo(){
 		$("#btnRight").hide();
 	});
 	//点击左右按钮切换
-	$("#btnLeft").click(function(){		
+	$("#btnLeft").click(function(){	
+		isPause = true;
 		imgDecrease();
 	});
-	$("#btnRight").click(function(){	
+	$("#btnRight").click(function(){
+		isPause = true;
 		imgIncrease();
 	})
 	//点击小圆点切换
@@ -211,7 +213,7 @@ function imgLunbo(){
 		$("banner ul li img").eq(index).fadeIn(1000).siblings().fadeOut();
 //		$("banner ul li img").eq(index).fadeOut(1000);
 //		$("banner ul li img").eq(index+1).fadeIn(1000).siblings().fadeOut();
-		if(index>4){
+		if(index>5){
 			index = 0;
 		}
 	})
