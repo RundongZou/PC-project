@@ -125,6 +125,7 @@ window.onload = function(){
 
 //商品分类的各种列表的显示以及隐藏
 $("#navWrap #nav li").mouseenter(function(e){
+	allHide();
 	if($(this).index()==0){
 		$("#bannerList").show();	
 	}else{

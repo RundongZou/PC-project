@@ -1110,8 +1110,10 @@ input {
   top: 173px;
   left: 255px;
   background-color: #fff;
-  display: block; }
+  display: block;
+  font-weight: normal; }
   #huanqiumeishi #div01huanqiu, #huanqiumeishi #div02 {
+    font-weight: normal;
     width: 280px;
     height: 400px;
     float: left; }
@@ -1198,6 +1200,7 @@ input {
   background-color: #fff;
   display: block; }
   #yundonghuwai #div01huwai, #yundonghuwai #div02 {
+    font-weight: normal;
     width: 280px;
     height: 400px;
     float: left; }
@@ -1281,6 +1284,7 @@ input {
   background-color: #fff;
   display: block; }
   #shuiguoshengxian #div01shuiguo, #shuiguoshengxian #div02 {
+    font-weight: normal;
     width: 280px;
     height: 400px;
     float: left; }

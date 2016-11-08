@@ -1072,7 +1072,9 @@ $aHoverRed:#e31436;
     @include commonPosition(173px,255px);
     background-color:#fff;
     @include block;
+    font-weight: normal;
     #div01huanqiu{
+        font-weight: normal;
         @include commonStyle(280px,400px);
         .div1huanqiu{
             @include commondiv1;
@@ -1141,6 +1143,7 @@ $aHoverRed:#e31436;
     background-color:#fff;
     @include block;
     #div01huwai{
+        font-weight: normal;
         @include commonStyle(280px,400px);
         .div1huwai{
             @include commondiv1;
@@ -1207,6 +1210,7 @@ $aHoverRed:#e31436;
     background-color:#fff;
     @include block;
     #div01shuiguo{
+        font-weight: normal;
         @include commonStyle(280px,400px);
         .div1shuiguo{
             @include commondiv1;
