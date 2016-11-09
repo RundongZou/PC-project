@@ -21,7 +21,22 @@ input {
 #wrap {
   width: 100%;
   height: auto; }
-
+  #wrap .fixed {
+    cursor: pointer;
+    display: block;
+    position: fixed;
+    bottom: 0;
+    left: 100px;
+    margin: 0 auto;
+    z-index: 10; }
+#wrap #fixed .a{
+	display:block;
+	float:left;
+	background-color:red;
+	position: absolute;
+	bottom:0;
+	left:200px;
+}
 /*----------------------------top----------------------------------*/
 #topWrap {
   width: 100%;

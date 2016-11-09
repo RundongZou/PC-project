@@ -72,7 +72,17 @@ input{
 $aHoverRed:#e31436;
 #wrap{
     @include commonStyle(100%,auto);
+    .fixed{
+        cursor: pointer;
+        display:block;
+        position: fixed;
+        bottom:0;
+        left:100px;
+        margin:0 auto;
+        z-index: 10;
+    }
 }
+
 /*----------------------------top----------------------------------*/
 
 @mixin commonTopLiHover(){
