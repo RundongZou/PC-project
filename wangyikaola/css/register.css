@@ -1,0 +1,138 @@
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	background-color:#efefef;
+	font-size:16px;
+	font-family: "微软雅黑";
+}
+ul,li,ol{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+input{
+	outline: none;
+}
+#head{
+	cursor: pointer;
+	margin-top:24px;
+	width:300px;
+	height:60px;
+	margin-left:130px;
+	background:url("../img_register/sprite.png") no-repeat -46px -2px;
+}
+#main{
+	position: relative;
+	width:1000px;
+	height:836px;
+	background-color: #fff;
+	margin:50px auto;
+}
+#main p{
+	position: absolute;
+	float: left;
+	font-size:22px;
+	color:#ca5252;
+	left:70px;
+	top:46px;
+}
+#main ul{
+	float: left;
+	margin-top:128px;
+}
+#main ul li{
+	position: relative;
+}
+/*#main ul li .cha{
+	width:16px;
+	height:16px;
+	position: absolute;
+	left:290px;
+	top:16px;
+	background:url("../img_register/cha.png") no-repeat ;
+}*/
+#main ul .accountName .cha{
+	width:16px;
+	height:16px;
+	position: absolute;
+	left:230px;
+	top:16px;
+	background:url("../img_register/cha.png") no-repeat ;	
+}
+#main ul li .cha{
+	cursor:pointer;
+}
+#main ul li .cha:hover{
+	background:url("../img_register/cha_hover.png") no-repeat 2px 1px ;
+}
+#main ul .password .cha{
+	width:16px;
+	height:16px;
+	position: absolute;
+	left:350px;
+	top:16px;
+	background:url("../img_register/cha.png") no-repeat ;	
+}
+#main ul .passwordConfirm .cha{
+	width:16px;
+	height:16px;
+	position: absolute;
+	left:380px;
+	top:16px;
+	background:url("../img_register/cha.png") no-repeat ;	
+}
+#main ul .identifyingCode .cha{
+	width:16px;
+	height:16px;
+	position: absolute;
+	left:366px;
+	top:16px;
+	background:url("../img_register/cha.png") no-repeat ;	
+}
+#main ul .phone .cha{
+	width:16px;
+	height:16px;
+	position: absolute;
+	left:366px;
+	top:16px;
+	background:url("../img_register/cha.png") no-repeat ;	
+}
+#main ul .message .cha{
+	width:16px;
+	height:16px;
+	position: absolute;
+	left:396px;
+	top:16px;
+	background:url("../img_register/cha.png") no-repeat ;	
+}
+#main ul .spanL{
+	line-height: 46px;
+	font-size:15px;
+}
+#main ul li input{
+	width:320px;
+	height:44px;
+	border:1px solid #cbcbcb;
+	margin-bottom:26px;
+	text-indent: 6px;
+	font-size: 16px;
+}
+#main ul .accountName input{
+	width:200px;
+	
+}
+#main ul .accountName,.password{
+	margin-left:290px;
+}
+#main ul .passwordConfirm{
+	margin-left:260px;
+}
+#main ul .identifyingCode,.phone{
+	margin-left:276px;
+}
+#main ul .message{
+	margin-left:246px;
+}
