@@ -410,9 +410,8 @@ input {
     height: 401px;
     background: rgba(0, 0, 0, 0.65);
     cursor: pointer;
-    display: none;
     position: absolute;
-    margin-left: 88px;
+    margin-left: 87px;
     z-index: 100; }
     #bannerWrap #bannerList li {
       width: 160px;
@@ -485,7 +484,7 @@ input {
       height: 68px;
       position: absolute;
       top: 160px;
-      left: 95px;
+      left: 260px;
       background-color: rgba(0, 0, 0, 0.5);
       background-image: url("../images/btnLeft1.png");
       background-repeat: no-repeat;
@@ -1411,3 +1410,122 @@ input {
       left: 800px; }
 
 /*# sourceMappingURL=style.css.map */
+#main_muying{
+	position: relative;
+	width:1090px;
+	height:646px;
+	background:lawngreen;
+	margin-left:90px;
+	margin-top:30px;
+}
+#main_muying .shang{
+	height:80px;
+	border-bottom:2px solid #000;
+}
+#main_muying .shang span{
+	position: absolute;
+	font-size:14px;
+	color:#999;
+	top:46px;
+	left:109px;
+}
+#main_muying .shang h1{
+	font-size:22px;
+	line-height:100px;
+	width:100px;
+	
+}
+#main_muying .shang ul{
+	position: absolute;
+	top:49px;
+	left:164px;
+}
+#main_muying .shang ul li{
+	float:left;
+	height:14px;
+	line-height:14px;
+	padding:0 12px;
+	border-left:1px solid #d3ccd3;
+}
+#main_muying .shang ul .padLeft0{
+	padding-left:0;
+	border-left:none;
+}
+#main_muying .shang ul .red a{
+	color:#e31436;
+}
+#main_muying .shang ul li a{
+	color:#666;
+}
+#main_muying .shang .more{
+	display:block;
+	position: absolute;
+	top:49px;
+	right:4px;
+	text-indent:10px;
+	width:74px;
+	background:url("../images/jiao-right.png") no-repeat 60px;
+}
+
+#main_muying .zhong{
+	height:450px;
+	border-bottom:1px solid #eaeaea;
+}
+#main_muying .zhong .left{
+	float:left;
+	padding-top:20px;
+	padding-left:16px;
+	cursor: pointer;
+	width:227px;
+	height:422px;
+	background:url("../images/ipnzazhw16_246_440.jpg") no-repeat -14px;
+}
+#main_muying .zhong .left ul{
+	width:212px;
+	height:144px;
+}
+#main_muying .zhong .left ul li{
+	float:left;
+	margin-right:10px;
+	width:60px;
+	height:60px;
+	line-height:60px;
+	border-radius: 50%;
+	background-color:#fff;
+	text-align: center;
+}
+#main_muying .zhong .left ul li:hover{
+	opacity: .5;
+}
+#main_muying .zhong .left ul li:hover a{
+	color:#e31436;
+}
+#main_muying .zhong .center{
+	cursor: pointer;
+	margin-left:-10px;
+	float:left;
+	width:600px;
+	height:450px;
+}
+#main_muying .zhong .center div{
+	position: relative;
+	padding-top:20px;
+	text-align: center;
+	width:298px;
+	height:200px;
+	float:left;
+	border-right:1px solid #eaeaea;
+	border-bottom:1px solid #eaeaea;
+}
+#main_muying .zhong .center div p{
+	line-height:20px;
+}
+#main_muying .zhong .center div .p1{
+	font-size:16px;
+	font-weight:bold;
+}
+#main_muying .zhong .center div img{
+	position: absolute;
+	bottom: 0;
+	left:56px;
+}

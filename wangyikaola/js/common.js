@@ -133,15 +133,18 @@ $("#navWrap #nav li").mouseenter(function(e){
 	}
 });
 $("#bannerList").mouseleave(function(){
-	$("#bannerList").hide();
+	//$("#bannerList").hide();
 }).mouseenter(function(){
 	isPause = true;
 	$("#btnLeft").hide();
 	$("#btnRight").hide();
 });
 $("#headerWrap").mouseenter(function(){
-	$("#bannerList").hide();
+	//$("#bannerList").hide();
 });
+$("#libaoWrap").mouseenter(function(){
+	allHide();
+})
 
 //图片轮播
 function imgLunbo(){
