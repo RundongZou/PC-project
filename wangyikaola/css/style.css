@@ -26,7 +26,7 @@ input {
     display: block;
     position: fixed;
     bottom: 0;
-    left: 100px;
+    left: 80px;
     margin: 0 auto;
     z-index: 10; }
 #wrap #fixed .a{
@@ -1410,15 +1410,19 @@ input {
       left: 800px; }
 
 /*# sourceMappingURL=style.css.map */
+#wrap .marNoneMain{
+	margin-top:0;
+}
 #main_muying{
 	position: relative;
 	width:1090px;
 	height:646px;
-	background:lawngreen;
+
 	margin-left:90px;
 	margin-top:30px;
 }
 #main_muying .shang{
+	width:1089px;
 	height:80px;
 	border-bottom:2px solid #000;
 }
@@ -1468,12 +1472,14 @@ input {
 }
 
 #main_muying .zhong{
-	height:450px;
+	background-color:#fff;
+	width:100%;
+	height:439px;
 	border-bottom:1px solid #eaeaea;
 }
 #main_muying .zhong .left{
 	float:left;
-	padding-top:20px;
+	padding-top:18px;
 	padding-left:16px;
 	cursor: pointer;
 	width:227px;
@@ -1487,6 +1493,7 @@ input {
 #main_muying .zhong .left ul li{
 	float:left;
 	margin-right:10px;
+	margin-bottom:10px;
 	width:60px;
 	height:60px;
 	line-height:60px;
@@ -1512,7 +1519,7 @@ input {
 	padding-top:20px;
 	text-align: center;
 	width:298px;
-	height:200px;
+	height:199px;
 	float:left;
 	border-right:1px solid #eaeaea;
 	border-bottom:1px solid #eaeaea;
@@ -1528,4 +1535,73 @@ input {
 	position: absolute;
 	bottom: 0;
 	left:56px;
+}
+#main_muying .zhong .right{
+	cursor: pointer;
+	width:216px;
+	height:439px;
+	border-right:1px solid #eaeaea;
+	border-bottom:1px solid #eaeaea;
+	float:left;
+	padding:0 20px;
+}
+#main_muying .zhong .right h1{
+	font-size:16px;
+	margin-top:20px;
+}
+#main_muying .zhong .right div{
+	padding:10px 0;
+	height:76px;
+	border-bottom:1px dashed #eaeaea;
+}
+#main_muying .zhong .right div p{
+	color:#666;
+	line-height:20px;
+	margin-left:86px;
+}
+#main_muying .zhong .right div .p1{
+	margin-top:-80px;
+}
+#main_muying .zhong .right div .p3{
+	line-height: 30px;
+}
+#main_muying .zhong .right div .p3 span{
+	color:#a599b2;
+	text-decoration: line-through;
+}
+#main_muying .zhong .right div .p3 .red{
+	font-size: 14px;
+	font-weight: bold;
+	color:#e31436;
+	text-decoration:none;
+	margin-right:6px;
+}
+#main_muying .zhong .right .borNone{
+	border:none;
+}
+#main_muying .xia{
+	background-color:#fff;
+	width:1088px;
+	height:108px;
+	border:1px solid #eaeaea;
+	margin-top:12px;
+}
+#main_muying .xia span{
+	width:132px;
+	display:block;
+	float:left;
+	line-height:110px;
+	text-align: center;
+	font-size:16px;
+}
+#main_muying .xia ul li{
+	float:left;
+	margin-right:3px;
+}
+
+#main_muying .zhong #main_meirong{
+	background:url("../images/iv98kq3j32_246_440.jpg") no-repeat -14px;
+}
+#main_muying .zhong #main_fushi{
+	background:url("../images/iqt7vrje24_246_440.jpg") no-repeat -14px;
 }
