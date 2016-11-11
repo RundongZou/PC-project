@@ -14,15 +14,37 @@ a{
 	text-decoration: none;
 }
 input{
+
 	outline: none;
+	/*font-size: 20px;
+	font-weight: bold;*/
 }
+input::-webkit-input-placeholder { 
+	font-size: 12px;	
+	color:red;
+}
+@font-face {
+  font-family: 'iconfont';
+  src: url('iconfont.eot');
+  src: url('iconfont.eot?#iefix') format('embedded-opentype'),
+  url('iconfont.woff') format('woff'),
+  url('iconfont.ttf') format('truetype'),
+  url('iconfont.svg#iconfont') format('svg');
+}
+.iconfont{
+  font-family:"iconfont" !important;
+  font-size:16px;font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 #head{
 	cursor: pointer;
 	margin-top:24px;
 	width:300px;
 	height:60px;
 	margin-left:130px;
-	background:url("../img_register/sprite.png") no-repeat -46px -2px;
 }
 #main{
 	position: relative;
@@ -33,7 +55,7 @@ input{
 	margin-left:140px;
 	float:left;
 }
-p{
+.zhuce{
 	position: absolute;
 	font-size:22px;
 	color:#ca5252;
@@ -44,7 +66,7 @@ p{
 
 #main div{
 	position: relative;
-	background-color:palegreen;
+/*	background-color:palegreen;*/
 	width:660px;
 	height:48px;
 	margin-bottom:26px;
@@ -101,10 +123,25 @@ p{
 	height:44px;
 	line-height:44px;
 	border:1px solid #cbcbcb;
+	margin-left:10px;
+	text-indent: 6px;
 }
-#main .userId .hint{
-	margin-left:100px;
+#main .userId .hint{	
+	position: relative;
+	font-size:12px;
+	height:31px;
+	margin-left:380px;
+	margin-top:-46px;
+	background-size:14px 14px;
+	padding-top:13px;
+	text-indent: 5px;
 }
+
+#main .userId .hint .hint_span{
+	position: absolute;
+	top:12px;
+}
+
 #main .userId input{
 	width:200px;
 }
