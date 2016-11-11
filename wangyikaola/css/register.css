@@ -30,109 +30,99 @@ input{
 	height:836px;
 	background-color: #fff;
 	margin:50px auto;
+	margin-left:140px;
+	float:left;
 }
-#main p{
+p{
 	position: absolute;
-	float: left;
 	font-size:22px;
 	color:#ca5252;
-	left:70px;
-	top:46px;
+	left:200px;
+	top:180px;
+	z-index: 2;
 }
-#main ul{
-	float: left;
-	margin-top:128px;
-}
-#main ul li{
+
+#main div{
 	position: relative;
+	background-color:palegreen;
+	width:660px;
+	height:48px;
+	margin-bottom:26px;
+	padding-top:2px;
+	
 }
-/*#main ul li .cha{
+/*小叉号*/
+#main div .cha{
+	display: block;
 	width:16px;
 	height:16px;
 	position: absolute;
-	left:290px;
-	top:16px;
-	background:url("../img_register/cha.png") no-repeat ;
-}*/
-#main ul .accountName .cha{
-	width:16px;
-	height:16px;
-	position: absolute;
-	left:230px;
-	top:16px;
-	background:url("../img_register/cha.png") no-repeat ;	
+	top:35%;
+	cursor: pointer;
+	background:url("../img_register/cha.png") no-repeat; 
 }
-#main ul li .cha{
-	cursor:pointer;
+#main div .cha:hover{
+	background:url("../img_register/cha_hover.png") 2px 1px;
 }
-#main ul li .cha:hover{
-	background:url("../img_register/cha_hover.png") no-repeat 2px 1px ;
+#main .userId .cha{
+	left:235px;
 }
-#main ul .password .cha{
-	width:16px;
-	height:16px;
-	position: absolute;
+#main .password .cha{
 	left:350px;
-	top:16px;
-	background:url("../img_register/cha.png") no-repeat ;	
 }
-#main ul .passwordConfirm .cha{
-	width:16px;
-	height:16px;
-	position: absolute;
-	left:380px;
-	top:16px;
-	background:url("../img_register/cha.png") no-repeat ;	
+#main .passwordConfirm .cha{
+	left:382px;
 }
-#main ul .identifyingCode .cha{
-	width:16px;
-	height:16px;
-	position: absolute;
+#main .identifyingCode .cha{
 	left:366px;
-	top:16px;
-	background:url("../img_register/cha.png") no-repeat ;	
 }
-#main ul .phone .cha{
-	width:16px;
-	height:16px;
-	position: absolute;
+#main .phone .cha{
 	left:366px;
-	top:16px;
-	background:url("../img_register/cha.png") no-repeat ;	
 }
-#main ul .message .cha{
-	width:16px;
-	height:16px;
-	position: absolute;
-	left:396px;
-	top:16px;
-	background:url("../img_register/cha.png") no-repeat ;	
+#main .message .cha{
+	left:398px;
 }
-#main ul .spanL{
-	line-height: 46px;
-	font-size:15px;
-}
-#main ul li input{
+
+#main div input{
+	font-size:16px;
+	text-indent:6px;
 	width:320px;
 	height:44px;
 	border:1px solid #cbcbcb;
-	margin-bottom:26px;
-	text-indent: 6px;
-	font-size: 16px;
 }
-#main ul .accountName input{
+#main .userId{
+	margin-left:290px;
+	margin-top:114px;
+}
+#main .userId .houzhui{
+	position: absolute;
+	background-color:#fff;
+	width:104px;
+	height:44px;
+	line-height:44px;
+	border:1px solid #cbcbcb;
+}
+#main .userId .hint{
+	margin-left:100px;
+}
+#main .userId input{
 	width:200px;
-	
 }
-#main ul .accountName,.password{
+#main .password{
 	margin-left:290px;
 }
-#main ul .passwordConfirm{
+#main .passwordConfirm{
+	margin-left:258px;
+}
+#main .passwordConfirm{
 	margin-left:260px;
 }
-#main ul .identifyingCode,.phone{
+#main .identifyingCode{
 	margin-left:276px;
 }
-#main ul .message{
-	margin-left:246px;
+#main .phone{
+	margin-left:276px;
+}
+#main .message{
+	margin-left:244px;
 }
