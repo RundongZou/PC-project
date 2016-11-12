@@ -179,3 +179,16 @@ input{
 	width:322px;
 	height:34px;
 }
+/*注册按钮*/
+ #main #btn1{
+	 cursor: pointer;
+	 width:323px;
+	 height:47px;
+	 background-color: red;
+	 border:none;
+	 margin-left:340px;
+	 opacity:.5;
+	 color:#fff;
+	 font-size:18px;
+	 letter-spacing:12px;
+}

@@ -1,5 +1,6 @@
 window.onload = function(){
-	var right_userName = /^[a-zA-Z][a-zA-Z_0-9]{6,18}$/;
+	var right_userName = /^[a-zA-Z][a-zA-Z_0-9]{5,17}$/;
+	//点击叉号，清空input里面的内容
 	$(".cha").click(function(){
 		//alert("1")
 		$(this).prev().val('');
@@ -16,9 +17,13 @@ window.onload = function(){
 			});
 		$(b).animate({"padding-left":"20px"},100).animate({"padding-left":"0px"},100).animate({"padding-left":"20px"},100).animate({"padding-left":"0px"},100).animate({"padding-left":"20px"},100).animate({"padding-left":"0px"},100).animate({"padding-left":"20px"},100).animate({"padding-left":"10px"},100);
 	}
+	//设置一个变量，如果有一栏符合，那么这个变量的值就加一，如果这个变量达到某个值，就注册成功，把用户信息存到cookie中
+	var judge = 0;
+	var str ;
 	//-----------------------------------------账号
 	$(".acInp").blur(function(){
 		if(right_userName.test($(this).val())){
+			judge ++;
 			$(this).css({
 				"border":"1px solid #cbcbcb"
 			})
@@ -61,35 +66,37 @@ window.onload = function(){
 				}
 				switch(level){
 					case 0:
-					wrong($(".inp_password"),".hint2");
-					$(" .hint2 .hint_span").html("密码须由6-16个字符组成，区分大小写");
+						wrong($(".inp_password"),".hint2");
+						$(" .hint2 .hint_span").html("密码须由6-16个字符组成，区分大小写");
 					break;
 					case 1:
-					wrong($(".inp_password"),".hint2");
-					$(" .hint2 .hint_span").html("密码过于简单，请重新设置");
+						wrong($(".inp_password"),".hint2");
+						$(" .hint2 .hint_span").html("密码过于简单，请重新设置");
 					break;
 					case 2:
-					$(this).css({
-						"border":"1px solid #cbcbcb"
-					})
-					$(".hint2").css({
-						"display":"block",
-						"color":"limegreen"
-					});
-					$(".password .hint2 .iconfont").html("&#xe62d;");
-					$(" .hint2 .hint_span").html("");
-					break;
+						judge++;
+						$(this).css({
+							"border":"1px solid #cbcbcb"
+						})
+						$(".hint2").css({
+							"display":"block",
+							"color":"limegreen"
+						});
+						$(".password .hint2 .iconfont").html("&#xe62d;");
+						$(" .hint2 .hint_span").html("");
+						break;
 					case 3:
-					$(this).css({
-						"border":"1px solid #cbcbcb"
-					})
-					$(".hint2").css({
-						"display":"block",
-						"color":"limegreen"
-					});
-					$(".password .hint2 .iconfont").html("&#xe62d;");
-					$(" .hint2 .hint_span").html("");
-					break;
+						judge++;
+						$(this).css({
+							"border":"1px solid #cbcbcb"
+						})
+						$(".hint2").css({
+							"display":"block",
+							"color":"limegreen"
+						});
+						$(".password .hint2 .iconfont").html("&#xe62d;");
+						$(" .hint2 .hint_span").html("");
+						break;
 				};
 			}
 		else{
@@ -102,6 +109,7 @@ window.onload = function(){
 	//------------------------------密码确认
 	$(".inp_passwordCon").blur(function(){
 		if($(this).val()==$(".inp_password").val()){
+			judge++;
 			if($(this).val()==''){
 				wrong($(".inp_passwordCon"),".hint3");
 				$(" .hint3 .hint_span").html("密码不能为空");
@@ -122,7 +130,29 @@ window.onload = function(){
 			$(" .hint3 .hint_span").html("密码不一致");
 		}
 	})
-	
+
+	$("#btn1").click(function(){
+		//alert(judge);
+		if(judge >= 3){
+			alert(1);
+			//judge = 0;
+			var oldStr = $(".acInp").val()+"&"+$(".inp_password").val();
+			if($.cookie("account")){
+				alert("ha");
+				str = $.cookie("account") +"|" + oldStr;
+			}else{
+				str = oldStr;
+			}
+			// if(str=''){
+			// 	str = oldStr;
+			// }else{
+			// 	str = str + "|" + oldStr;
+			// }
+			 $.cookie("account",str,{empires:7,path:"/"});
+		}
+
+	})
+
 	
 	
 }
