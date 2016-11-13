@@ -48,10 +48,10 @@ window.onload = function(){
 		}
 		if($.cookie("account")){
 			var arr =  $.cookie("account").split("|");
-			console.log(arr);
+			//console.log(arr);
 			for(var i = 0;i<arr.length;i++){
 				var subArr = arr[i].split("&");
-				console.log(subArr);
+				//console.log(subArr);
 				if($(".acInp").val()==subArr[0]){
 					wrong($(".acInp"),".hint1");
 					$(".userId .hint .hint_span").html("该用户名已注册");

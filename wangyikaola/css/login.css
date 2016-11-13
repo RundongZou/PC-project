@@ -18,6 +18,7 @@ input,button{
     outline:none;
 }
 
+
 #top{
     cursor: pointer;
     width:100%;
@@ -68,13 +69,21 @@ input,button{
     border:1px solid #c5cddb;
     margin-top:18px;
     text-indent: 46px;
-    font-style: 13px;
+    font-size: 13px;
 }
 #main .login .left .userName{
     background:url("../img_login/1.png") no-repeat;
 }
 #main .login .left .userPassword{
     background:url("../img_login/2.png") no-repeat;
+}
+#main .login .left .wrong{
+    display: block;
+    font-size:12px;
+    color:#fa5b5b;
+    width:268px;
+    height:34px;
+    line-height:34px;
 }
 #main .login .left .tenDays{
     position: absolute;
@@ -120,6 +129,41 @@ input,button{
     left:36px;
     font-size:17px;
     letter-spacing: 10px;
+}
+#main .login .left .bor{
+    float: left;
+    width:350px;
+    height:1px;
+    margin-left:-30px;
+    margin-top: 136px;
+    background-color:#eaeaea;
+}
+#main .login .left p{
+    color:#333;
+    float: left;
+    margin-top:12px;
+}
+#main .login .left ul{
+    float: left;
+    width:180px;
+    height:20px;
+    margin-left:130px;
+    margin-top:-16px;
+}
+#main .login .left ul li{
+    float: left;
+    padding:0 8px;
+    border-right:1px solid #eaeaea;
+}
+#main .login .left ul .borNone{
+    border:none;
+}
+
+#main .login .right{
+    width:140px;
+    height:100%;
+    float: left;
+    background:url("../img_login/ir76kill77_146_338.jpg") no-repeat;
 }
 
 #footerwrap{
@@ -188,14 +232,14 @@ input,button{
      top:104px;
      left:490px;
  }
-.img2{
+.img2 {
     cursor: pointer;
     display: block;
-    width:26px;
-    height:30px;
+    width: 26px;
+    height: 30px;
     position: absolute;
-    top:104px;
-    left:580px;
+    top: 104px;
+    left: 580px;
 }
 
 
@@ -203,21 +247,3 @@ input,button{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
->>>>>>> master

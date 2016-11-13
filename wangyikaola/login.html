@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="css/login.css">
     <script src="js/jquery-3.1.1.js"></script>
     <script src="js/jquery.cookie.js"></script>
+    <script src="js/login.js"></script>
 </head>
 
 <div id="top"></div>
@@ -17,15 +18,23 @@
         <div class="left">
             <h2>登录网易邮箱账号</h2>
             <input class="userName" type="text" placeholder="网易邮箱账号" value="">
-            <input class="userPassword" type="text" placeholder="密码" value="">
+            <input class="userPassword" type="password" placeholder="密码" value="">
+            <!--<span class="wrong">账号或密码错误</span>-->
             <input class="tenDays" type="checkbox"value=""><span class="ten">十天内免登陆</span>
             <a class="forget" href="">忘记密码？</a>
             <button class="btn">登录</button>
             <span class="donthave">没有网易邮箱？</span>
             <a class="rightnow" href="register.html">立即免费注册>></a>
-
+            <div class="bor"></div>
+            <p>使用第三方账号登录：</p>
+            <ul>
+                <li><a href=""><img src="img_login/3.png"></a></li>
+                <li><a href=""><img src="img_login/4.png"></a></li>
+                <li><a href=""><img src="img_login/5.png"></a></li>
+                <li class="borNone"><a href=""><img src="img_login/6.png"></a></li>
+            </ul>
         </div>
-
+        <div class="right"></div>
     </div>
 </div>
 <div id="footerWrap">
