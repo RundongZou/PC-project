@@ -7,12 +7,15 @@ body{
     font-size:12px;
     font-family: "微软雅黑";
 }
+<<<<<<< HEAD
 a{
     text-decoration: none;
 }
 li,ul,ol{
     list-style:none;
 }
+=======
+>>>>>>> master
 #top{
     cursor: pointer;
     width:100%;
@@ -47,6 +50,7 @@ li,ul,ol{
     margin:0 auto;
     background-color:palegreen;
 }
+<<<<<<< HEAD
 #footer .ul1{
     margin-left:20px;
     float: left;
@@ -69,3 +73,32 @@ li,ul,ol{
 #footer .ul1 li a:hover{
     opacity:.5;
 }
+=======
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>> master
