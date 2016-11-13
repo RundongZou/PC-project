@@ -1,5 +1,6 @@
 window.onload = function(){
 	var right_userName = /^[a-zA-Z][a-zA-Z_0-9]{5,17}$/;
+
 	//点击叉号，清空input里面的内容
 	$(".cha").click(function(){
 		//alert("1")
@@ -19,6 +20,7 @@ window.onload = function(){
 	}
 	//设置一个变量，如果有一栏符合，那么这个变量的值就加一，如果这个变量达到某个值，就注册成功，把用户信息存到cookie中
 	var judge = 0;
+	//设置一个字符串，用于cookie的拼接
 	var str ;
 	//-----------------------------------------账号
 	$(".acInp").blur(function(){
@@ -43,6 +45,19 @@ window.onload = function(){
 		}else{
 			wrong();
 			$(".userId .hint .hint_span").html("请用字母、数字或下划线命名");
+		}
+		if($.cookie("account")){
+			var arr =  $.cookie("account").split("|");
+			console.log(arr);
+			for(var i = 0;i<arr.length;i++){
+				var subArr = arr[i].split("&");
+				console.log(subArr);
+				if($(".acInp").val()==subArr[0]){
+					wrong($(".acInp"),".hint1");
+					$(".userId .hint .hint_span").html("该用户名已注册");
+					break;
+				}
+			}
 		}
 	})
 	//-----------------------------------密码
@@ -129,27 +144,26 @@ window.onload = function(){
 			wrong($(".inp_passwordCon"),".hint3");
 			$(" .hint3 .hint_span").html("密码不一致");
 		}
+
 	})
 
+	//如果信息都合格可以注册的话，点击注册按钮，就可以注册，同时，把信息存到cookie里面
 	$("#btn1").click(function(){
 		//alert(judge);
 		if(judge >= 3){
-			alert(1);
+			//alert(1);
 			//judge = 0;
+
 			var oldStr = $(".acInp").val()+"&"+$(".inp_password").val();
 			if($.cookie("account")){
-				alert("ha");
+				//alert("ha");
 				str = $.cookie("account") +"|" + oldStr;
 			}else{
 				str = oldStr;
 			}
-			// if(str=''){
-			// 	str = oldStr;
-			// }else{
-			// 	str = str + "|" + oldStr;
-			// }
 			 $.cookie("account",str,{empires:7,path:"/"});
 		}
+
 
 	})
 
