@@ -81,7 +81,7 @@ input{
 
 #main div{
 	position: relative;
-	background-color:palegreen;
+	/*background-color:palegreen;*/
 	width:660px;
 	height:48px;
 	margin-bottom:26px;
