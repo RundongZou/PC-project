@@ -40,12 +40,26 @@ input{
 }
 
 #head{
+	position: relative;
 	cursor: pointer;
 	margin-top:24px;
 	width:300px;
 	height:60px;
 	margin-left:130px;
 	background:url("../img_register/sprite.png") no-repeat -2px -2px;
+}
+ .have{
+	position: absolute;
+	left:75%;
+	top:50px;
+	 font-size: 16px;
+}
+.log{
+	position: absolute;
+	left:83%;
+	top:50px;
+	color:#ca5252;
+	font-size:16px;
 }
 #main{
 	position: relative;
