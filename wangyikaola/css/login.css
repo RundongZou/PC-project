@@ -7,15 +7,17 @@ body{
     font-size:12px;
     font-family: "微软雅黑";
 }
-<<<<<<< HEAD
+
 a{
     text-decoration: none;
 }
 li,ul,ol{
     list-style:none;
 }
-=======
->>>>>>> master
+input,button{
+    outline:none;
+}
+
 #top{
     cursor: pointer;
     width:100%;
@@ -39,18 +41,99 @@ li,ul,ol{
     height:520px;
     background:url("../img_login/iv3jpqb957_1920_520.jpg") no-repeat center center;
 }
+#main .login{
+    float: left;
+    background-color:#fff;
+    width:501px;
+    height:356px;
+    margin-left:618px;
+    margin-top:80px;
+}
+#main .login .left{
+    position: relative;
+    float: left;
+    width:292px;
+    height:356px;
+    border-right:1px solid #eaeaea;
+    padding:0 30px;
+}
+#main .login .left h2{
+    float: left;
+    margin-top:32px;
+    margin-bottom:5px;
+}
+#main .login .left input{
+    width:268px;
+    height:34px;
+    border:1px solid #c5cddb;
+    margin-top:18px;
+    text-indent: 46px;
+    font-style: 13px;
+}
+#main .login .left .userName{
+    background:url("../img_login/1.png") no-repeat;
+}
+#main .login .left .userPassword{
+    background:url("../img_login/2.png") no-repeat;
+}
+#main .login .left .tenDays{
+    position: absolute;
+    width:15px;
+    height:15px;
+    float: left;
+    top:170px;
+    left:40px;
+}
+#main .login .left .ten{
+    position: absolute;
+    top:187px;
+    left:58px;
+    color:#999;
+}
+#main .login .left .forget{
+    position: absolute;
+    top:186px;
+    left:246px;
+    color:#999;
+}
+#main .login .left .donthave{
+    position: absolute;
+    top:276px;
+    left:90px;
+    color:#666;
+}
+#main .login .left .rightnow{
+    position: absolute;
+    top:276px;
+    left:176px;
+    color:#51b8f1;
+}
+#main .login .left .btn{
+    cursor:pointer;
+    width:270px;
+    height:44px;
+    background-color: #e31436;
+    border:none;
+    color:#fff;
+    position: absolute;
+    top:226px;
+    left:36px;
+    font-size:17px;
+    letter-spacing: 10px;
+}
 
 #footerwrap{
     width:100%;
     height:140px;
+    position: relative;
 }
 #footer{
     width:1120px;
     height:140px;
     margin:0 auto;
-    background-color:palegreen;
+    position: relative;
 }
-<<<<<<< HEAD
+
 #footer .ul1{
     margin-left:20px;
     float: left;
@@ -73,11 +156,47 @@ li,ul,ol{
 #footer .ul1 li a:hover{
     opacity:.5;
 }
-=======
+#footer .ul2{
+    float: left;
+    width: 100%;
+    height:12px;
+    margin-top:10px;
+    margin-left:60px;
+}
+#footer .ul2 .li1 span{
+    float: left;
+    margin-top:-5px;
+}
+#footer .ul2 li{
+    height:12px;
+    font-size:12px;
+    float:left;
+    color:#999;
+    line-height:14px;
+    margin-right:26px;
+}
+#footer .ul2 li a{
+    color:#999
+}
 
-
-
-
+.img1{
+     cursor: pointer;
+     display: block;
+     width:80px;
+     height:30px;
+     position: absolute;
+     top:104px;
+     left:490px;
+ }
+.img2{
+    cursor: pointer;
+    display: block;
+    width:26px;
+    height:30px;
+    position: absolute;
+    top:104px;
+    left:580px;
+}
 
 
 
