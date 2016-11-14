@@ -364,6 +364,28 @@ input {
 #headerWrap #header ul .red a {
     color: #e31436; }
 
+
+/*搜索*/
+#append{
+    position: absolute;
+    border:solid darkslategray 2px;
+    border-top:0;
+    display:none;
+    width:458px;
+    left:342px;
+    top:60px;
+    background-color:#eee;
+}
+.addbg{
+    background:red;
+}
+.item{
+    padding:3px 5px;
+    cursor:pointer;
+}
+
+
+
 /*-----------------------------------nav-------------------------------------------*/
 #navWrap {
     width: 100%;
