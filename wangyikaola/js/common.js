@@ -1,9 +1,27 @@
 window.onload = function(){
+
+
+
+
+
+
+
+
+
+
+
+
+	$("img").src="images/loading2.gif";
+
 	//图片加载不出来 换成动图
-//	$("#header img").one("error",function(e){
-//		alert("111")
-//	});
-//	alert(1);
+	$("img").on("error",function(e){
+		$(this).src="images/loading2.gif";
+	});
+
+	// $("img").load(function(){
+	// 	$(this).src="images/loading2.gif";
+	// });
+
 	$("#top #ulLeft .li4").mouseenter(function(){
 		$("#top .topApp").show();
 	});
