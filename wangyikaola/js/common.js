@@ -448,6 +448,24 @@ window.onload = function(){
 				}else{
 					$(".main_yingyang .right").append(html2);
 				}
+			}else if(i <= 47){
+				if( i <= 43 ){
+					$(".main_haiwai .center").append(html1);
+				}else{
+					$(".main_haiwai .right").append(html2);
+				}
+			}else if(i <= 55){
+				if( i <= 51 ){
+					$(".main_shuma .center").append(html1);
+				}else{
+					$(".main_shuma .right").append(html2);
+				}
+			}else if(i <= 63){
+				if( i <= 59 ){
+					$(".main_huanqiu .center").append(html1);
+				}else{
+					$(".main_huanqiu .right").append(html2);
+				}
 			}
 		}
 
