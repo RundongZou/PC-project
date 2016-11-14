@@ -1,0 +1,1620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>搜索-网易考拉海购</title>
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/list.css" />
+    <script type="text/javascript" src="js/jquery-3.1.1.js" ></script>
+    <script type="text/javascript" src="js/jquery.easing.1.3.js" ></script>
+    <script src="js/jquery.rotate.min.js"></script>
+    <script type="text/javascript" src="js/common.js" ></script>
+    <script type="text/javascript" src="js/list.js" ></script>
+
+</head>
+<body>
+<div id="wrap">
+    <!----------------------------top----------------------------->
+    <div id="topWrap">
+        <div id="top">
+            <ul id="ulLeft">
+                <li class="li1"><a href="#">考拉欢迎你！</a></li>
+                <li class="li2"><a href="login.html">登录</a></li>
+                <li class="li3"><a href="register.html">免费注册</a></li>
+                <li class="li4"><a href="#">手机考拉海购</a></li>
+            </ul>
+            <img class="topApp" src="images/topApp.png"  alt=""/>
+            <img class="topWeibo" src="images/topWeibo.png"  alt=""/>
+            <img class="topWeixin" src="images/topWeixin.png"  alt=""/>
+            <img class="topYixin" src="images/topYixin.png"  alt=""/>
+
+            <ul id="ulRight">
+                <li class="li1"><a href="#"><img src="images/topFlag.png"/><span>每日签到<span></a></li>
+                <li class="li2"><a href="#">我的订单</a></li>
+                <li class="li3"><a href="#"><img src="images/topjiao1.png"/><span>个人中心</span></a></li>
+
+                <li class="li4"><a href="#"><img src="images/topjiao1.png"/><span>客户服务</span></a></li>
+                <li class="li5"><a href="#"><img src="images/topMoney.png"/><span>游戏充值</span></a></li>
+                <li class="li6"><a href="#">消费者告知书</a></li>
+                <li class="li7"><a href="#"><img src="images/topjiao1.png"/><span>更多</span></a></li>
+            </ul>
+            <li id="li3h"><img class="jiao3" src="images/topjiao1.png"/><a href="">个人中心</a></li>
+            <li id="li4h"><img class="jiao4" src="images/topjiao1.png"/><a href="">客户服务</a></li>
+            <li id="li7h"><img class="jiao7" src="images/topjiao1.png"/><a href="">更多</a></li>
+            <ul id="li3Hover">
+                <li><a href="#">我的优惠券</a></li>
+                <li class="bor"><a href="#">我的考拉豆</a></li>
+                <li><a href="#">账户安全</a></li>
+                <li class="bor"><a href="#">我的实名认证</a></li>
+                <li><a href="#">我收藏的商品</a></li>
+                <li class="bor"><a href="#">我关注的品牌</a></li>
+                <li><a href="#">售后管理</a></li>
+            </ul>
+            <ul id="li4Hover">
+                <li class="gm"><a href="#">联系客服</a></li>
+                <li class="help"><a href="#">帮助中心</a></li>
+            </ul>
+            <ul id="li7Hover">
+                <li class="bor"><a href="#">收藏本站</a></li>
+                <li class="li_topWeibo"><a href="#">新浪微博</a></li>
+                <li class="li_topWeixin"><a href="#">微信公众号</a></li>
+                <li class="bor li_topYixin"><a href="#">易信公众号</a></li>
+                <li class="bor"><a href="#">招商合作</a></li>
+                <li><a href="#">考拉招聘</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!----------------------------header----------------------------->
+    <div id="headerWrap">
+        <div id="header">
+            <a href="#"><img src="images/logo.png"  alt="" /></a>
+            <input class="search" id="kw" onKeyup="getContent(this);" type="text" placeholder="在千万海外商品中搜索" >
+            <div id="append" style="z-index: 100"></div>
+            <a href="#"><img class="img_search" src="images/img_search.png" alt=""></a>
+            <div id="cart">购物车</div>
+            <ul id="goods">
+                <li><a href="#">马油</a></li>
+                <li class="red"><a href="#">尤妮佳</a></li>
+                <li><a href="#">麦片</a></li>
+                <li><a href="#">lamy</a></li>
+                <li><a href="#">卫生巾</a></li>
+                <li><a href="#">德运奶粉</a></li>
+                <li class="red borNone"><a href="#">MK</a></li>
+            </ul>
+            <a href="#"><img class="gif" src="images/iuo467l221_168_68.gif"></a>
+        </div>
+    </div>
+
+    <!----------------------------nav-------------------------------->
+    <div id="navWrap">
+        <div id="nav">
+            <ul>
+                <li class="all"><a href="#"><b>所有分类</b></a></li>
+                <li class="common"><a href="#"><b>首页</b></a></li>
+                <li class="common"><a href="#"><b>今日限时购</b></a></li>
+                <li class="common"><a href="#"><b>每日上新</b></a></li>
+                <li class="common"><a href="#"><b>国家馆</b></a></li>
+                <li class="common"><a href="#"><b>全球旗舰</b></a></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <!--------------------------banner------------------------------->
+
+
+        <ul id="bannerList" style="display:none;z-index: 10;position: absolute;">
+            <li class="li1"><img class="bgred" src="images/bg_red.png"><a href="#">母婴儿童</a></li>
+            <li class="li2"><img class="bgred" src="images/bg_red.png"><a href="#">美容彩妆</a></li>
+            <li class="li3"><img class="bgred" src="images/bg_red.png"><a href="#">服饰鞋包</a></li>
+            <li class="li4"><img class="bgred" src="images/bg_red.png"><a href="#">家居生活</a></li>
+            <li class="li5"><img class="bgred" src="images/bg_red.png"><a href="#">营养保健</a></li>
+            <li class="li6"><img class="bgred" src="images/bg_red.png"><a href="#">海外直邮</a></li>
+            <li class="li7"><img class="bgred" src="images/bg_red.png"><a href="#">数码家电</a></li>
+            <li class="li8"><img class="bgred" src="images/bg_red.png"><a href="#">环球美食</a></li>
+            <li class="li9"><img class="bgred" src="images/bg_red.png"><a href="#">运动户外</a></li>
+            <li class="borNone li10"><img class="bgred" src="images/bg_red.png"><a href="#">水果生鲜</a></li>
+        </ul>
+
+
+
+        <!----母婴儿童---->
+        <div id="muyingertong" style="display:none;z-index: 10;">
+            <div id="div01muying">
+                <div class="div1muying">
+                    <dt><b>奶粉</b></dt>
+                    <dd>
+                        <ul>
+                            <li class="red padLeft0"><a href="">爱他美</a></li>
+                            <li class="red"><a href="">牛栏</a></li>
+                            <li class="red"><a href="">Hero Baby</a></li>
+                            <li class="red"><a href="">喜宝</a></li>
+                        </ul>
+                        <ul>
+                            <li class="padLeft0"><a href="">可瑞康</a></li>
+                            <li class="red"><a href="">贝拉米</a></li>
+                            <li><a href="">美林</a></li>
+                            <li><a href="">惠氏</a></li>
+                            <li><a href="">泓乐</a></li>
+                        </ul>
+                        <ul>
+                            <li class="padLeft0"><a href="">美赞臣</a></li>
+                            <li><a href="">贝儿</a></li>
+                            <li class="red"><a href="">a2</a></li>
+                            <li><a href="">雀巢</a></li>
+                            <li class="red"><a href="">1段</a></li>
+                            <li class="red"><a href="">Pre段</a></li>
+                        </ul>
+                        <ul>
+                            <li class="red padLeft0"><a href="">2段</a></li>
+                            <li class="red"><a href="">3段</a></li>
+                            <li class="red"><a href="">5段(2+)</a></li>
+                            <li class="red"><a href="">4段(1+)</a></li>
+                            <li class="red"><a href="">6段</a></li>
+                        </ul>
+
+                    </dd>
+                </div>
+                <div class="div2">
+                    <dt><b>营养辅食</b></dt>
+                    <dd>
+                        <ul>
+                            <li class="red padLeft0"><a href="">辅食泥</a></li>
+                            <li class="red"><a href="">米粉米糊</a></li>
+                            <li class="red"><a href="">泡芙</a></li>
+                            <li><a href="">溶溶豆</a></li>
+                        </ul>
+                        <ul>
+                            <li class="padLeft0"><a href="">营养品</a></li>
+                            <li><a href="">饼干</a></li>
+                            <li><a href="">肉松面仔</a></li>
+                            <li><a href="">调味品</a></li>
+                        </ul>
+                        <ul>
+                            <li class="padLeft0"><a href="">其他辅食</a></li>
+                            <li><a href="">其他零食</a></li>
+                        </ul>
+                    </dd>
+                </div>
+                <div class="div3">
+                    <dt><b>童装童鞋</b></dt>
+                    <dd>
+                        <ul>
+                            <li class="red padLeft0"><a href="">童装</a></li>
+                            <li><a href="">儿童配饰</a></li>
+                            <li class="red"><a href="">童鞋</a></li>
+                        </ul>
+                    </dd>
+                </div>
+            </div>
+            <div id="div02">
+                <div class="div1muying">
+                    <dt><b>纸尿裤/拉拉裤</b></dt>
+                    <dd>
+                        <ul>
+                            <li class="red padLeft0"><a href="">日本花王</a></li>
+                            <li class="red"><a href="">日本尤妮佳</a></li>
+                            <li class="red"><a href="">大王</a></li>
+                            <li class="red"><a href="">好奇</a></li>
+                        </ul>
+                        <ul>
+                            <li class="padLeft0"><a href="">妈咪宝贝</a></li>
+                            <li><a href="">帮宝适</a></li>
+                            <li><a href="">丹麦班博</a></li>
+                        </ul>
+                        <ul>
+                            <li class="padLeft0"><a href="">瑞典丽贝乐</a></li>
+                            <li><a href="">美国科克兰</a></li>
+                            <li><a href="">芬兰姆明一族</a></li>
+                        </ul>
+                        <ul>
+                            <li class="red padLeft0"><a href="">宝松怡</a></li>
+                            <li class="red"><a href="">NB号</a></li>
+                            <li class="red"><a href="">S号</a></li>
+                            <li class="red"><a href="">M号</a></li>
+                            <li class="red"><a href="">L号</a></li>
+                            <li class="red"><a href="">XL号</a></li>
+                        </ul>
+                        <ul>
+                            <li class="padLeft0"><a href="">XXL号</a></li>
+                        </ul>
+                    </dd>
+                </div>
+                <div class="div2">
+                    <dt><b>宝宝用品</b></dt>
+                    <dd>
+                        <ul>
+                            <li class="red padLeft0"><a href="">洗漱护肤</a></li>
+                            <li class="red"><a href="">护理</a></li>
+                            <li class="red"><a href="">喂养</a></li>
+                            <li><a href="">出行</a></li>
+                            <li><a href="">清洁消毒</a></li>
+                        </ul>
+                        <ul>
+                            <li class="padLeft0"><a href="">文具图书</a></li>
+                            <li><a href="">积木</a></li>
+                            <li><a href="">益智玩具</a></li>
+                            <li><a href="">其他玩具</a></li>
+                        </ul>
+                        <ul>
+                            <li class="padLeft0"><a href="">宝宝家居</a></li>
+                            <li><a href="">小家电</a></li>
+                        </ul>
+                    </dd>
+                </div>
+                <div class="div3">
+                    <dt><b>孕妈必备</b></dt>
+                    <dd>
+                        <ul>
+                            <li class="red padLeft0"><a href="">营养</a></li>
+                            <li class="red"><a href="">洗护</a></li>
+                            <li><a href="">待产新生</a></li>
+                            <li><a href="">穿戴</a></li>
+                            <li><a href="">塑身</a></li>
+                        </ul>
+                    </dd>
+                </div>
+            </div>
+            <div id="div03">
+                <ul>
+                    <li class="borNone"><a href="#"><img src="images/aptamil.jpg"></a></li>
+                    <li><a href="#"><img src="images/pigeon.jpg"></a></li>
+                    <li><a href="#"><img src="images/merries.jpg"></a></li>
+                    <li class="borNone"><a href="#"><img src="images/unicoplus.jpg"></a></li>
+                    <li><a href="#"><img src="images/happybaby.jpg"></a></li>
+                    <li><a href="#"><img src="images/banana.jpg"></a></li>
+                    <li class="borNone"><a href="#"><img src="images/britax.jpg"></a></li>
+                    <li><a href="#"><img src="images/xiaolinzhiyao.jpg"></a></li>
+                    <li><a href="#"><img src="images/como.jpg"></a></li>
+                </ul>
+            </div>
+            <div id="div04">
+                <a href="#"><img src="images/muying_244_100.jpg"></a>
+            </div>
+        </div>
+
+        <!----美容彩妆---->
+        <div id="meirongcaizhuang" style="display:none;z-index: 10;">
+            <div id="div01meirong">
+                <div class="div1meirong">
+                    <dt><b>护肤</b></dt>
+                    <dd>
+                        <ul>
+                            <li class="red padLeft0"><a href="">洁面</a></li>
+                            <li><a href="">卸妆</a></li>
+                            <li class="red"><a href="">爽肤水</a></li>
+                            <li class="red"><a href="">面霜</a></li>
+                            <li><a href="">眼部护理</a></li>
+                        </ul>
+                        <ul>
+                            <li class="red padLeft0"><a href="">精华</a></li>
+                            <li class="red"><a href="">乳液/凝胶</a></li>
+                            <li><a href="">手/足护理</a></li>
+                            <li><a href="">身体护理</a></li>
+                        </ul>
+                        <ul>
+                            <li class="padLeft0"><a href="">唇部护理</a></li>
+                            <li class="red"><a href="">护肤套装</a></li>
+                            <li class="red"><a href="">男士护肤</a></li>
+                        </ul>
+                        <ul>
+                            <li class="red padLeft0"><a href="">精油芳疗</a></li>
+                            <li class="red"><a href="">面部护肤</a></li>
+                        </ul>
+
+                    </dd>
+                </div>
+                <div class="div2">
+                    <dt><b>彩妆</b></dt>
+                    <dd>
+                        <ul>
+                            <li class="red padLeft0"><a href="">BB霜/CC霜</a></li>
+                            <li><a href="">唇膏/唇彩</a></li>
+                            <li><a href="">隔离/妆前</a></li>
+                            <li><a href="">粉底</a></li>
+                        </ul>
+                        <ul>
+                            <li class="padLeft0"><a href="">粉饼/散粉</a></li>
+                            <li class="red"><a href="">美甲</a></li>
+                            <li class="red"><a href="">眼线</a></li>
+                            <li><a href="">眉笔</a></li>
+                            <li class="red"><a href="">睫毛膏</a></li>
+                        </ul>
+                        <ul>
+                            <li class="padLeft0"><a href="">眼影</a></li>
+                            <li><a href="">腮红</a></li>
+                            <li><a href="">遮瑕</a></li>
+                            <li><a href="">高光/修颜</a></li>
+                            <li class="red"><a href="">香水</a></li>
+                        </ul>
+                        <ul>
+                            <li class="padLeft0"><a href="">化妆工具</a></li>
+                            <li><a href="">彩妆工具</a></li>
+                        </ul>
+                    </dd>
+                </div>
+                <div class="div3">
+                    <dt><b>香水/香氛</b></dt>
+                    <dd>
+                        <ul>
+                            <li class="red padLeft0"><a href="">女士香水</a></li>
+                            <li><a href="">男士香水</a></li>
+                            <li><a href="">香水套装</a></li>
+                            <li><a href="">Q版香水</a></li>
+                        </ul>
+                    </dd>
+                </div>
+            </div>
+            <div id="div02">
+                <div class="div1meirong">
+                    <dt><b>面膜</b></dt>
+                    <dd>
+                        <ul>
+                            <li class="red padLeft0"><a href="">可莱丝</a></li>
+                            <li><a href="">森田药妆</a></li>
+                            <li class="red"><a href="">Montagne jeunesse</a></li>
+                        </ul>
+                        <ul>
+                            <li class="padLeft0"><a href="">丽得姿</a></li>
+                            <li><a href="">SNP</a></li>
+                            <li><a href="">Elizavecca</a></li>
+                            <li><a href="">我的心机</a></li>
+                        </ul>
+                        <ul>
+                            <li class="red padLeft0"><a href="">自然晨露</a></li>
+                            <li><a href="">THE BODY SHOP</a></li>
+                        </ul>
+                        <ul>
+                            <li class="padLeft0"><a href="">我的美丽日记</a></li>
+                            <li><a href="">BEYOND</a></li>
+                            <li><a href="">其他面膜</a></li>
+                        </ul>
+                    </dd>
+                </div>
+                <div class="div2">
+                    <dt><b>防晒修复</b></dt>
+                    <dd>
+                        <ul>
+                            <li class="red padLeft0"><a href="">水宝宝</a></li>
+                            <li><a href="">露得清</a></li>
+                            <li><a href="">香蕉船</a></li>
+                            <li><a href="">高丝</a></li>
+                        </ul>
+                        <ul>
+                            <li class="padLeft0"><a href="">近江兄弟</a></li>
+                            <li><a href="">曼秀雷敦</a></li>
+                            <li><a href="">碧柔</a></li>
+                            <li><a href="">高丽雅娜</a></li>
+                        </ul>
+                        <ul>
+                            <li class="padLeft0"><a href="">Ego</a></li>
+                            <li><a href="">KISS ME</a></li>
+                            <li><a href="">其他防晒</a></li>
+                        </ul>
+                    </dd>
+                </div>
+            </div>
+            <div id="div03">
+                <ul>
+                    <li class="borNone"><a href="#"><img src="images/sk2.jpg"></a></li>
+                    <li><a href="#"><img src="images/estee.jpg"></a></li>
+                    <li><a href="#"><img src="images/lancome.jpg"></a></li>
+                    <li class="borNone"><a href="#"><img src="images/kiehls.jpg"></a></li>
+                    <li><a href="#"><img src="images/clinique.jpg"></a></li>
+                    <li><a href="#"><img src="images/pola.jpg"></a></li>
+                    <li class="borNone"><a href="#"><img src="images/lamer.jpg"></a></li>
+                    <li><a href="#"><img src="images/mediheal.jpg"></a></li>
+                    <li><a href="#"><img src="images/f0.jpg"></a></li>
+                </ul>
+            </div>
+            <div id="div04">
+                <a href="#"><img src="images/meizhuang_244_100.jpg"></a>
+            </div>
+        </div>
+
+        <!----服饰鞋包---->
+        <div id="fushixiebao" style="display:none;z-index: 10;">
+            <div id="div01fushi">
+                <div class="div1fushi">
+                    <dt><b>精选大牌</b></dt>
+                    <dd>
+                        <ul>
+                            <li class="red padLeft0"><a href="">MICHAEL KORS</a></li>
+                            <li><a href="">COACH 蔻驰</a></li>
+
+                        </ul>
+                        <ul>
+                            <li class="padLeft0"><a href="">SWAROVSKI</a></li>
+                            <li class="red"><a href="">FURLA 芙拉</a></li>
+                        </ul>
+                        <ul>
+                            <li class="padLeft0"><a href="">Kipling 凯浦林</a></li>
+                            <li><a href="">Salvatore Ferragamo</a></li>
+                        </ul>
+                        <ul>
+                            <li class="padLeft0"><a href="">LONGCHAMP 珑骧</a></li>
+                            <li><a href="">BOTTEGA VENETA</a></li>
+                        </ul>
+                        <ul>
+                            <li class="red padLeft0"><a href="">Kate Spade</a></li>
+                            <li><a href="">Rebecca Minkoff</a></li>
+                            <li><a href="">土拨鼠</a></li>
+                        </ul>
+                    </dd>
+                </div>
+                <div class="div2">
+                    <dt><b>女士箱包</b></dt>
+                    <dd>
+                        <ul>
+                            <li class="red padLeft0"><a href="">斜挎包</a></li>
+                            <li><a href="">手提包</a></li>
+                            <li><a href="">手拿包</a></li>
+                            <li><a href="">双肩包</a></li>
+                        </ul>
+                        <ul>
+                            <li class="padLeft0"><a href="">化妆包</a></li>
+                            <li><a href="">钱包/卡包</a></li>
+                            <li><a href="">附件包</a></li>
+                        </ul>
+                    </dd>
+                </div>
+                <div class="div3">
+                    <dt><b>男士箱包</b></dt>
+                    <dd>
+                        <ul>
+                            <li class="red padLeft0"><a href="">斜挎包</a></li>
+                            <li><a href="">手拿包</a></li>
+                            <li><a href="">双肩包</a></li>
+                            <li><a href="">商务包</a></li>
+                        </ul>
+                        <ul>
+                            <li class="padLeft0"><a href="">钱包/卡包</a></li>
+                            <li class="red"><a href="">网易考拉拉杆箱</a></li>
+                            <li class="red"><a href="">手提包</a></li>
+                        </ul>
+                    </dd>
+                </div>
+            </div>
+            <div id="div02">
+                <div class="div1fushi">
+                    <dt><b>手表配饰</b></dt>
+                    <dd>
+                        <ul>
+                            <li class="red padLeft0"><a href="">墨镜</a></li>
+                            <li><a href="">眼镜</a></li>
+                            <li class="red"><a href="">腰带</a></li>
+                            <li class="red"><a href="">项链</a></li>
+                            <li><a href="">手镯</a></li>
+                        </ul>
+                        <ul>
+                            <li class="padLeft0"><a href="">大牌手表</a></li>
+                            <li><a href="">流行饰品	</a></li>
+                            <li><a href="">围巾/丝巾</a></li>
+                        </ul>
+                        <ul>
+                            <li class="padLeft0"><a href="">Zippo 打火机</a></li>
+                            <li class="red"><a href="">Ray·Ban 雷朋</a></li>
+                        </ul>
+                        <ul>
+                            <li class="red padLeft0"><a href="">GENTLE MONSTER</a></li>
+                            <li><a href="">KAREN WALKER</a></li>
+                        </ul>
+                        <ul>
+                            <li class="padLeft0"><a href="">军刀</a></li>
+                            <li><a href="">其他配件</a></li>
+                        </ul>
+                    </dd>
+                </div>
+                <div class="div2">
+                    <dt><b>服饰内衣</b></dt>
+                    <dd>
+                        <ul>
+                            <li class="padLeft0"><a href="">男装</a></li>
+                            <li><a href="">女装</a></li>
+                            <li><a href="">丝袜</a></li>
+                            <li class="red"><a href="">Calvin Klein 卡文克莱</a></li>
+                        </ul>
+                        <ul>
+                            <li class="padLeft0"><a href="">睡衣/家居服套装</a></li>
+                            <li class="red"><a href="">内衣</a></li>
+                        </ul>
+                    </dd>
+                </div>
+                <div class="div3">
+                    <dt><b>鞋</b></dt>
+                    <dd>
+                        <ul>
+                            <li class="padLeft0"><a href="">女鞋</a></li>
+                            <li><a href="">男鞋</a></li>
+                            <li><a href="">户外鞋</a></li>
+                        </ul>
+                    </dd>
+                </div>
+            </div>
+            <div id="div03">
+                <ul>
+                    <li class="borNone"><a href="#"><img src="images/michael.jpg"></a></li>
+                    <li><a href="#"><img src="images/coach.jpg"></a></li>
+                    <li><a href="#"><img src="images/furla.jpg"></a></li>
+                    <li class="borNone"><a href="#"><img src="images/renma.jpg"></a></li>
+                    <li><a href="#"><img src="images/hengchang.jpg"></a></li>
+                    <li><a href="#"><img src="images/bottega.jpg"></a></li>
+                    <li class="borNone"><a href="#"><img src="images/kipling.jpg"></a></li>
+                    <li><a href="#"><img src="images/sophie.jpg"></a></li>
+                    <li><a href="#"><img src="images/saint.jpg"></a></li>
+                </ul>
+            </div>
+            <div id="div04">
+                <a href="#"><img src="images/xiebao_244_100.jpg"></a>
+            </div>
+        </div>
+
+        <!-----家居生活----->
+        <div id="jiajushenghuo" style="display:none;z-index: 10;">
+            <div id="div01jiaju">
+                <div class="div1jiaju">
+                    <dt><b>个人洗护</b></dt>
+                    <dd>
+                        <ul>
+                            <li class="red padLeft0"><a href="">洗发护发</a></li>
+                            <li class="red"><a href="">沐浴清洁</a></li>
+                            <li><a href="">牙刷</a></li>
+                            <li class="red"><a href="">牙膏</a></li>
+                        </ul>
+                        <ul>
+                            <li class="red padLeft0"><a href="">漱口水</a></li>
+                            <li><a href="">其他身体清洁</a></li>
+                            <li><a href="">其他口腔用品</a></li>
+                        </ul>
+                        <ul>
+                            <li class="padLeft0"><a href="">洗护工具</a></li>
+                            <li><a href="">染发剂</a></li>
+                            <li><a href="">其他个人护理</a></li>
+                        </ul>
+                    </dd>
+                </div>
+                <div class="div2">
+                    <dt><b>家装家纺</b></dt>
+                    <dd>
+                        <ul>
+                            <li class="red padLeft0"><a href="">床品套件</a></li>
+                            <li class="red"><a href="">枕头</a></li>
+                            <li><a href="">床上用品</a></li>
+                            <li class="red"><a href="">毛巾浴巾</a></li>
+                        </ul>
+                        <ul>
+                            <li class="padLeft0"><a href="">浴袍</a></li>
+                            <li><a href="">其他家纺用品</a></li>
+                        </ul>
+                    </dd>
+                </div>
+                <div class="div3">
+                    <dt><b>宠物生活</b></dt>
+                    <dd>
+                        <ul>
+                            <li class="red padLeft0"><a href="">宠物主粮</a></li>
+                            <li><a href="">宠物零食</a></li>
+                            <li class="red"><a href="">宠物洗护美容</a></li>
+                        </ul>
+                        <ul>
+                            <li class="padLeft0"><a href="">宠物玩具</a></li>
+                            <li><a href="">宠物医疗保健</a></li>
+                        </ul>
+                    </dd>
+                </div>
+            </div>
+            <div id="div02">
+                <div class="div1jiaju">
+                    <dt><b>居家日用</b></dt>
+                    <dd>
+                        <ul>
+                            <li class="red padLeft0"><a href="">杯子</a></li>
+                            <li class="red"><a href="">滤水壶/滤芯</a></li>
+                            <li class="red"><a href="">锅具刀具</a></li>
+                            <li><a href="">厨房餐饮</a></li>
+                        </ul>
+                        <ul>
+                            <li class="red padLeft0"><a href="">纸品</a></li>
+                            <li class="red"><a href="">衣物清洁</a></li>
+                            <li><a href="">驱虫除臭</a></li>
+                            <li><a href="">家居清洁</a></li>
+                        </ul>
+                        <ul>
+                            <li class="padLeft0"><a href="">收纳整理</a></li>
+                            <li><a href="">创意礼品</a></li>
+                            <li><a href="">宠物生活</a></li>
+                        </ul>
+                        <ul>
+                            <li class="red padLeft0"><a href="">汽车用品</a></li>
+                        </ul>
+                    </dd>
+                </div>
+                <div class="div2">
+                    <dt><b>其他个护</b></dt>
+                    <dd>
+                        <ul>
+                            <li class="red padLeft0"><a href="">眼罩口罩</a></li>
+                            <li class="red"><a href="">私处洗液</a></li>
+                            <li class="red"><a href="">卫生巾系列</a></li>
+                        </ul>
+                        <ul>
+                            <li class="padLeft0"><a href="">护垫/棉条</a></li>
+                            <li><a href="">贴心个护用品</a></li>
+                            <li><a href="">成人用品</a></li>
+                        </ul>
+                    </dd>
+                </div>
+            </div>
+            <div id="div03">
+                <ul>
+                    <li class="borNone"><a href="#"><img src="images/lv.jpg"></a></li>
+                    <li><a href="#"><img src="images/propolinse.jpg"></a></li>
+                    <li><a href="#"><img src="images/laurier.jpg"></a></li>
+                    <li class="borNone"><a href="#"><img src="images/nitori.jpg"></a></li>
+                    <li><a href="#"><img src="images/brita.jpg"></a></li>
+                    <li><a href="#"><img src="images/latex.jpg"></a></li>
+                    <li class="borNone"><a href="#"><img src="images/thermos.jpg"></a></li>
+                    <li><a href="#"><img src="images/lion.jpg"></a></li>
+                    <li><a href="#"><img src="images/laundress.jpg"></a></li>
+                </ul>
+            </div>
+            <div id="div04">
+                <a href="#"><img src="images/jiaju_244_100.jpg"></a>
+            </div>
+        </div>
+
+        <!-----营养保健---->
+        <div id="yingyangbaojian" style="display:none;z-index: 10;">
+            <div id="div01yingyang">
+                <div class="div1yingyang">
+                    <dt><b>营养补充</b></dt>
+                    <dd>
+                        <ul>
+                            <li class="padLeft0"><a href="">维生素</a></li>
+                            <li class="red"><a href="">鱼油</a></li>
+                            <li class="red"><a href="">酵素</a></li>
+                            <li><a href="">蛋白粉</a></li>
+                            <li class="red"><a href="">葡萄籽</a></li>
+                        </ul>
+                        <ul>
+                            <li class="red padLeft0"><a href="">蔓越莓</a></li>
+                            <li><a href="">叶酸</a></li>
+                            <li><a href="">蜂蜜/蜂胶</a></li>
+                            <li class="red"><a href="">铁</a></li>
+                            <li class="red"><a href="">钙</a></li>
+                        </ul>
+                        <ul>
+                            <li class="padLeft0"><a href="">蛋白质/氨基酸</a></li>
+                            <li><a href="">大豆异黄酮</a></li>
+                            <li><a href="">大蒜提取物</a></li>
+                        </ul>
+                        <ul>
+                            <li class="red padLeft0"><a href="">胶原蛋白</a></li>
+                            <li><a href="">参类</a></li>
+                            <li><a href="">蜂蜜</a></li>
+                            <li class="red"><a href="">奶蓟草</a></li>
+                            <li><a href="">月见草</a></li>
+                        </ul>
+                        <ul>
+                            <li class="padLeft0"><a href="">番茄红素</a></li>
+                            <li><a href="">芦荟</a></li>
+                            <li><a href="">卵磷脂</a></li>
+                            <li class="red"><a href="">银杏</a></li>
+                        </ul>
+                        <ul>
+                            <li class="padLeft0"><a href="">叶黄/蓝莓</a></li>
+                            <li class="red"><a href="">DHA</a></li>
+                            <li class="red"><a href="">维骨力</a></li>
+                        </ul>
+                    </dd>
+                </div>
+                <div class="div2">
+                    <dt><b>女性必备</b></dt>
+                    <dd>
+                        <ul>
+                            <li class="red padLeft0"><a href="">减肥瘦身</a></li>
+                            <li><a href="">舒缓岁月</a></li>
+                            <li class="red"><a href="">胶原蛋白</a></li>
+                            <li><a href="">内分泌</a></li>
+                        </ul>
+                        <ul>
+                            <li class="red padLeft0"><a href="">酵素</a></li>
+                            <li class="red"><a href="">补气养血</a></li>
+                        </ul>
+                    </dd>
+                </div>
+                <div class="div3">
+                    <dt><b>男性必备</b></dt>
+                    <dd>
+                        <ul>
+                            <li class="red padLeft0"><a href="">护肝</a></li>
+                            <li><a href="">补钙</a></li>
+                            <li class="red"><a href="">增肌</a></li>
+                            <li><a href="">肾、腺</a></li>
+                            <li class="red"><a href="">玛卡</a></li>
+                        </ul>
+                    </dd>
+                </div>
+            </div>
+            <div id="div02">
+                <div class="div1yingyang">
+                    <dt><b>健康养护</b></dt>
+                    <dd>
+                        <ul>
+                            <li class="red padLeft0"><a href="">男性功能</a></li>
+                            <li><a href="">美容养颜</a></li>
+                            <li class="red"><a href="">调节三高</a></li>
+                        </ul>
+                        <ul>
+                            <li class="padLeft0"><a href="">关节养护</a></li>
+                            <li class="red"><a href="">肝肾养护</a></li>
+                            <li class="red"><a href="">减肥瘦身</a></li>
+                        </ul>
+                        <ul>
+                            <li class="padLeft0"><a href="">调节免疫</a></li>
+                            <li class="red"><a href="">心脑保健</a></li>
+                            <li><a href="">滋补养生</a></li>
+                        </ul>
+                        <ul>
+                            <li class="red padLeft0"><a href="">骨骼健康</a></li>
+                            <li><a href="">保护视力</a></li>
+                            <li class="red"><a href="">改善睡眠</a></li>
+                        </ul>
+                        <ul>
+                            <li class="padLeft0"><a href="">改善贫血</a></li>
+                            <li><a href="">护发养发</a></li>
+                        </ul>
+                    </dd>
+                </div>
+                <div class="div2">
+                    <dt><b>关爱老年</b></dt>
+                    <dd>
+                        <ul>
+                            <li class="red padLeft0"><a href="">滋补养生</a></li>
+                            <li><a href="">心脑保健</a></li>
+                            <li class="red"><a href="">调节三高</a></li>
+                        </ul>
+                        <ul>
+                            <li class="padLeft0"><a href="">调节免疫</a></li>
+                            <li><a href="">肝肾养护</a></li>
+                            <li class="red"><a href="">骨骼关节</a></li>
+                        </ul>
+                    </dd>
+                </div>
+                <div class="div3">
+                    <dt><b>国际汇</b></dt>
+                    <dd>
+                        <ul>
+                            <li class="red padLeft0"><a href="">澳新</a></li>
+                            <li><a href="">韩国</a></li>
+                            <li class="red"><a href="">德国</a></li>
+                            <li><a href="">日本</a></li>
+                            <li><a href="">美国</a></li>
+                        </ul>
+                    </dd>
+                </div>
+            </div>
+            <div id="div03">
+                <ul>
+                    <li class="borNone"><a href="#"><img src="images/huqingyu_120_120.jpg"></a></li>
+                    <li><a href="#"><img src="images/hongshen_120_120.jpg"></a></li>
+                    <li><a href="#"><img src="images/healthy.jpg"></a></li>
+                    <li class="borNone"><a href="#"><img src="images/blackmores.jpg"></a></li>
+                    <li><a href="#"><img src="images/schiff_120_120.jpg"></a></li>
+                    <li><a href="#"><img src="images/salus.jpg"></a></li>
+                    <li class="borNone"><a href="#"><img src="images/doppel_120_120.jpg"></a></li>
+                    <li><a href="#"><img src="images/gnc.jpg"></a></li>
+                    <li><a href="#"><img src="images/centrum.jpg"></a></li>
+                </ul>
+            </div>
+            <div id="div04">
+                <a href="#"><img src="images/yingyangbaojian_244_100.jpg"></a>
+            </div>
+        </div>
+
+        <!-----海外直邮----->
+        <div id="haiwaizhiyou" style="display:none;z-index: 10;">
+            <div id="div01haiwai">
+                <div class="div1haiwai">
+                    <dt><b>母婴专区</b></dt>
+                    <dd>
+                        <ul>
+                            <li class="red padLeft0"><a href="">婴儿奶粉</a></li>
+                            <li class="red"><a href="">美德乐吸奶器</a></li>
+                            <li><a href="">宝宝用品</a></li>
+                        </ul>
+                        <ul>
+                            <li class="padLeft0"><a href="">玩具总动员</a></li>
+                            <li><a href="">小黄人玩具</a></li>
+                        </ul>
+                        <ul>
+                            <li class="padLeft0"><a href="">MEGA BLOKS 美加宝</a></li>
+                        </ul>
+                    </dd>
+                </div>
+                <div class="div2">
+                    <dt><b>电子生活</b></dt>
+                    <dd>
+                        <ul>
+                            <li class="red padLeft0"><a href="">beats by dr. dre</a></li>
+                            <li class="red"><a href="">SENNHEISER 森海塞尔</a></li>
+                        </ul>
+                        <ul>
+                            <li class="red padLeft0"><a href="">SoundBot</a></li>
+                            <li><a href="">鼠标</a></li>
+                            <li><a href="">音箱</a></li>
+                            <li><a href="">耳麦</a></li>
+                            <li><a href="">影音娱乐</a></li>
+                        </ul>
+                        <ul>
+                            <li class="red padLeft0"><a href="">宝丽来相机</a></li>
+                        </ul>
+                    </dd>
+                </div>
+                <div class="div3">
+                    <dt><b>服饰鞋包</b></dt>
+                    <dd>
+                        <ul>
+                            <li class="red padLeft0"><a href="">Daniel Wellington</a></li>
+                            <li><a href="">COACH 蔻驰</a></li>
+                        </ul>
+                        <ul>
+                            <li class="padLeft0"><a href="">Calvin Klein</a></li>
+                            <li><a href="">Zippo 打火机</a></li>
+                        </ul>
+                        <ul>
+                            <li class="red padLeft0"><a href="">Pandora 潘多拉</a></li>
+                            <li class="red"><a href="">CITIZEN 西铁城</a></li>
+                            <li><a href="">运动鞋</a></li>
+                        </ul>
+                    </dd>
+                </div>
+            </div>
+            <div id="div02">
+                <div class="div1haiwai">
+                    <dt><b>美容彩妆</b></dt>
+                    <dd>
+                        <ul>
+                            <li class="padLeft0"><a href="">春雨</a></li>
+                            <li><a href="">水光面膜</a></li>
+                            <li><a href="">FOREO洁面仪</a></li>
+                            <li><a href="">护肤</a></li>
+                        </ul>
+                        <ul>
+                            <li class="padLeft0"><a href="">面部清洁</a></li>
+                        </ul>
+                    </dd>
+                </div>
+                <div class="div2">
+                    <dt><b>日用家居</b></dt>
+                    <dd>
+                        <ul>
+                            <li class="red padLeft0"><a href="">PHILIPS 飞利浦</a></li>
+                            <li><a href="">电动牙刷</a></li>
+                            <li><a href="">剃须刀</a></li>
+                        </ul>
+                        <ul>
+                            <li class="red padLeft0"><a href="">智能扫地机器人</a></li>
+                            <li><a href="">料理机</a></li>
+                            <li><a href="">家居用品</a></li>
+                        </ul>
+                        <ul>
+                            <li class="padLeft0"><a href="">戴森</a></li>
+                            <li><a href="">宠物用品</a></li>
+                        </ul>
+                    </dd>
+                </div>
+                <div class="div3">
+                    <dt><b>美食保健</b></dt>
+                    <dd>
+                        <ul>
+                            <li class="red padLeft0"><a href="">蛋白粉</a></li>
+                            <li><a href="">减肥瘦身</a></li>
+                            <li class="red"><a href="">其他保健</a></li>
+                            <li><a href="">进口零食</a></li>
+                        </ul>
+                        <ul>
+                            <li class="padLeft0"><a href="">卡乐比</a></li>
+                            <li><a href="">酒水饮料</a></li>
+                        </ul>
+                    </dd>
+                </div>
+            </div>
+            <div id="div03">
+                <ul>
+                    <li class="borNone"><a href="#"><img src="images/dw.jpg"></a></li>
+                    <li><a href="#"><img src="images/pandora.jpg"></a></li>
+                    <li><a href="#"><img src="images/medela.jpg"></a></li>
+                    <li class="borNone"><a href="#"><img src="images/philips.jpg"></a></li>
+                    <li><a href="#"><img src="images/citizen.jpg"></a></li>
+                    <li><a href="#"><img src="images/foreo_120_120.jpg"></a></li>
+                    <li class="borNone"><a href="#"><img src="images/beats.jpg"></a></li>
+                    <li><a href="#"><img src="images/braun.jpg"></a></li>
+                    <li><a href="#"><img src="images/bose.jpg"></a></li>
+                </ul>
+            </div>
+            <div id="div04">
+                <a href="#"><img src="images/haiwai_244_100.jpg"></a>
+            </div>
+        </div>
+
+        <!-----数码家电----->
+        <div id="shumajiadian" style="display:none;z-index: 10;">
+            <div id="div01shuma">
+                <div class="div1shuma">
+                    <dt><b>手机/配件</b></dt>
+                    <dd>
+                        <ul>
+                            <li class="red padLeft0"><a href="">苹果</a></li>
+                            <li class="red"><a href="">华为</a></li>
+                            <li><a href="">三星</a></li>
+                            <li><a href="">魅族</a></li>
+                            <li><a href="">数据线</a></li>
+                        </ul>
+                        <ul>
+                            <li class="padLeft0"><a href="">手机壳</a></li>
+                            <li><a href="">手机贴膜</a></li>
+                        </ul>
+                    </dd>
+                </div>
+                <div class="div2">
+                    <dt><b>生活电器</b></dt>
+                    <dd>
+                        <ul>
+                            <li class="red padLeft0"><a href="">净化器/氧吧</a></li>
+                            <li class="red"><a href="">扫地机器人</a></li>
+                            <li><a href="">吸尘器/除螨</a></li>
+                        </ul>
+                        <ul>
+                            <li class="padLeft0"><a href="">加湿器</a></li>
+                            <li><a href="">挂烫机/电熨斗</a></li>
+                            <li><a href="">除湿机</a></li>
+                        </ul>
+                        <ul>
+                            <li class="padLeft0"><a href="">毛球修剪器</a></li>
+                            <li class="red"><a href="">电风扇</a></li>
+                            <li><a href="">其他生活电器</a></li>
+                        </ul>
+                    </dd>
+                </div>
+                <div class="div3">
+                    <dt><b>厨房电器</b></dt>
+                    <dd>
+                        <ul>
+                            <li class="padLeft0"><a href="">汉美驰</a></li>
+                            <li class="red"><a href="">电水壶/热水瓶</a></li>
+                            <li class="red"><a href="">咖啡机/咖啡壶</a></li>
+                        </ul>
+                        <ul>
+                            <li class="padLeft0"><a href="">原汁机/榨汁机</a></li>
+                            <li><a href="">电饭煲</a></li>
+                            <li><a href="">搅拌/料理机</a></li>
+                        </ul>
+                        <ul>
+                            <li class="padLeft0"><a href="">面包机</a></li>
+                            <li class="red"><a href="">豆浆机</a></li>
+                            <li><a href="">净水器</a></li>
+                            <li><a href="">其他厨房电器</a></li>
+                        </ul>
+                    </dd>
+                </div>
+            </div>
+            <div id="div02">
+                <div class="div1shuma">
+                    <dt><b>数码影音</b></dt>
+                    <dd>
+                        <ul>
+                            <li class="padLeft0"><a href="">耳机/耳麦</a></li>
+                            <li><a href="">音箱/音响</a></li>
+                            <li class="red"><a href="">单反相机</a></li>
+                            <li><a href="">微单</a></li>
+                        </ul>
+                        <ul>
+                            <li class="padLeft0"><a href="">数码相机</a></li>
+                            <li><a href="">拍立得</a></li>
+                            <li><a href="">平板/游戏机</a></li>
+                        </ul>
+                        <ul>
+                            <li class="red padLeft0"><a href="">智能穿戴</a></li>
+                            <li><a href="">其他配件</a></li>
+                        </ul>
+                    </dd>
+                </div>
+                <div class="div2">
+                    <dt><b>个护健康</b></dt>
+                    <dd>
+                        <ul>
+                            <li class="red padLeft0"><a href="">电动牙刷</a></li>
+                            <li class="red"><a href="">剃须刀</a></li>
+                            <li><a href="">卷/直发器</a></li>
+                        </ul>
+                        <ul>
+                            <li class="padLeft0"><a href="">电吹风/风筒</a></li>
+                            <li class="red"><a href="">剃/脱毛器</a></li>
+                            <li><a href="">鼻毛修剪器</a></li>
+                        </ul>
+                        <ul>
+                            <li class="padLeft0"><a href="">按摩梳/理发器</a></li>
+                            <li><a href="">其他个护电器</a></li>
+                        </ul>
+                    </dd>
+                </div>
+                <div class="div3">
+                    <dt><b>办公/外设</b></dt>
+                    <dd>
+                        <ul>
+                            <li class="red padLeft0"><a href="">凌美</a></li>
+                            <li class="red"><a href="">kindle</a></li>
+                            <li><a href="">派克</a></li>
+                            <li class="red"><a href="">笔类</a></li>
+                            <li><a href="">电子书</a></li>
+                        </ul>
+                        <ul>
+                            <li class="padLeft0"><a href="">办公文具</a></li>
+                            <li><a href="">纸本</a></li>
+                            <li class="red"><a href="">照片打印机</a></li>
+                            <li><a href="">相片纸</a></li>
+                        </ul>
+                        <ul>
+                            <li class="padLeft0"><a href="">鼠标/键盘</a></li>
+                            <li><a href="">投影机</a></li>
+                            <li><a href="">移动存储</a></li>
+                            <li><a href="">游戏周边</a></li>
+                        </ul>
+                    </dd>
+                </div>
+            </div>
+            <div id="div03">
+                <ul>
+                    <li class="borNone"><a href="#"><img src="images/philips.jpg"></a></li>
+                    <li><a href="#"><img src="images/apple.jpg"></a></li>
+                    <li><a href="#"><img src="images/lamy.jpg"></a></li>
+                    <li class="borNone"><a href="#"><img src="images/hurom.jpg"></a></li>
+                    <li><a href="#"><img src="images/irobot.jpg"></a></li>
+                    <li><a href="#"><img src="images/dyson.jpg"></a></li>
+                    <li class="borNone"><a href="#"><img src="images/beats.jpg"></a></li>
+                    <li><a href="#"><img src="images/braun.jpg"></a></li>
+                    <li><a href="#"><img src="images/canon.jpg"></a></li>
+                </ul>
+            </div>
+            <div id="div04">
+                <a href="#"><img src="images/shuma_244_100.jpg"></a>
+            </div>
+        </div>
+
+        <!-----环球美食----->
+        <div id="huanqiumeishi" style="display:none;z-index: 10;">
+            <div id="div01huanqiu">
+                <div class="div1huanqiu">
+                    <dt><b>乳品/咖啡/麦片/冲饮</b></dt>
+                    <dd>
+                        <ul>
+                            <li class="red padLeft0"><a href="">成人奶粉</a></li>
+                            <li><a href="">奶片</a></li>
+                            <li><a href="">进口牛奶</a></li>
+                            <li class="red"><a href="">酸奶</a></li>
+                        </ul>
+                        <ul>
+                            <li class="padLeft0"><a href="">其他乳品</a></li>
+                            <li class="red"><a href="">麦片</a></li>
+                            <li><a href="">五谷冲饮</a></li>
+                            <li><a href="">热可可</a></li>
+                        </ul>
+                        <ul>
+                            <li class="padLeft0"><a href="">其他冲饮</a></li>
+                            <li class="red"><a href="">速溶咖啡</a></li>
+                            <li><a href="">咖啡粉</a></li>
+                            <li><a href="">咖啡豆</a></li>
+                        </ul>
+                        <ul>
+                            <li class="padLeft0"><a href="">胶囊咖啡</a></li>
+                            <li><a href="">咖啡伴侣</a></li>
+                        </ul>
+                    </dd>
+                </div>
+                <div class="div2">
+                    <dt><b>茶/酒/饮料</b></dt>
+                    <dd>
+                        <ul>
+                            <li class="red padLeft0"><a href="">葡萄酒</a></li>
+                            <li><a href="">洋酒</a></li>
+                            <li><a href="">白酒</a></li>
+                            <li class="red"><a href="">啤酒</a></li>
+                            <li><a href="">黄酒</a></li>
+                        </ul>
+                        <ul>
+                            <li class="red padLeft0"><a href="">品质水饮</a></li>
+                            <li><a href="">饮料</a></li>
+                            <li class="red"><a href="">碳酸饮料</a></li>
+                            <li><a href="">果蔬汁</a></li>
+                        </ul>
+                        <ul>
+                            <li class="red padLeft0"><a href="">花草茶</a></li>
+                            <li><a href="">茶饮</a></li>
+                        </ul>
+                    </dd>
+                </div>
+                <div class="div3">
+                    <dt><b>休闲零食</b></dt>
+                    <dd>
+                        <ul>
+                            <li class="red padLeft0"><a href="">坚果	</a></li>
+                            <li><a href="">蜜饯果干</a></li>
+                            <li><a href="">糖果巧克力</a></li>
+                            <li class="red"><a href="">薯片/膨化</a></li>
+                        </ul>
+                        <ul>
+                            <li class="padLeft0"><a href="">海产品</a></li>
+                            <li><a href="">果冻布丁</a></li>
+                            <li class="red"><a href="">肉脯干</a></li>
+                            <li><a href="">其他零食</a></li>
+                        </ul>
+                    </dd>
+                </div>
+            </div>
+            <div id="div02">
+                <div class="div1huanqiu">
+                    <dt><b>人气热门</b></dt>
+                    <dd>
+                        <ul>
+                            <li class="red padLeft0"><a href="">德运</a></li>
+                            <li><a href="">丸太拉面</a></li>
+                            <li class="red"><a href="">UCC咖啡</a></li>
+                            <li><a href="">轩尼诗</a></li>
+                        </ul>
+                        <ul>
+                            <li class="padLeft0"><a href="">成人奶粉</a></li>
+                            <li><a href="">可乐</a></li>
+                            <li class="red"><a href="">早餐麦片</a></li>
+                            <li class="red"><a href="">歌帝梵</a></li>
+                        </ul>
+                        <ul>
+                            <li class="red padLeft0"><a href="">卡乐比</a></li>
+                            <li><a href="">巴黎水</a></li>
+                        </ul>
+                    </dd>
+                </div>
+                <div class="div2">
+                    <dt><b>粮油副食</b></dt>
+                    <dd>
+                        <ul>
+                            <li class="padLeft0"><a href="">调味品/料理</a></li>
+                            <li><a href="">果酱/酱料</a></li>
+                            <li class="red"><a href="">食用油/橄榄油</a></li>
+                        </ul>
+                        <ul>
+                            <li class="red padLeft0"><a href="">泡面</a></li>
+                            <li><a href="">方便素食</a></li>
+                            <li><a href="">罐头</a></li>
+                            <li><a href="">方便菜</a></li>
+                        </ul>
+                        <ul>
+                            <li class="red padLeft0"><a href="">米面杂粮</a></li>
+                        </ul>
+                    </dd>
+                </div>
+                <div class="div3">
+                    <dt><b>饼干糕点</b></dt>
+                    <dd>
+                        <ul>
+                            <li class="red padLeft0"><a href="">饼干</a></li>
+                            <li><a href="">糕点</a></li>
+                            <li><a href="">点心</a></li>
+                            <li><a href="">莱家威化</a></li>
+                            <li class="red"><a href="">中秋月饼</a></li>
+                        </ul>
+                    </dd>
+                </div>
+            </div>
+            <div id="div03">
+                <ul>
+                    <li class="borNone"><a href="#"><img src="images/niu_120_120.jpg"></a></li>
+                    <li><a href="#"><img src="images/ucc.jpg"></a></li>
+                    <li><a href="#"><img src="images/gilim_120_120.jpg"></a></li>
+                    <li class="borNone"><a href="#"><img src="images/mayushan_120_120.jpg"></a></li>
+                    <li><a href="#"><img src="images/illy.jpg"></a></li>
+                    <li><a href="#"><img src="images/owl_120_120.jpg"></a></li>
+                    <li class="borNone"><a href="#"><img src="images/xu.jpg"></a></li>
+                    <li><a href="#"><img src="images/cocacola.jpg"></a></li>
+                    <li><a href="#"><img src="images/riyu.jpg"></a></li>
+                </ul>
+            </div>
+            <div id="div04">
+                <a href="#"><img src="images/meishi_244_100.jpg"></a>
+            </div>
+        </div>
+
+        <!-----运动户外----->
+        <div id="yundonghuwai" style="display:none;z-index: 10;">
+            <div id="div01huwai">
+                <div class="div1huwai">
+                    <dt><b>运动鞋</b></dt>
+                    <dd>
+                        <ul>
+                            <li class="red padLeft0"><a href="">跑步鞋</a></li>
+                            <li><a href="">休闲鞋</a></li>
+                            <li><a href="">篮球鞋</a></li>
+                            <li class="red"><a href="">NIKE</a></li>
+                        </ul>
+                        <ul>
+                            <li class="red padLeft0"><a href="">阿迪达斯</a></li>
+                            <li class="red"><a href="">ASICS</a></li>
+                            <li><a href="">美津浓</a></li>
+                            <li><a href="">圣康尼</a></li>
+                        </ul>
+                        <ul>
+                            <li class="padLeft0"><a href="">SKORA</a></li>
+                            <li><a href="">Under Armour</a></li>
+                        </ul>
+                    </dd>
+                </div>
+                <div class="div2">
+                    <dt><b>户外鞋靴</b></dt>
+                    <dd>
+                        <ul>
+                            <li class="padLeft0"><a href="">登山鞋</a></li>
+                            <li class="red"><a href="">徒步鞋</a></li>
+                            <li class="red"><a href="">溯溪鞋</a></li>
+                            <li><a href="">越野跑鞋</a></li>
+                        </ul>
+                        <ul>
+                            <li class="red padLeft0"><a href="">LOWA</a></li>
+                            <li class="red"><a href="">CRISPI</a></li>
+                            <li class="red"><a href="">Bestard</a></li>
+                        </ul>
+                    </dd>
+                </div>
+                <div class="div3">
+                    <dt><b>户外装备</b></dt>
+                    <dd>
+                        <ul>
+                            <li class="red padLeft0"><a href="">头巾</a></li>
+                            <li><a href="">腰包</a></li>
+                            <li class="red"><a href="">登山包</a></li>
+                            <li><a href="">休闲包</a></li>
+                            <li><a href="">水壶</a></li>
+                        </ul>
+                        <ul>
+                            <li class="padLeft0"><a href="">打火机</a></li>
+                            <li><a href="">军刀</a></li>
+                            <li><a href="">维氏</a></li>
+                            <li class="red"><a href="">Ospery</a></li>
+                            <li class="red"><a href="">格里高利</a></li>
+                        </ul>
+                        <ul>
+                            <li class="red padLeft0"><a href="">露营装备</a></li>
+                        </ul>
+                    </dd>
+                </div>
+            </div>
+            <div id="div02">
+                <div class="div1huwai">
+                    <dt><b>运动服装</b></dt>
+                    <dd>
+                        <ul>
+                            <li class="red padLeft0"><a href="">运动T恤</a></li>
+                            <li><a href="">运动卫衣</a></li>
+                            <li><a href="">更多商品</a></li>
+                            <li><a href="">NIKE</a></li>
+                        </ul>
+                        <ul>
+                            <li class="red padLeft0"><a href="">阿迪达斯</a></li>
+                        </ul>
+                    </dd>
+                </div>
+                <div class="div2">
+                    <dt><b>户外服装</b></dt>
+                    <dd>
+                        <ul>
+                            <li class="padLeft0"><a href="">速干T恤</a></li>
+                            <li><a href="">卫衣衬衣</a></li>
+                            <li><a href="">皮肤风衣</a></li>
+                            <li><a href="">冲锋衣裤</a></li>
+                        </ul>
+                        <ul>
+                            <li class="padLeft0"><a href="">户外裤</a></li>
+                            <li><a href="">功能内衣</a></li>
+                            <li><a href="">帽子/皮带</a></li>
+                            <li class="red"><a href="">土拨鼠</a></li>
+                        </ul>
+                        <ul>
+                            <li class="red padLeft0"><a href="">巴塔</a></li>
+                            <li><a href="">棉服</a></li>
+                        </ul>
+                    </dd>
+                </div>
+                <div class="div3">
+                    <dt><b>更多分类</b></dt>
+                    <dd>
+                        <ul>
+                            <li class="red padLeft0"><a href="">汽车机油</a></li>
+                            <li class="red"><a href="">壳牌</a></li>
+                            <li><a href="">嘉实多</a></li>
+                            <li><a href="">道达尔</a></li>
+                        </ul>
+                        <ul>
+                            <li class="padLeft0"><a href="">智能穿戴</a></li>
+                            <li class="red"><a href="">速尔跑步机</a></li>
+                        </ul>
+                    </dd>
+                </div>
+            </div>
+            <div id="div03">
+                <ul>
+                    <li class="borNone"><a href="#"><img src="images/skechers_120_120.jpg"></a></li>
+                    <li><a href="#"><img src="images/nike.jpg"></a></li>
+                    <li><a href="#"><img src="images/adidas.jpg"></a></li>
+                    <li class="borNone"><a href="#"><img src="images/asics_120_120.jpg"></a></li>
+                    <li><a href="#"><img src="images/marmot_120_120.jpg"></a></li>
+                    <li><a href="#"><img src="images/keen_120_120.jpg"></a></li>
+                    <li class="borNone"><a href="#"><img src="images/patagonia_120_120.jpg"></a></li>
+                    <li><a href="#"><img src="images/osprey_120_120.jpg"></a></li>
+                    <li><a href="#"><img src="images/gregory_120_120.jpg"></a></li>
+                </ul>
+            </div>
+            <div id="div04">
+                <a href="#"><img src="images/huwai_244_100.jpg"></a>
+            </div>
+        </div>
+
+        <!-------水果生鲜------->
+        <div id="shuiguoshengxian" style="display:none;z-index: 10;">
+            <div id="div01shuiguo">
+                <div class="div1shuiguo">
+                    <dt><b>新鲜水果</b></dt>
+                    <dd>
+                        <ul>
+                            <li class="padLeft0"><a href="">火龙果</a></li>
+                            <li class="red"><a href="">奇异果</a></li>
+                            <li><a href="">车厘子</a></li>
+                            <li class="red"><a href="">榴莲</a></li>
+                            <li><a href="">柠檬</a></li>
+                        </ul>
+                        <ul>
+                            <li class="red padLeft0"><a href="">牛油果</a></li>
+                            <li><a href="">苹果</a></li>
+                            <li><a href="">橙子</a></li>
+                            <li><a href="">木瓜</a></li>
+                            <li><a href="">葡萄</a></li>
+                        </ul>
+                        <ul>
+                            <li class="padLeft0"><a href="">其他水果</a></li>
+                            <li><a href="">柚子</a></li>
+                            <li><a href="">枣</a></li>
+                            <li><a href="">梨</a></li>
+                            <li><a href="">石榴</a></li>
+                            <li class="red"><a href="">山竹</a></li>
+                        </ul>
+                        <ul>
+                            <li class="padLeft0"><a href="">龙眼</a></li>
+                        </ul>
+                    </dd>
+                </div>
+                <div class="div2">
+                    <dt><b>水产海鲜</b></dt>
+                    <dd>
+                        <ul>
+                            <li class="padLeft0"><a href="">鱼类/三文鱼</a></li>
+                            <li class="red"><a href="">虾类</a></li>
+                            <li class="red"><a href="">大闸蟹</a></li>
+                            <li><a href="">其他水产</a></li>
+                        </ul>
+                        <ul>
+                            <li class="red padLeft0"><a href="">海参</a></li>
+                            <li><a href="">贝类</a></li>
+                            <li><a href="">螃蟹</a></li>
+                            <li class="red"><a href="">海鲜礼盒</a></li>
+                            <li><a href="">鱼类制品</a></li>
+                        </ul>
+                        <ul>
+                            <li class="padLeft0"><a href="">乌贼</a></li>
+                            <li class="red"><a href="">大闸蟹礼券</a></li>
+                        </ul>
+                    </dd>
+                </div>
+
+            </div>
+            <div id="div02">
+                <div class="div1shuiguo">
+                    <dt><b>肉品禽蛋</b></dt>
+                    <dd>
+                        <ul>
+                            <li class="padLeft0"><a href="">牛肉</a></li>
+                            <li class="red"><a href="">牛排</a></li>
+                            <li><a href="">其他肉类</a></li>
+                            <li><a href="">鸡肉产品</a></li>
+                            <li class="red"><a href="">鸡蛋</a></li>
+                        </ul>
+                        <ul>
+                            <li class="red padLeft0"><a href="">猪肉/腊肠/火腿</a></li>
+                            <li class="red"><a href="">驴肉</a></li>
+                        </ul>
+                    </dd>
+                </div>
+                <div class="div2">
+                    <dt><b>冷冻食品</b></dt>
+                    <dd>
+                        <ul>
+                            <li class="padLeft0"><a href="">冷冻食品</a></li>
+                            <li class="red"><a href="">冷冻面点</a></li>
+                            <li class="red"><a href="">海鲜制品</a></li>
+                            <li class="red"><a href="">奶制品</a></li>
+                        </ul>
+                        <ul>
+                            <li class="padLeft0"><a href="">水饺</a></li>
+                            <li><a href="">蛋糕面包</a></li>
+                            <li><a href="">冰淇淋</a></li>
+                            <li class="red"><a href="">其他冷冻食品</a></li>
+                        </ul>
+
+                    </dd>
+                </div>
+            </div>
+            <div id="div03">
+                <ul>
+                    <li class="borNone"><a href="#"><img src="images/gusu_120_120.jpg"></a></li>
+                    <li><a href="#"><img src="images/yangchenghu_120_120.jpg"></a></li>
+                    <li><a href="#"><img src="images/hongyi_120_120.jpg"></a></li>
+                    <li class="borNone"><a href="#"><img src="images/beijiguang_120_120.jpg"></a></li>
+                    <li><a href="#"><img src="images/zespri_120_120.jpg"></a></li>
+                    <li><a href="#"><img src="images/dangdun_120_120.jpg"></a></li>
+                    <li class="borNone"><a href="#"><img src="images/shiguohui_120_120.jpg"></a></li>
+                    <li><a href="#"><img src="images/dayang_120_120.jpg"></a></li>
+                    <li><a href="#"><img src="images/haimeng_120_120.jpg"></a></li>
+                </ul>
+            </div>
+            <div id="div04">
+                <a href="#"><img src="images/shuiguo_244_100.jpg"></a>
+            </div>
+        </div>
+
+<!-------------------------------------main--------------------------------->
+    <div id="mainWrap">
+        <div id="main">
+            <div class="shang"></div>
+            <div class="zhong">
+            </div>
+            <div class="cainixihuan">
+                <p class="pTop">
+                    <span class="span1">猜你喜欢</span>
+                    <span class="span2">根据你的浏览记录推荐的商品</span>
+                </p>
+                <div class="five">
+                    <!--<a href=""><img src="img_list/8be7843b-7aee-4389-b08f-979663bf32fc.jpg"></a>-->
+                    <!--<p class="p1">[1000点]网易充值一卡通</p>-->
+                    <!--<p class="p2 red">立省1元</p>-->
+                    <!--<p class="p3">-->
+                        <!--<span class="s1 red">¥99</span>-->
+                        <!--<span class="s2">¥100</span>-->
+                    <!--</p>-->
+                    <!--<p class="p4">3585人已评价</p>-->
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+        <!-------------------------底部------------------------------>
+    <div id="footerWrap">
+        <div id="footer">
+            <!--<ul>-->
+            <!--<li><a href=""><img src="images/225d93b3a11d48698685e065b13a3229.png"></a></li>-->
+            <!--<span>关注我们</span>-->
+            <!--</ul>-->
+        </div>
+    </div>
+    <div id="bottom"></div>
+
+
+
+
+    <script type="text/javascript">
+        var data = [
+            "你好，我是Michael",
+            "你是谁",
+            "你最好啦",
+            "你最珍贵",
+            "你是我最好的朋友",
+            "你画我猜",
+            "你是笨蛋",
+            "你懂得",
+            "你为我着迷",
+            "你是我的眼",
+            "男鞋",
+            "陈念鲁"
+
+        ];
+        $(document).ready(function(){
+            $(document).keydown(function(e){
+                e = e || window.event;
+                var keycode = e.which ? e.which : e.keyCode;
+                if(keycode == 38){
+                    if(jQuery.trim($("#append").html())==""){
+                        return;
+                    }
+                    movePrev();
+                }else if(keycode == 40){
+                    if(jQuery.trim($("#append").html())==""){
+                        return;
+                    }
+                    $("#kw").blur();
+                    if($(".item").hasClass("addbg")){
+                        moveNext();
+                    }else{
+                        $(".item").removeClass('addbg').eq(0).addClass('addbg');
+                    }
+
+                }else if(keycode == 13){
+                    dojob();
+                }
+            });
+
+            var movePrev = function(){
+                $("#kw").blur();
+                var index = $(".addbg").prevAll().length;
+                if(index == 0){
+                    $(".item").removeClass('addbg').eq($(".item").length-1).addClass('addbg');
+                }else{
+                    $(".item").removeClass('addbg').eq(index-1).addClass('addbg');
+                }
+            }
+
+            var moveNext = function(){
+                var index = $(".addbg").prevAll().length;
+                if(index == $(".item").length-1){
+                    $(".item").removeClass('addbg').eq(0).addClass('addbg');
+                }else{
+                    $(".item").removeClass('addbg').eq(index+1).addClass('addbg');
+                }
+
+            }
+
+            var dojob = function(){
+                $("#kw").blur();
+                var value = $(".addbg").text();
+                $("#kw").val(value);
+                $("#append").hide().html("");
+            }
+        });
+        function getContent(obj){
+            var kw = jQuery.trim($(obj).val());
+            if(kw == ""){
+                $("#append").hide().html("");
+                return false;
+            }
+            var html = "";
+            for (var i = 0; i < data.length; i++) {
+                if (data[i].indexOf(kw) >= 0) {
+                    html = html + "<div class='item' onmouseenter='getFocus(this)' onClick='getCon(this);'>" + data[i] + "</div>"
+                }
+            }
+            if(html != ""){
+                $("#append").show().html(html);
+            }else{
+                $("#append").hide().html("");
+            }
+        }
+        function getFocus(obj){
+            $(".item").removeClass("addbg");
+            $(obj).addClass("addbg");
+        }
+        function getCon(obj){
+            var value = $(obj).text();
+            $("#kw").val(value);
+            $("#append").hide().html("");
+        }
+    </script>
+
+
+
+
+
+</body>
+</html>

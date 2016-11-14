@@ -202,7 +202,7 @@ input{
 	 background-color: red;
 	 border:none;
 	 margin-left:340px;
-	 opacity:.5;
+	 /*opacity:.5;*/
 	 color:#fff;
 	 font-size:18px;
 	 letter-spacing:12px;

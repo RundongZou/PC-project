@@ -1,10 +1,173 @@
-{
-  "compilerOptions": {
-    "module": "commonjs",
-    "target": "es5",
-    "sourceMap": true
+[
+  {
+    "imgSrc":"img_list/2c87cd85-22df-4629-86c8-f69e3995f742.jpg",
+    "s1":"¥30",
+    "s2":"10.0折",
+    "s3":"包邮",
+    "s4":"¥30",
+    "p2":"[30点]战网点数-账号直充",
+    "bg":"url(img_list/manjian.png)"
   },
-  "exclude": [
-    "node_modules"
-  ]
-}
+  {
+    "imgSrc":"img_list/2c87cd85-22df-4629-86c8-f69e3995f742.jpg",
+    "s1":"¥30",
+    "s2":"10.0折",
+    "s3":"包邮",
+    "s4":"¥30",
+    "p2":"[30点]战网点数-账号直充",
+    "bg":"url(img_list/manjian.png)"
+  },
+  {
+    "imgSrc":"img_list/2c87cd85-22df-4629-86c8-f69e3995f742.jpg",
+    "s1":"¥30",
+    "s2":"10.0折",
+    "s3":"包邮",
+    "s4":"¥30",
+    "p2":"[30点]战网点数-账号直充",
+    "bg":"url(img_list/manjian.png)"
+  },
+  {
+    "imgSrc":"img_list/2c87cd85-22df-4629-86c8-f69e3995f742.jpg",
+    "s1":"¥30",
+    "s2":"10.0折",
+    "s3":"包邮",
+    "s4":"¥30",
+    "p2":"[30点]战网点数-账号直充",
+    "bg":"url(img_list/manjian.png)"
+  },
+  {
+    "imgSrc":"img_list/2c87cd85-22df-4629-86c8-f69e3995f742.jpg",
+    "s1":"¥30",
+    "s2":"10.0折",
+    "s3":"包邮",
+    "s4":"¥30",
+    "p2":"[30点]战网点数-账号直充",
+    "bg":"url(img_list/manjian.png)"
+  },
+  {
+    "imgSrc":"img_list/2c87cd85-22df-4629-86c8-f69e3995f742.jpg",
+    "s1":"¥30",
+    "s2":"10.0折",
+    "s3":"包邮",
+    "s4":"¥30",
+    "p2":"[30点]战网点数-账号直充",
+    "bg":"url(img_list/manjian.png)"
+  },
+  {
+    "imgSrc":"img_list/2c87cd85-22df-4629-86c8-f69e3995f742.jpg",
+    "s1":"¥30",
+    "s2":"10.0折",
+    "s3":"包邮",
+    "s4":"¥30",
+    "p2":"[30点]战网点数-账号直充",
+    "bg":"url(img_list/manjian.png)"
+  },
+  {
+    "imgSrc":"img_list/2c87cd85-22df-4629-86c8-f69e3995f742.jpg",
+    "s1":"¥30",
+    "s2":"10.0折",
+    "s3":"包邮",
+    "s4":"¥30",
+    "p2":"[30点]战网点数-账号直充",
+    "bg":"url(img_list/manjian.png)"
+  },
+  {
+    "imgSrc":"img_list/2c87cd85-22df-4629-86c8-f69e3995f742.jpg",
+    "s1":"¥30",
+    "s2":"10.0折",
+    "s3":"包邮",
+    "s4":"¥30",
+    "p2":"[30点]战网点数-账号直充",
+    "bg":"url(img_list/manjian.png)"
+  },
+  {
+    "imgSrc":"img_list/2c87cd85-22df-4629-86c8-f69e3995f742.jpg",
+    "s1":"¥30",
+    "s2":"10.0折",
+    "s3":"包邮",
+    "s4":"¥30",
+    "p2":"[30点]战网点数-账号直充",
+    "bg":"url(img_list/manjian.png)"
+  },
+  {
+    "imgSrc":"img_list/2c87cd85-22df-4629-86c8-f69e3995f742.jpg",
+    "s1":"¥30",
+    "s2":"10.0折",
+    "s3":"包邮",
+    "s4":"¥30",
+    "p2":"[30点]战网点数-账号直充",
+    "bg":"url(img_list/manjian.png)"
+  },
+  {
+    "imgSrc":"img_list/2c87cd85-22df-4629-86c8-f69e3995f742.jpg",
+    "s1":"¥30",
+    "s2":"10.0折",
+    "s3":"包邮",
+    "s4":"¥30",
+    "p2":"[30点]战网点数-账号直充",
+    "bg":"url(img_list/manjian.png)"
+  },
+  {
+    "imgSrc":"img_list/2c87cd85-22df-4629-86c8-f69e3995f742.jpg",
+    "s1":"¥30",
+    "s2":"10.0折",
+    "s3":"包邮",
+    "s4":"¥30",
+    "p2":"[30点]战网点数-账号直充",
+    "bg":"url(img_list/manjian.png)"
+  },
+
+
+
+
+
+
+
+  {
+    "imgSrc":"img_list/8be7843b-7aee-4389-b08f-979663bf32fc.jpg",
+    "p1":"[1000点]网易充值一卡通",
+    "p2":"立省1元",
+    "s1":"¥99",
+    "s2":"¥100",
+    "p4":"3585人已评价",
+    "bg":"url(img_list/manjian.png)"
+  },
+  {
+    "imgSrc":"img_list/8be7843b-7aee-4389-b08f-979663bf32fc.jpg",
+    "p1":"[1000点]网易充值一卡通",
+    "p2":"立省1元",
+    "s1":"¥99",
+    "s2":"¥100",
+    "p4":"3585人已评价",
+    "bg":"url(img_list/manjian.png)"
+  } ,
+  {
+  "imgSrc":"img_list/8be7843b-7aee-4389-b08f-979663bf32fc.jpg",
+  "p1":"[1000点]网易充值一卡通",
+  "p2":"立省1元",
+  "s1":"¥99",
+  "s2":"¥100",
+  "p4":"3585人已评价",
+  "bg":"url(img_list/manjian.png)"
+},
+  {
+  "imgSrc":"img_list/8be7843b-7aee-4389-b08f-979663bf32fc.jpg",
+  "p1":"[1000点]网易充值一卡通",
+  "p2":"立省1元",
+  "s1":"¥99",
+  "s2":"¥100",
+  "p4":"3585人已评价",
+  "bg":"url(img_list/manjian.png)"
+},
+  {
+    "imgSrc":"img_list/8be7843b-7aee-4389-b08f-979663bf32fc.jpg",
+    "p1":"[1000点]网易充值一卡通",
+    "p2":"立省1元",
+    "s1":"¥99",
+    "s2":"¥100",
+    "p4":"3585人已评价",
+    "bg":"url(img_list/manjian.png)"
+  }
+
+
+]

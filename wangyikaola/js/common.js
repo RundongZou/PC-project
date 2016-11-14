@@ -1,16 +1,6 @@
 window.onload = function(){
 
 
-
-
-
-
-
-
-
-
-
-
 	$("img").src="images/loading2.gif";
 
 	//图片加载不出来 换成动图
@@ -47,6 +37,15 @@ window.onload = function(){
 	$("#top .li_topYixin").mouseleave(function(){
 		$("#top .topYixin").hide();
 	});
+
+	//搜索
+	$(".img_search").click(function(){
+		window.location.href="list.html";
+	})
+
+
+
+
 
 	function threeliHide(){
 		$("#li3h").hide();
@@ -391,10 +390,14 @@ window.onload = function(){
 	});
 	$("banner").mouseenter(function(){
 		allHide();
-	})
+	});
+	$("#mainWrap").mouseenter(function(){
+		allHide();
+	});
 	$("#muyingertong").mouseenter(function(){
 		$("#bannerList").show();
 	});
+
 	$("#meirongcaizhuang").mouseenter(function(){
 		$("#bannerList").show();
 	});

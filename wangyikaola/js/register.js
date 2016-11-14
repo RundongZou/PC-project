@@ -162,6 +162,7 @@ window.onload = function(){
 				str = oldStr;
 			}
 			 $.cookie("account",str,{empires:7,path:"/"});
+			window.location.href="login.html";
 		}
 
 

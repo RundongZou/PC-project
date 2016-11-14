@@ -13,14 +13,17 @@ window.onload = function () {
                     if($(".userPassword").val()==subArr[1]){
                         window.location.href="index.html";
                         //wrong($(".acInp"),".hint1");
-                        // $(".userId .hint .hint_span").html("该用户名已注册");
+                        // $(".userId .hint .hint_span").html("该用户名已注册")!
                         break;
                     }else{
                         alert("密码错误！");
                         break;
                     }
-
                 }
+                    if(1){
+                        alert("用户名不存在！");
+                        break;
+                    }
             }
         }
     })
