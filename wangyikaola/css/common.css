@@ -81,21 +81,21 @@ input {
     position: absolute;
     position: absolute;
     top: 31px;
-    left: 940px;
+    left: 980px;
     display: none;
     z-index: 10; }
 #topWrap #top .topWeixin {
     position: absolute;
     position: absolute;
     top: 31px;
-    left: 940px;
+    left: 980px;
     display: none;
     z-index: 10; }
 #topWrap #top .topYixin {
     position: absolute;
     position: absolute;
     top: 31px;
-    left: 940px;
+    left: 980px;
     display: none;
     z-index: 10; }
 #topWrap #top #ulRight {
@@ -421,13 +421,25 @@ input {
 #navWrap #nav .common a:hover {
     color: #e31436; }
 
+
+
+
+
+
+
+
+
+
 /*---------------------footer------------------------*/
 #footerWrap{
     width:100%;
     height:383px;
     border-top:1px solid #eaeaea;
     margin-top: 111px;
-    background:url("../images/footer.png") no-repeat 89px 0;
+    background-color:#fff;
+    background-image:url("../images/footer.png");
+    background-repeat:no-repeat;
+    background-position: 120px 0;
 }
 #footer{
     width:1090px;
