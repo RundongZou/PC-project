@@ -8,7 +8,7 @@
     /*position: absolute;*/
     margin-left: 87px;
     z-index: 100; }
- #bannerList li {
+#bannerList li {
     width: 160px;
     height: 40px;
     line-height: 40px;
@@ -20,40 +20,40 @@
     display: none; }
 #bannerList li:hover {
     background-color: rgba(144, 144, 144, 0.5); }
- #bannerList li:hover .bgred {
+#bannerList li:hover .bgred {
     display: block; }
 #bannerList li:hover a {
     border: none; }
- #bannerList li a {
+#bannerList li a {
     display: block;
     width: 136px;
     height: 39px;
     margin-left: 12px;
     color: #fff;
     background: url("../images/banner_jiao.png") no-repeat 120px 50%; }
- #bannerList .borNone {
+#bannerList .borNone {
     border: none; }
- #bannerList .li1 {
+#bannerList .li1 {
     background: url("../images/iqkplg1m99_40_40.png") no-repeat 22px 50%; }
- #bannerList .li2 {
+#bannerList .li2 {
     background: url("../images/iqkpnez751_40_40.png") no-repeat 22px 50%; }
- #bannerList .li3,  #bannerList #topWrap #top #ulRight .li4, #topWrap #top #ulRight  #bannerList .li4 {
+#bannerList .li3,  #bannerList #topWrap #top #ulRight .li4, #topWrap #top #ulRight  #bannerList .li4 {
     background: url("../images/iqkpo5f994_40_40.png") no-repeat 22px 50%; }
- #bannerList .li4 {
+#bannerList .li4 {
     background: url("../images/iqkpow3285_40_40.png") no-repeat 22px 50%; }
- #bannerList .li5 {
+#bannerList .li5 {
     background: url("../images/iqkpq2ue80_40_40.png") no-repeat 22px 50%; }
- #bannerList .li6 {
+#bannerList .li6 {
     background: url("../images/iqkptd2291_40_40.png") no-repeat 22px 50%; }
- #bannerList .li7 {
+#bannerList .li7 {
     background: url("../images/iqkpsh0e98_40_40.png") no-repeat 22px 50%; }
- #bannerList .li8 {
+#bannerList .li8 {
     background: url("../images/iqkpr75617_40_40.png") no-repeat 22px 50%; }
- #bannerList .li9 {
+#bannerList .li9 {
     background: url("../images/ir26dxt121_40_40.png") no-repeat 22px 50%; }
- #bannerList .li10 {
+#bannerList .li10 {
     background: url("../images/iqsu18g169_40_40.png") no-repeat 22px 50%; }
- #bannerList .li10 a {
+#bannerList .li10 a {
     border: none; }
 
 #muyingertong {
@@ -64,7 +64,7 @@
     border-bottom: 1px solid #000;
     position: absolute;
     top: 173px;
-    left: 250px;
+    left: 248px;
     background-color: #fff;
     display: block; }
 #muyingertong #div01muying, #muyingertong #div02 {
@@ -148,7 +148,7 @@
     border-bottom: 1px solid #000;
     position: absolute;
     top: 173px;
-    left: 250px;
+    left: 248px;
     background-color: #fff;
     display: block; }
 #meirongcaizhuang #div01meirong, #meirongcaizhuang #div02 {
@@ -235,7 +235,7 @@
     border-bottom: 1px solid #000;
     position: absolute;
     top: 173px;
-    left: 250px;
+    left: 248px;
     background-color: #fff;
     display: block; }
 #fushixiebao #div01fushi, #fushixiebao #div02 {
@@ -322,7 +322,7 @@
     border-bottom: 1px solid #000;
     position: absolute;
     top: 173px;
-    left: 250px;
+    left: 248px;
     background-color: #fff;
     display: block; }
 #jiajushenghuo #div01jiaju, #jiajushenghuo #div02 {
@@ -408,7 +408,7 @@
     border-bottom: 1px solid #000;
     position: absolute;
     top: 173px;
-    left: 250px;
+    left: 248px;
     background-color: #fff;
     display: block; }
 #yingyangbaojian #div01yingyang, #yingyangbaojian #div02 {
@@ -494,7 +494,7 @@
     border-bottom: 1px solid #000;
     position: absolute;
     top: 173px;
-    left: 250px;
+    left: 248px;
     background-color: #fff;
     display: block; }
 #haiwaizhiyou #div01haiwai, #haiwaizhiyou #div02 {
@@ -577,7 +577,7 @@
     border-bottom: 1px solid #000;
     position: absolute;
     top: 173px;
-    left: 250px;
+    left: 248px;
     background-color: #fff;
     display: block; }
 #shumajiadian #div01shuma, #shumajiadian #div02 {
@@ -660,7 +660,7 @@
     border-bottom: 1px solid #000;
     position: absolute;
     top: 173px;
-    left: 250px;
+    left: 248px;
     background-color: #fff;
     display: block;
     font-weight: normal; }
@@ -748,7 +748,7 @@
     border-bottom: 1px solid #000;
     position: absolute;
     top: 173px;
-    left: 250px;
+    left: 248px;
     background-color: #fff;
     display: block; }
 #yundonghuwai #div01huwai, #yundonghuwai #div02 {
@@ -832,7 +832,7 @@
     border-bottom: 1px solid #000;
     position: absolute;
     top: 173px;
-    left: 250px;
+    left: 248px;
     background-color: #fff;
     display: block; }
 #shuiguoshengxian #div01shuiguo, #shuiguoshengxian #div02 {
@@ -903,312 +903,52 @@
     margin-top: 10px;
     margin-left: 40px; }
 
-
-/*-----------------------------------main-------------------------------------*/
-#mainWrap{
-    width:100%;
-    position: relative;
-    min-height:300px;
-    height:auto;
+/*----------------------------------main----------------------------------*/
+img{
+    border:none;
+    float: left;;
 }
+
 #main{
-    width:1090px;
+    width: 1090px;
+    height:980px;
+    background-color:lightblue;
     margin:0 auto;
-    /*background-color:lightblue;*/
+    margin-bottom:38px;
+
 }
-#main .shang{
-    width:100%;
-    height:230px;
-    background:url("../img_list/zanshi1.png");
+#other{
+    width:1090px;
+    height:10340px;
+    margin:0 auto;
 }
-#main .zhong{
-    width:100%;
-    height:1610px;
-    background-color:white;
-}
-#main .zhong div{
+#other img{
     cursor: pointer;
+}
+#other .left{
     float: left;
-    border:1px solid #fff;
-    width:258px;
-    height:386px;
-    margin-top:10px;
-    margin-left:12px;
-    background-color:#fff;
-    /*background-image:url("../img_list/manjian.png") ;*/
-    background-repeat:no-repeat;
-    background-position: center bottom;
+    width:178px;
+    height:2952px;
+    background:mediumvioletred;
 }
-#main .zhong div:hover{
-    border:1px solid red;
-    width:258px;
-    height:386px;
-}
-#main .zhong div img{
-    height:256px;
-}
-#main .zhong div .p1{
-    margin-top:-3px;
-    margin-bottom:4px;
-    padding:0 15px;
-    width:228px;
-    height:22px;
-    line-height:22px;
-}
-#main .zhong div .p2{
-    padding-left:15px;
+#other .right{
+    width:890px;
+    float: left;
+    margin-left:20px;
+    height:100%;
+    background:lightgreen;
 }
 
-#main .zhong div .p1 span{
-    margin-right:7px;
-}
-#main .zhong div .red{
-    color:#d42147;
-}
-#main .zhong div .s1{
-    float: left;
-    font-size:20px;
-}
-#main .zhong div .s2,#main .zhong div .s3{
-    float: left;
-    font-size:12px;
-    display: block;
-    height:18px;
-    line-height:18px;
-    border:1px dotted #d42147;
-}
-#main .zhong div .s4{
-    float: left;
-    text-decoration: line-through;
-    color:#999;
-    float:right;
-}
-
-
-.m0{
-    margin-right:0;
-}
-
-
-/*----------------------猜你喜欢cainixihuan-----------------*/
-.cainixihuan{
-    width:100%;
-    height:387px;
-}
-.cainixihuan .pTop{
-    text-indent:12px;
-    width:100%;
-    height:80px;
-}
-.cainixihuan .pTop .span1{
-    font-size:16px;
-    font-weight:bold;
-    float: left;
-    margin-top:46px;
-}
-.cainixihuan .pTop .span2{
-    font-size:12px;
-    float: left;
-    margin-top:50px;
-    margin-left:10px;
-}
-.cainixihuan .five{
-    width:100%;
-    height:304px;
-}
-.cainixihuan .five .f{
-    float: left;
-    margin-left:12px;
-    height:302px;
+.right_other{
+    width:888px;
+    height:6536px;
     border:1px solid #eaeaea;
     background-color:#fff;
+    text-align: center;
+
 }
-.cainixihuan .five .f:hover{
-    border:1px solid red;
-}
-.cainixihuan .five img{
-    width:204px;
-    height:200px;
-}
-.cainixihuan .five .p1{
-    height:25px;
-    line-height:25px;
+.right_other .shang{
     width:100%;
-    text-indent:16px;
+    height:234px;
+    overflow: hidden;
 }
-.cainixihuan .five .p2{
-    width:100%;
-    height:14px;
-    line-height:14px;
-    text-indent:16px;
-}
-.cainixihuan .five .red{
-    color:#e31436;
-}
-.cainixihuan .five .p3{
-    margin-top:8px;
-    width:100%;
-    height:24px;
-    line-height:24px;
-    text-indent:16px;
-}
-.cainixihuan .five .p3 span{
-    margin-right:3px;
-}
-.cainixihuan .five .p3 .s1{
-    font-size:18px;
-}
-.cainixihuan .five .p3 .s2{
-    text-decoration: line-through;
-    color:#999;
-}
-.cainixihuan .five .p4{
-    width:100%;
-    height:20px;
-    line-height:20px;
-    text-indent:16px;
-    color:#999;
-}
-
-/*----------------------大家都在买dajia-----------------*/
-.dajia{
-    width:100%;
-    height:387px;
-}
-.dajia .pTop{
-    text-indent:12px;
-    width:100%;
-    height:70px;
-}
-.dajia .pTop .span1{
-    font-size:16px;
-    font-weight:bold;
-    float: left;
-    margin-top:36px;
-}
-.dajia .pTop .span2{
-    font-size:12px;
-    float: left;
-    margin-top:40px;
-    margin-left:10px;
-}
-.dajia .five{
-    width:100%;
-    height:304px;
-}
-.dajia .five .f{
-    float: left;
-    margin-left:12px;
-    height:302px;
-    border:1px solid #eaeaea;
-    background-color:#fff;
-}
-.dajia .five .f:hover{
-    border:1px solid red;
-}
-.dajia .five img{
-    width:204px;
-    height:200px;
-}
-.dajia .five .p1{
-    height:25px;
-    line-height:25px;
-    width:100%;
-    text-indent:16px;
-}
-.dajia .five .p2{
-    width:100%;
-    height:14px;
-    line-height:14px;
-    text-indent:16px;
-}
-.dajia .five .red{
-    color:#e31436;
-}
-.dajia .five .p3{
-    margin-top:8px;
-    width:100%;
-    height:24px;
-    line-height:24px;
-    text-indent:16px;
-}
-.dajia .five .p3 span{
-    margin-right:3px;
-}
-.dajia .five .p3 .s1{
-    font-size:18px;
-}
-.dajia .five .p3 .s2{
-    text-decoration: line-through;
-    color:#999;
-}
-.dajia .five .p4{
-    width:100%;
-    height:20px;
-    line-height:20px;
-    text-indent:16px;
-    color:#999;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
