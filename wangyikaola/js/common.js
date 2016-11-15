@@ -8,6 +8,17 @@ window.onload = function(){
 		$(this).src="images/loading2.gif";
 	});
 
+	//给所有的a标签，加一个：点击的默认超链接转向列表页
+	$("a").click(function(){
+		window.location.href="list.html";
+	})
+
+	// $("div").click(function(){
+	// 	window.location.href="list.html";
+	// })
+
+
+
 	// $("img").load(function(){
 	// 	$(this).src="images/loading2.gif";
 	// });
@@ -392,6 +403,9 @@ window.onload = function(){
 		allHide();
 	});
 	$("#mainWrap").mouseenter(function(){
+		allHide();
+	});
+	$("#main").mouseenter(function(){
 		allHide();
 	});
 	$("#muyingertong").mouseenter(function(){
