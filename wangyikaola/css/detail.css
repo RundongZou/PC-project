@@ -944,8 +944,7 @@ img{
 }
 #main .zhong{
     width:1090px;
-    height:546px;
-    background-color:lightpink;
+    height:550px;
     position: relative;
 }
 #main .zhong .left{
@@ -997,11 +996,297 @@ img{
 }
 
 #main .zhong .leftBottom{
-    /*float: left;*/
+    float: left;
     width:402px;
     height:127px;
-    background-color:blueviolet;
+    margin-top:422px;
+    margin-left:-402px;
 }
+#main .zhong .leftBottom img{
+    cursor:pointer;
+    margin-top:16px;
+
+}
+#main .zhong .leftBottom .xiaotu{
+    margin-left:10px;
+}
+#main .zhong .leftBottom .btn_right{
+    float:right;
+}
+#main .zhong .content{
+    float: left;
+    width:658px;
+    height:530px;
+    background:#fff;
+    padding-top:20px;
+    padding-left:30px;
+}
+.content p{
+    width:100%;
+    color:#666;
+}
+.content a:hover{
+    text-decoration: underline;
+}
+.content .p1{
+    color:#999;
+    height:26px;
+    line-height:26px;
+    background:url("../img_detail/939be9ea4d7b4acbb68e67ab531e0d7f1419664531530i46nlv7t10030.png") no-repeat 0 0;
+    background-size:26px 26px;
+    text-indent:32px;
+}
+.content .p1 span{
+    padding-right:7px;
+    border-right:1px solid #999;
+    margin-right:6px;
+}
+.content .p1 a{
+    color:#999;
+}
+.content .p2{
+    margin-top:9px;
+    height:26px;
+    line-height:26px;
+    text-indent:10px;
+    font-size:20px;
+}
+.content .p3{
+    height:40px;
+    line-height:40px;
+
+}
+.content .price{
+    padding:7px 0;
+    height:72px;
+    border-top:1px dotted #ddd;
+    border-bottom:1px dotted #ddd;
+    background-color:#f9f9f9;
+}
+.content .price p{
+    height:36px;
+    line-height:36px;
+    text-indent:10px;
+}
+.content .p2{
+    color:#000;
+}
+
+
+.content .price p .red{
+    color:#d22046;
+}
+.content .price .p4{
+    background:url("../img_detail/baoyou.png") no-repeat 148px 11px;
+}
+.content .price .p4 .red{
+    font-size:20px;
+    margin-left:40px;
+}
+.content .price .p4 .s1{
+    color:#999;
+    text-decoration: line-through;
+    margin-left:52px;
+}
+.content .price .p5{
+    background:url("../img_detail/manejian.png") no-repeat 80px 11px;
+}
+.content .price .p5 .s2{
+    margin-left:116px;
+}
+.content  .p6{
+    text-indent:10px;
+    margin-top:11px;
+    height:28px;
+    line-height:28px;
+}
+.content .p6 .s2{
+    margin-left:44px;
+    color:#333;
+}
+.content  .p7{
+    text-indent:10px;
+    margin-top:11px;
+    height:28px;
+    line-height:28px;
+}
+.content .p7 .s2{
+    margin-left:44px;
+    color:#333;
+}
+.content .p7 a{
+    color:#d22147;
+}
+.content .p7 .s3{
+    color:#333;
+}
+.content .p8{
+    text-indent:10px;
+    height:46px;
+    line-height:46px;
+}
+.content .p8 .s1{
+    display: block;
+    float: left;
+    color:#666;
+}
+.content .p8 .s2{
+    cursor:pointer;
+    display: block;
+    width:76px;
+    height:26px;
+    line-height:26px;
+    text-indent:12px;
+    border:1px solid #ccc;
+    float: left;
+    margin-left:24px;
+    margin-top:8px;
+}
+.content .p8 .s2:hover{
+    border:1px solid #d41c44;
+}
+.content .p9 .s2:hover{
+    border:1px solid #d41c44;
+}
+
+
+.content .p9{
+    text-indent:10px;
+    height:46px;
+    line-height:46px;
+}
+.content .p9 .s1{
+    color:#666;
+    display: block;
+    float: left;
+}
+.content .p9 .s2{
+    cursor:pointer;
+    display: block;
+    width:38px;
+    height:26px;
+    line-height:26px;
+    text-indent:12px;
+    border:1px solid #ccc;
+    float: left;
+    margin-left:24px;
+    margin-top:8px;
+}
+.content .d1{
+    position: relative;
+    height:34px;
+    line-height:34px;
+    text-indent:10px;
+    margin-bottom:14px;
+}
+.content .d1 .s1{
+    color:#666;
+}
+.content .d1 .s2{
+    margin-left:140px;
+    color:#666;
+}
+.content .d1 .btn1{
+    cursor:pointer;
+    position: absolute;
+    top:8px;
+    left:86px;
+    width:20px;
+    height:20px;
+    border:1px solid #ccc;
+    background-image:url("../img_detail/jian1.png") ;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.content .d1 .btn2:hover{
+    background-color:red;
+}
+.content .d1 .btn2{
+    cursor: pointer;
+    position: absolute;
+    top:8px;
+    left:154px;
+    width:20px;
+    height:20px;
+    border:1px solid #ccc;
+    background-image:url("../img_detail/jia1.png") ;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.content .d1 .s2{
+    margin-left:156px;
+}
+.content .d1 #inp1{
+    position: absolute;
+    left:106px;
+    border:none;
+    top:8px;
+    text-align: center;
+    width:48px;
+    height:16px;
+    border-top:1px solid #ccc;
+    border-bottom:1px solid #ccc;
+}
+.content .d2{
+    height:50px;
+    line-height:50px;
+}
+.content .d2 .btn1{
+    cursor:pointer;
+    width:160px;
+    height:50px;
+    background-color:#d22147;
+    color:#fff;
+    border:none;
+    font-size:18px;
+    font-weight:bold;
+    margin-left:10px;
+}
+.content .d2 .btn1:hover{
+    background-color:#f5345e;
+}
+.content .d2 .btn2{
+    cursor: pointer;
+    font-size:18px;
+    text-indent:30px;
+    color:#333;
+    font-weight:bold;
+    width:158px;
+    height:48px;
+    border:1px solid #ddd;
+    background:url("../img_detail/heart.png") no-repeat 48px center;
+}
+.content .p10{
+    text-indent:10px;
+    height:40px;
+    line-height:40px;
+}
+.content .p11{
+    color:#333;
+    height:30px;
+    line-height:30px;
+    background:url("../img_detail/star.png") no-repeat 10px 8px;
+}
+.content .p11 .red{
+    color:#d61640;
+    margin-left:88px;
+}
+.content .p11 span{
+    margin-right:10px;
+}
+
+#main .tuijian{
+    width:100%;
+    height:368px;
+    background:red;
+}
+
+
+
+
+
+
+
 
 
 
