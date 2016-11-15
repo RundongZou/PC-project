@@ -43,4 +43,12 @@ $(document).ready(function(){
         $(".div3").hide();
         $(".c3").hide();
     })
+
+
+
+
+
+
+
+
 })
