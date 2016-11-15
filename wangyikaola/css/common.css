@@ -17,7 +17,9 @@ a {
 
 input {
     outline: none; }
-
+img{
+    border:none;
+}
 #wrap {
     width: 100%;
     height: auto; }
