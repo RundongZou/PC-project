@@ -161,7 +161,7 @@ window.onload = function(){
 			}else{
 				str = oldStr;
 			}
-			 $.cookie("account",str,{expires:15,path:"/"});
+			 $.cookie("account",str,{empires:7,path:"/"});
 			window.location.href="login.html";
 		}
 
