@@ -25,8 +25,6 @@ window.onload = function () {
                         break;
                     }
             }
-        }else{
-            alert("用户名不存在！");
         }
     })
 

@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/cart.css" />
     <script type="text/javascript" src="js/jquery-3.1.1.js" ></script>
     <script type="text/javascript" src="js/jquery.easing.1.3.js" ></script>
+    <script type="text/javascript" src="js/jquery.cookie.js" ></script>
     <script src="js/jquery.rotate.min.js"></script>
     <script type="text/javascript" src="js/common.js" ></script>
     <script type="text/javascript" src="js/cart.js" ></script>
@@ -90,21 +91,36 @@
                 <input class="inp2" type="checkbox" value="">
                 <span class="s1">网易暴雪周边商城发货</span>
             </div>
-            <div class="d3">
-                <input class="inp3" type="checkbox" value="">
-                <a href="detail.html"><img class="img1" src="img_cart/22243f6a-a909-4e99-b4dd-a7b797cd7f38.jpg"></a>
-                <a class="txt" href="detail.html">预售 2016年 第十届暴雪嘉年华 七合一纪念限量礼盒</a>
-                <span class="s1">399.00</span>
-                <span class="s2">299.00</span>
-                <button class="btn1"></button>
-                <input id="inp1" type="text" value="1   "/>
-                <button class="btn2"></button>
-                <span class="s3">299.00</span>
-                <a class="delete" href="">删除</a>
-                <a class="collect" href="">移入我的收藏</a>
+            <div id="gouwu" class="d3">
+                <!--<input class="inp3" type="checkbox" value="">-->
+                <!--<a href="detail.html"><img class="img1" src="img_cart/22243f6a-a909-4e99-b4dd-a7b797cd7f38.jpg"></a>-->
+                <!--<a class="txt" href="detail.html">预售 2016年 第十届暴雪嘉年华 七合一纪念限量礼盒</a>-->
+                <!--<span class="s1">399.00</span>-->
+                <!--<span class="s2">299.00</span>-->
+                <!--<button class="btn1"></button>-->
+                <!--<input id="inp4" type="text" value="1"/>-->
+                <!--<button class="btn2"></button>-->
+                <!--<span class="s3">299.00</span>-->
+                <!--<a class="delete" href="">删除</a>-->
+                <!--<a class="collect" href="">移入我的收藏</a>-->
             </div>
-            <div class="d4">
-                <span>活动优惠：-¥ 0.00</span>
+            <!--<ul class="d4">-->
+                <!--<li class="li1">活动优惠：-¥<span>0.00</span></li>-->
+                <!--<li class="li2">商品应付总计：<span>299</span></li>-->
+                <!--<li class="li3">预估税费：¥<span>0.00</span></li>-->
+            <!--</ul>-->
+            <!--<div class="d5">-->
+                <!--<input class="inp5" type="checkbox" value="">-->
+                <!--<span class="s1">全选</span>-->
+                <!--<a href="">删除选中商品</a>-->
+                <!--<p class="p1">已选商品  <span class="red num1">1</span>  件</p>-->
+                <!--<p class="p2"><span>总价(不含运费)：</span><span class="red">¥</span><span class="red num2">299</span></p>-->
+                <!--<ul>-->
+                    <!--<li class="li1">活动优惠：-¥<span>0.00</span></li>-->
+                    <!--<li class="li2">商品应付总计：<span>299</span></li>-->
+                    <!--<li class="li3">商品税费：¥<span>0.00</span></li>-->
+                <!--</ul>-->
+                <!--<p class="jiesuan">去结算</p>-->
             </div>
         </div>
     </div>
@@ -128,18 +144,7 @@
 
     <script type="text/javascript">
         var data = [
-            "你好，我是Michael",
-            "你是谁",
-            "你最好啦",
-            "你最珍贵",
-            "你是我最好的朋友",
-            "你画我猜",
-            "你是笨蛋",
-            "你懂得",
-            "你为我着迷",
-            "你是我的眼",
-            "男鞋",
-            "陈念鲁"
+            "暴雪","游戏","周边","暴雪游戏周边","游戏周边"
 
         ];
         $(document).ready(function(){

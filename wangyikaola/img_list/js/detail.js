@@ -46,40 +46,7 @@ $(document).ready(function(){
 
     $("#main .d2 .btn1").click(function () {
         window.location.href="cart.html";
-    });
-
-    //点击“加入购物车”，商品的有关信息存入到cookie中
-
-
-    $("#jia").click(function(){
-        if(parseInt($("#inp1")[0].value)<99){
-            $("#inp1")[0].value=parseInt($("#inp1")[0].value)+1;
-        }else{
-            $("#inp1")[0].value = 99;
-        }
-
-    });
-    $("#jian").click(function(){
-        if(parseInt($("#inp1")[0].value)>99){
-            $("#inp1")[0].value = 99;
-        }
-        if(parseInt($("#inp1")[0].value)>1){
-            $("#inp1")[0].value=parseInt($("#inp1")[0].value)-1;
-        }else{
-            $("#inp1")[0].value = 1;
-        }
-
     })
-
-    $("#jiaru").click(function(){
-            var productStr = $("#inp1").val();
-            $.cookie("product",productStr,{expires:15,path:"/"});
-    });
-    $("#liji").click(function(){
-        var productStr = $("#inp1").val();
-        $.cookie("product",productStr,{expires:15,path:"/"});
-    })
-
 
 
 
