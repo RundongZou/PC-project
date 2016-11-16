@@ -1098,6 +1098,8 @@
 }
 .dajia .five .f{
     margin-left:12px;
+    width:204px;
+    float: left;
     height:302px;
     border:1px solid #eaeaea;
     background-color:#fff;

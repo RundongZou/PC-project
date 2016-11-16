@@ -1192,7 +1192,8 @@ img{
     height:34px;
     line-height:34px;
     text-indent:10px;
-    margin-bottom:14px;
+    margin-bottom:16px;
+    margin-top:10px;
 }
 .content .d1 .s1{
     color:#666;
@@ -1209,7 +1210,7 @@ img{
     width:20px;
     height:20px;
     border:1px solid #ccc;
-    background-image:url("../img_detail/jian1.png") ;
+    background-image:url("../img_detail/jian2.png") ;
     background-repeat: no-repeat;
     background-position: center center;
 }
@@ -1247,34 +1248,38 @@ img{
     line-height:50px;
 }
 .content .d2 .btn1{
+    color:#d41c44;
     cursor:pointer;
-    width:160px;
-    height:50px;
-    background-color:#d22147;
-    color:#fff;
+    width:156px;
+    height:46px;
+    background-color:#ffeced;
     border:none;
     font-size:18px;
     font-weight:bold;
     margin-left:10px;
+    border:2px solid #d41c44;
 }
 .content .d2 .btn1:hover{
-    background-color:#f5345e;
+    background-color:#fff;
 }
 .content .d2 .btn2{
     margin-left:10px;
     cursor: pointer;
     font-size:18px;
     text-indent:30px;
-    color:#333;
+    color:#fff;
     font-weight:bold;
+    border:none;
     width:158px;
     height:48px;
-    border:1px solid #ddd;
+    background-color:#d22147;
+    background-image: url("../img_detail/che.png");
+    background-repeat:no-repeat;
+    background-position: 25px center;
     /*background:url("../img_detail/heart.png") no-repeat 48px center;*/
 }
 .content .d2 .btn2:hover{
-    border:1px solid red;
-    background:url("../img_detail/heart.png") no-repeat 48px center;
+    background-color:#f5345e;
 }
 .content .p10{
     text-indent:10px;

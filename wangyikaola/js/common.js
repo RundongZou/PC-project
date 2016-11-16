@@ -13,6 +13,9 @@ window.onload = function(){
 		window.location.href="list.html";
 	})
 
+    $(".gif").click(function(){
+        window.location.href="index.html";
+    })
 	// $("div").click(function(){
 	// 	window.location.href="list.html";
 	// })
