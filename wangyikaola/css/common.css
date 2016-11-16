@@ -3,8 +3,9 @@ body {
     background-color: #f3f3f3;
     font-size: 12px;
     font-family: "微软雅黑";
+
 }
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td { border: 0 none; font-family: inherit; font-style: inherit; font-weight: inherit; margin: 0; outline: 0 none; padding: 0; }
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td { border: 0 none; font-style: inherit; font-weight: inherit; margin: 0; outline: 0 none; padding: 0; }
 :focus { outline: 0 none; }
 table { border-collapse: collapse; border-spacing: 0; }
 caption, th, td { font-weight: normal; text-align: left; }
@@ -326,7 +327,7 @@ img{
     margin: 0 auto; }
 #headerWrap #header .search {
     width: 458px;
-    height: 32px;
+    height: 30px;
     position: absolute;
     top: 24px;
     left: 342px;
