@@ -44,7 +44,9 @@ $(document).ready(function(){
         $(".c3").hide();
     })
 
-
+    $("#main .d2 .btn1").click(function () {
+        window.location.href="cart.html";
+    })
 
 
 

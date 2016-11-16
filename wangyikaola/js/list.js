@@ -58,6 +58,8 @@ $(document).ready(function(){
     $("#main .five div").click(function(){
         window.location.href="detail.html";
     })
+
+
 })
 
 
