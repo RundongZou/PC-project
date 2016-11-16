@@ -405,9 +405,9 @@ window.onload = function(){
 	$("#mainWrap").mouseenter(function(){
 		allHide();
 	});
-	$("#main").mouseenter(function(){
-		allHide();
-	});
+	// $("#main").mouseenter(function(){
+	// 	allHide();
+	// });
 	$("#muyingertong").mouseenter(function(){
 		$("#bannerList").show();
 	});
