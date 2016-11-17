@@ -38,7 +38,7 @@ window.onload = function(){
 		}else if($(this).val().length<6||$(this).val().length>18){
 			wrong($(this),".hint1");
 			$(".userId .hint .hint_span").html("账号需由6-18个字符组成");
-			
+
 		}else if($(this).val()[0]>=0&&$(this).val()[0]<=9){
 			wrong();
 			$(".userId .hint .hint_span").html("账号需由字母开头");
@@ -145,12 +145,33 @@ window.onload = function(){
 			$(" .hint3 .hint_span").html("密码不一致");
 		}
 
+
+	})
+
+	//手机号
+	var phoneNumber = /^(0|86|17951)?(13[0-9]|15[012356789]|17[678]|18[0-9]|14[57])[0-9]{8}$/;
+	$(".inp_phoneNumber").blur(function(){
+		if(phoneNumber.test($(this).val())){
+			judge ++;
+			$(this).css({
+				"border":"1px solid #cbcbcb"
+			})
+			$(".hint5").css({
+				"display":"block",
+				"color":"limegreen"
+			});
+			$(".phone .hint .iconfont").html("&#xe62d;");
+			$(" .hint5 .hint_span").html("");
+		}else{
+			wrong($(this),".hint5");
+			$(".phone .hint .hint_span").html("请输入正确的手机号");
+		}
 	})
 
 	//如果信息都合格可以注册的话，点击注册按钮，就可以注册，同时，把信息存到cookie里面
 	$("#btn1").click(function(){
 		//alert(judge);
-		if(judge >= 3){
+		if(judge >= 4){
 			//alert(1);
 			//judge = 0;
 
@@ -162,6 +183,7 @@ window.onload = function(){
 				str = oldStr;
 			}
 			 $.cookie("account",str,{expires:15,path:"/"});
+			alert("恭喜您，注册成功！即将跳转到登录页面~");
 			window.location.href="login.html";
 		}
 

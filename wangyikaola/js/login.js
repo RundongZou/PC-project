@@ -16,14 +16,10 @@ window.onload = function () {
                         // $(".userId .hint .hint_span").html("该用户名已注册")!
                         break;
                     }else{
-                        alert("密码错误！");
+                        alert("用户名不存在或密码错误！");
                         break;
                     }
                 }
-                    if(1){
-                        alert("用户名不存在！");
-                        break;
-                    }
             }
         }else{
             alert("用户名不存在！");

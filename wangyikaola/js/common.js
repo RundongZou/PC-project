@@ -11,14 +11,13 @@ window.onload = function(){
 	//给所有的a标签，加一个：点击的默认超链接转向列表页
 	$("a").click(function(){
 		window.location.href="list.html";
-	})
+	});
 
     $(".gif").click(function(){
         window.location.href="index.html";
-    })
-	// $("div").click(function(){
-	// 	window.location.href="list.html";
-	// })
+    });
+
+
 
 
 

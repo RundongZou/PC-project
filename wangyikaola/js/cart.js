@@ -16,7 +16,7 @@ $(document).ready(function(){
         '<input'+' id="inp4" type="text" value="'+val+'">'+
         '<button'+' class="btn2" id="jia">'+'</button>'+
         '<span'+' class="s3" id="total1">'+total+'</span>'+
-        '<a'+' class="delete" href="">'+"删除"+'</a>'+
+        '<a'+' class="delete" id="delete" href="detail.html">'+"删除"+'</a>'+
         '<a'+' class="collect" href="">'+"移入我的收藏"+'</a>';
 
     var html2=    '<ul'+' class="d4">'+
@@ -36,7 +36,7 @@ $(document).ready(function(){
     '<li'+' class="li2">'+"商品应付总计："+'<span'+' id="total4">'+total+'</span></li>'+
     '<li'+' class="li3">'+"商品税费：¥"+'<span>'+"0.00"+'</span></li>'+
     '</ul>'+
-    '<p'+' class="jiesuan">'+"去结算"+'</p>';
+    '<p'+' class="jiesuan" id="jiesuan">'+"去结算"+'</p>';
 
 
     $("#gouwu").html(html);
@@ -81,6 +81,20 @@ $(document).ready(function(){
         $("#num1").html(productStr);
         $.cookie("product",productStr,{expires:15,path:"/"});
     });
+
+
+    $("#delete").click(function(){
+        $("#gouwu").html('');
+        $("#main").html('');
+       // $.removeCookie("product",{path:"/"});
+        window.location.href="detail.html";
+
+    })
+
+    $("#jiesuan").click(function(){
+        alert("结算成功，即将返回首页~");
+        window.location.href="index.html";
+    })
 
 
 
