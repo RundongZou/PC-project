@@ -9,6 +9,7 @@
 	<script type="text/javascript" src="js/jquery.easing.1.3.js" ></script>
 	<script src="js/jquery.rotate.min.js"></script>
 	<script type="text/javascript" src="js/common.js" ></script>
+	<script type="text/javascript" src="js/index.js" ></script>
 </head>
 <body>
 <div id="wrap">
@@ -143,13 +144,13 @@
 			</ul>
 			<div id="btnLeft"></div>
 			<div id="btnRight"></div>
-			<div id="btnBottom">
-				<li class="liRed"></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-			</div>
+			<!--<div id="btnBottom">-->
+				<!--<li class="liRed"></li>-->
+				<!--<li></li>-->
+				<!--<li></li>-->
+				<!--<li></li>-->
+				<!--<li></li>-->
+			<!--</div>-->
 		</banner>
 	</div>
 	<!----母婴儿童---->
@@ -1990,6 +1991,38 @@
 		$("#kw").val(value);
 		$("#append").hide().html("");
 	}
+
+
+	$(".main_muying2 .center div").mouseenter(function(event){
+		$(event.target).animate({"opacity":"0.5"},300).animate({"opacity":"1"},300)
+	});
+	$(".main_meirong .center div").mouseenter(function(event){
+		$(event.target).animate({"opacity":"0.5"},300).animate({"opacity":"1"},300)
+	});
+	$(".main_fushi .center div").mouseenter(function(event){
+		$(event.target).animate({"opacity":"0.5"},300).animate({"opacity":"1"},300)
+	});
+	$(".main_jiaju .center div").mouseenter(function(event){
+		$(event.target).animate({"opacity":"0.5"},300).animate({"opacity":"1"},300)
+	});
+	$(".main_yingyang .center div").mouseenter(function(event){
+		$(event.target).animate({"opacity":"0.5"},300).animate({"opacity":"1"},300)
+	});
+	$(".main_haiwai .center div").mouseenter(function(event){
+		$(event.target).animate({"opacity":"0.5"},300).animate({"opacity":"1"},300)
+	});
+	$(".main_shuma .center div").mouseenter(function(event){
+		$(event.target).animate({"opacity":"0.5"},300).animate({"opacity":"1"},300)
+	});
+	$(".main_huanqiu .center div").mouseenter(function(event){
+		$(event.target).animate({"opacity":"0.5"},300).animate({"opacity":"1"},300)
+	});
+
+
+	$("div").click(function(){
+		window.location.href="list.html";
+	});
+
 </script>
 
 </body>
