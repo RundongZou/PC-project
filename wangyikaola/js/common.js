@@ -237,6 +237,7 @@ window.onload = function(){
 			isPause = true;
 			imgIncrease();
 		})
+
 		//点击小圆点切换
 		$("#btnBottom li").click(function(){
 			isPause = true;
@@ -401,6 +402,7 @@ window.onload = function(){
 
 		}
 	});
+
 	$("banner").mouseenter(function(){
 		allHide();
 	});
